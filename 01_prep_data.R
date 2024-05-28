@@ -1,10 +1,10 @@
 # download from FISHGLOB: https://github.com/AquaAuma/FishGlob_data/blob/main/outputs/Cleaned_data/NEUS_clean.RData
 # too big to track on GH (added to gitignore)
 
-# pull in data
-
 library(data.table)
 library(here)
+
+# pull in data
 
 load(here("data","NEUS_clean.Rdata"))
 # contains two objects, 'data' and 'readme'
