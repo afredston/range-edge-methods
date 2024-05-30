@@ -10,13 +10,9 @@ load(here("data","NEUS_clean.Rdata"))
 # contains two objects, 'data' and 'readme'
 # be sure to read the readme to understand the column units and values 
 
-focal_spp <- 'Paralichthys dentatus' # can change later
-
 data <- data.table(data) 
 
-dat <- data[accepted_name == focal_spp & season == 'Fall']
-
-hist(dat$wgt) # note that the data are already zero-inflated--most of the records are zeros 
+dat <- data[season == 'Fall']
 
 # note that the standardized catch per unit effort / area columns are NA in this dataset
 
@@ -36,20 +32,36 @@ dat <- dat[,wgt_cpue := wgt/0.5][,wgt_cpua := wgt/0.0384][,num_cpue := num/0.5][
 
 # you can now use any of these indices of biomass -- kg / hr or kg / km^2, or num / hr or num / km^2 -- for EDM
 
-save(dat, file=here("data","summer_flounder.RData"))
+# STEP 3: impute zeros for hauls where species were not found 
 
-# calculate annual edge with different methods 
+# first split out most of the haul information so the resulting object isn't too huge
+# cheat code: dput(colnames(dat))
 
-# latitudinal distal
+hauldat <- unique(dat[,c("survey", "source", "timestamp", "haul_id", "country", "sub_area", 
+                         "continent", "stat_rec", "station", "stratum", "year", "month", 
+                         "day", "quarter", "season", "latitude", "longitude", "haul_dur", 
+                         "area_swept", "gear", "depth", "sbt", "sst",  "survey_unit")])
 
-# latitudinal quantile of presence
+sppdat <- unique(dat[, c("verbatim_name", "verbatim_aphia_id", 
+                     "accepted_name", "aphia_id", "SpecCode", "kingdom", "phylum", 
+                     "class", "order", "family", "genus", "rank")])
 
-# latitudinal quantile of abundance
+write.csv(sppdat, file=here("data","species_data.csv"))
+write.csv(hauldat, file=here("data","haul_data.csv"))
 
-# 2D contour distal
+# now we can cut those columns out of dat and only keep the columns that vary in each row and are used in the analysis 
+dat <- dat[,c("haul_id","num_cpue", 
+              "num_cpua", "wgt_cpue", "wgt_cpua", 
+              "accepted_name")] 
 
-# 2D contour quantile of presence
+# get expanded grid 
+dat_zeros <- as.data.table(expand.grid(haul_id=unique(dat[,haul_id]), accepted_name=unique(dat[,accepted_name]))) # every combination of taxon and haul; 10 million rows for NEUS alone! 
 
-# 2D contour quantile of abundance
+# expand raw to have true absences
+dat_zeros <- merge(dat_zeros, dat[,], all.x=TRUE, by=c("haul_id", "accepted_name")) 
+dat_zeros <- copy(dat_zeros)[is.na(wgt_cpue), wgt_cpue := 0][wgt_cpue<Inf] # replace NAs with 0s; these occur after merging in taxon*haul combos where no individuals were recorded 
+dat_zeros <- copy(dat_zeros)[is.na(num_cpue), num_cpue := 0][num_cpue<Inf]
+dat_zeros <- copy(dat_zeros)[is.na(num_cpua), num_cpua := 0][num_cpua<Inf]
+dat_zeros <- copy(dat_zeros)[is.na(wgt_cpua), wgt_cpua := 0][wgt_cpua<Inf]
 
-# SDM outputs 
+save(dat_zeros, file=here("data","dat_zeros.RData"))
