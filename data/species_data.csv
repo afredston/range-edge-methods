@@ -1,542 +1,542 @@
-"","verbatim_name","verbatim_aphia_id","accepted_name","aphia_id","SpecCode","kingdom","phylum","class","order","family","genus","rank"
-"1","ALOSA PSEUDOHARENGUS",NA,"Alosa pseudoharengus",158669,1583,"Animalia","Chordata","Teleostei","Clupeiformes","Alosidae","Alosa","Species"
-"2","BREVOORTIA TYRANNUS",NA,"Brevoortia tyrannus",158691,1592,"Animalia","Chordata","Teleostei","Clupeiformes","Alosidae","Brevoortia","Species"
-"3","CLUPEA HARENGUS",NA,"Clupea harengus",126417,24,"Animalia","Chordata","Teleostei","Clupeiformes","Clupeidae","Clupea","Species"
-"4","GADUS MORHUA",NA,"Gadus morhua",126436,69,"Animalia","Chordata","Teleostei","Gadiformes","Gadidae","Gadus","Species"
-"5","LEUCORAJA ERINACEA",NA,"Leucoraja erinaceus",1577339,2557,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Leucoraja","Species"
-"6","LIMANDA FERRUGINEA",NA,"Myzopsetta ferruginea",1571969,521,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Limanda","Species"
-"7","LOPHIUS AMERICANUS",NA,"Lophius americanus",159184,532,"Animalia","Chordata","Teleostei","Lophiiformes","Lophiidae","Lophius","Species"
-"8","MERLUCCIUS BILINEARIS",NA,"Merluccius bilinearis",158962,323,"Animalia","Chordata","Teleostei","Gadiformes","Merlucciidae","Merluccius","Species"
-"9","PEPRILUS TRIACANTHUS",NA,"Peprilus triacanthus",159828,492,"Animalia","Chordata","Teleostei","Scombriformes","Stromateidae","Peprilus","Species"
-"10","PSEUDOPLEURONECTES AMERICANUS",NA,"Pseudopleuronectes americanus",158885,524,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Pseudopleuronectes","Species"
-"11","SCOPHTHALMUS AQUOSUS",NA,"Scophthalmus aquosus",158907,530,"Animalia","Chordata","Teleostei","Pleuronectiformes","Scophthalmidae","Scophthalmus","Species"
-"12","SQUALUS ACANTHIAS",NA,"Squalus acanthias",105923,139,"Animalia","Chordata","Elasmobranchii","Squaliformes","Squalidae","Squalus","Species"
-"13","UROPHYCIS CHUSS",NA,"Urophycis chuss",126503,312,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Species"
-"14","DIPTURUS LAEVIS",NA,"Dipturus laevis",158548,2561,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Dipturus","Species"
-"15","HIPPOGLOSSOIDES PLATESSOIDES",NA,"Hippoglossoides platessoides",127137,4239,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossoides","Species"
-"16","LEUCORAJA OCELLATA",NA,"Leucoraja ocellata",158553,2562,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Leucoraja","Species"
-"17","MYOXOCEPHALUS OCTODECEMSPINOSUS",NA,"Myoxocephalus octodecemspinosus",159520,4120,"Animalia","Chordata","Teleostei","Perciformes","Cottidae","Myoxocephalus","Species"
-"18","PARALICHTHYS OBLONGUS",NA,"Hippoglossina oblonga",158833,4229,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Species"
-"19","PRIONOTUS CAROLINUS",NA,"Prionotus carolinus",159571,1243,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"20","TAUTOGOLABRUS ADSPERSUS",NA,"Tautogolabrus adspersus",159785,3672,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Tautogolabrus","Species"
-"21","HEMITRIPTERUS AMERICANUS",NA,"Hemitripterus americanus",159518,4097,"Animalia","Chordata","Teleostei","Perciformes","Hemitripteridae","Hemitripterus","Species"
-"22","MACROZOARCES AMERICANUS",NA,"Zoarces americanus",159267,480,"Animalia","Chordata","Teleostei","Perciformes","Zoarcidae","Macrozoarces","Species"
-"23","STENOTOMUS CHRYSOPS",NA,"Stenotomus chrysops",159811,452,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Stenotomus","Species"
-"24","TAUTOGA ONITIS",NA,"Tautoga onitis",158830,458,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Tautoga","Species"
-"25","ALOSA SAPIDISSIMA",NA,"Alosa sapidissima",158670,1584,"Animalia","Chordata","Teleostei","Clupeiformes","Alosidae","Alosa","Species"
-"26","SCOMBER SCOMBRUS",NA,"Scomber scombrus",127023,118,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Scomber","Species"
-"27","CENTROPRISTIS STRIATA",NA,"Centropristis striata",159348,361,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Centropristis","Species"
-"28","CYNOSCION REGALIS",NA,"Cynoscion regalis",159313,406,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Cynoscion","Species"
-"29","PARALICHTHYS DENTATUS",NA,"Paralichthys dentatus",158826,1338,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Species"
-"30","UROPHYCIS TENUIS",NA,"Urophycis tenuis",126504,313,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Species"
-"31","CITHARICHTHYS ARCTIFRONS",NA,"Citharichthys arctifrons",158791,4209,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Species"
-"32","GLYPTOCEPHALUS CYNOGLOSSUS",NA,"Glyptocephalus cynoglossus",127136,26,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Glyptocephalus","Species"
-"33","LIPARIS ATLANTICUS",NA,"Liparis atlanticus",159524,4186,"Animalia","Chordata","Teleostei","Perciformes","Liparidae","Liparis","Species"
-"34","UROPHYCIS REGIA",NA,"Urophycis regia",158991,1883,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Species"
-"35","LEPOPHIDIUM PROFUNDORUM",NA,"Lepophidium profundorum",158762,5420,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Lepophidium","Species"
-"36","HELICOLENUS DACTYLOPTERUS",NA,"Helicolenus dactylopterus",127251,76,"Animalia","Chordata","Teleostei","Perciformes","Sebastidae","Helicolenus","Species"
-"37","LEUCORAJA GARMANI",NA,"Leucoraja garmani",158552,1253,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Leucoraja","Species"
-"38","LOPHOLATILUS CHAMAELEONTICEPS",NA,"Lopholatilus chamaeleonticeps",159406,362,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Malacanthidae","Lopholatilus","Species"
-"39","MAUROLICUS WEITZMANI",NA,"Maurolicus weitzmani",158838,51611,"Animalia","Chordata","Teleostei","Stomiiformes","Sternoptychidae","Maurolicus","Species"
-"40","PERISTEDION MINIATUM",NA,"Peristedion miniatum",159550,4018,"Animalia","Chordata","Teleostei","Perciformes","Peristediidae","Peristedion","Species"
-"41","ARGENTINA SILUS",NA,"Argentina silus",126715,2700,"Animalia","Chordata","Teleostei","Argentiniformes","Argentinidae","Argentina","Species"
-"42","MYCTOPHIDAE",NA,"Myctophidae",125498,NA,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae",NA,"Family"
-"43","ENCHELYOPUS CIMBRIUS",NA,"Enchelyopus cimbrius",126450,1874,"Animalia","Chordata","Teleostei","Gadiformes","Lotidae","Enchelyopus","Species"
-"44","PONTINUS LONGISPINIS",NA,"Pontinus longispinis",159555,3931,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Pontinus","Species"
-"45","SCYLIORHINUS RETIFER",NA,"Scyliorhinus retifer",158516,853,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Scyliorhinidae","Scyliorhinus","Species"
-"46","MERLUCCIUS ALBIDUS",NA,"Merluccius albidus",158748,1080,"Animalia","Chordata","Teleostei","Gadiformes","Merlucciidae","Merluccius","Species"
-"47","MELANOGRAMMUS AEGLEFINUS",NA,"Melanogrammus aeglefinus",126437,1381,"Animalia","Chordata","Teleostei","Gadiformes","Gadidae","Melanogrammus","Species"
-"48","SPHOEROIDES MACULATUS",NA,"Sphoeroides maculatus",158934,1181,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Sphoeroides","Species"
-"49","CONGER OCEANICUS",NA,"Conger oceanicus",158566,300,"Animalia","Chordata","Teleostei","Anguilliformes","Congridae","Conger","Species"
-"50","OPHICHTHUS CRUENTIFER",NA,"Ophichthus cruentifer",158644,2654,"Animalia","Chordata","Teleostei","Anguilliformes","Ophichthidae","Ophichthus","Species"
-"51","UROPHYCIS SP",NA,"Urophycis",125774,NA,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Genus"
-"52","TRACHURUS LATHAMI",NA,"Trachurus lathami",159655,369,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Trachurus","Species"
-"53","TORPEDO NOBILIANA",NA,"Tetronarce nobiliana",321911,2553,"Animalia","Chordata","Elasmobranchii","Torpediniformes","Torpedinidae","Torpedo","Species"
-"54","ANGUILLIFORMES",NA,"Anguilliformes",10295,NA,"Animalia","Chordata","Teleostei","Anguilliformes",NA,NA,"Order"
-"55","RAJA SP",NA,"Raja",105766,NA,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Raja","Genus"
-"56","ALOSA AESTIVALIS",NA,"Alosa aestivalis",158667,1574,"Animalia","Chordata","Teleostei","Clupeiformes","Alosidae","Alosa","Species"
-"57","LUMPENUS LUMPRETAEFORMIS",NA,"Lumpenus lampretaeformis",154675,1380,"Animalia","Chordata","Teleostei","Perciformes","Stichaeidae","Lumpenus","Species"
-"58","CHLOROPHTHALMUS AGASSIZI",NA,"Chlorophthalmus agassizi",126336,1808,"Animalia","Chordata","Teleostei","Aulopiformes","Chlorophthalmidae","Chlorophthalmus","Species"
-"59","AMBLYRAJA RADIATA",NA,"Amblyraja radiata",105865,2565,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Amblyraja","Species"
-"60","MYXINE GLUTINOSA",NA,"Myxine glutinosa",101170,2513,"Animalia","Chordata","Myxini","Myxiniformes","Myxinidae","Myxine","Species"
-"61","MALACORAJA SENTA",NA,"Malacoraja senta",158554,2568,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Malacoraja","Species"
-"62","MACROURIDAE",NA,"Macrouridae",125471,NA,"Animalia","Chordata","Teleostei","Gadiformes","Macrouridae",NA,"Family"
-"63","UROPHYCIS CHESTERI",NA,"Phycis chesteri",158988,1880,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Species"
-"64","SEBASTES FASCIATUS",NA,"Sebastes fasciatus",127252,3969,"Animalia","Chordata","Teleostei","Perciformes","Sebastidae","Sebastes","Species"
-"65","TRIGLOPS MURRAYI",NA,"Triglops murrayi",127205,4146,"Animalia","Chordata","Teleostei","Perciformes","Cottidae","Triglops","Species"
-"66","ASPIDOPHOROIDES MONOPTERYGIUS",NA,"Aspidophoroides monopterygius",159459,4157,"Animalia","Chordata","Teleostei","Perciformes","Agonidae","Aspidophoroides","Species"
-"67","OGCOCEPHALUS CORNIGER",NA,"Ogcocephalus corniger",159192,3095,"Animalia","Chordata","Teleostei","Lophiiformes","Ogcocephalidae","Ogcocephalus","Species"
-"68","POLLACHIUS VIRENS",NA,"Pollachius virens",126441,1343,"Animalia","Chordata","Teleostei","Gadiformes","Gadidae","Pollachius","Species"
-"69","HIPPOGLOSSUS HIPPOGLOSSUS",NA,"Hippoglossus hippoglossus",127138,1371,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossus","Species"
-"70","AMMODYTES DUBIUS",NA,"Ammodytes dubius",151520,3821,"Animalia","Chordata","Teleostei","Perciformes","Ammodytidae","Ammodytes","Species"
-"71","ARTEDIELLUS SP",NA,"Artediellus",126147,NA,"Animalia","Chordata","Teleostei","Perciformes","Cottidae","Artediellus","Genus"
-"72","BROSME BROSME",NA,"Brosme brosme",126447,51,"Animalia","Chordata","Teleostei","Gadiformes","Lotidae","Brosme","Species"
-"73","CYCLOPTERUS LUMPUS",NA,"Cyclopterus lumpus",127214,62,"Animalia","Chordata","Teleostei","Perciformes","Cyclopteridae","Cyclopterus","Species"
-"74","ANARHICHAS LUPUS",NA,"Anarhichas lupus",126758,2501,"Animalia","Chordata","Teleostei","Perciformes","Anarhichadidae","Anarhichas","Species"
-"75","ETRUMEUS TERES",NA,"Etrumeus sadina",584793,1455,"Animalia","Chordata","Teleostei","Clupeiformes","Dussumieriidae","Etrumeus","Species"
-"76","MYOXOCEPHALUS SCORPIUS",NA,"Myoxocephalus scorpius",127203,1329,"Animalia","Chordata","Teleostei","Perciformes","Cottidae","Myoxocephalus","Species"
-"77","CAREPROCTUS RANULA",NA,"Careproctus ranula",159523,54217,"Animalia","Chordata","Teleostei","Perciformes","Liparidae","Careproctus","Species"
-"78","NEZUMIA BAIRDI",NA,"Nezumia bairdii",183289,3104,"Animalia","Chordata","Teleostei","Gadiformes","Macrouridae","Nezumia","Species"
-"79","CRYPTACANTHODES MACULATUS",NA,"Cryptacanthodes maculatus",159675,3815,"Animalia","Chordata","Teleostei","Perciformes","Cryptacanthodidae","Cryptacanthodes","Species"
-"80","PETROMYZON MARINUS",NA,"Petromyzon marinus",101174,2530,"Animalia","Chordata","Petromyzonti","Petromyzontiformes","Petromyzontidae","Petromyzon","Species"
-"81","DECAPTERUS MACARELLUS",NA,"Decapterus macarellus",126807,993,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Decapterus","Species"
-"82","MUSTELUS CANIS",NA,"Mustelus canis",158518,2539,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Triakidae","Mustelus","Species"
-"83","PRIONOTUS EVOLANS",NA,"Prionotus evolans",159572,1244,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"84","POMATOMUS SALTATRIX",NA,"Pomatomus saltatrix",151482,364,"Animalia","Chordata","Teleostei","Scombriformes","Pomatomidae","Pomatomus","Species"
-"85","BOTHIDAE",NA,"Bothidae",125576,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes","Bothidae",NA,"Family"
-"86","PLEURONECTIDAE",NA,"Pleuronectidae",125579,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae",NA,"Family"
-"87","PARALEPIS COREGONOIDES",NA,"Paralepis coregonoides",126361,1757,"Animalia","Chordata","Teleostei","Aulopiformes","Paralepididae","Paralepis","Species"
-"88","PLEURONECTIFORMES",NA,"Pleuronectiformes",10331,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes",NA,NA,"Order"
-"89","POLYIPNUS CLARUS",NA,"Polyipnus clarus",158840,47696,"Animalia","Chordata","Teleostei","Stomiiformes","Sternoptychidae","Polyipnus","Species"
-"90","ALUTERUS SCHOEPFI",NA,"Aluterus schoepfii",159490,1081,"Animalia","Chordata","Teleostei","Tetraodontiformes","Monacanthidae","Aluterus","Species"
-"91","SCOMBERESOX SAURUS",NA,"Scomberesox saurus",126392,1084,"Animalia","Chordata","Teleostei","Beloniformes","Scomberesocidae","Scomberesox","Species"
-"92","LUMPENUS MACULATUS",NA,"Leptoclinus maculatus",127072,3788,"Animalia","Chordata","Teleostei","Perciformes","Stichaeidae","Lumpenus","Species"
-"93","CHAULIODUS SLOANI",NA,"Chauliodus sloani",127338,1786,"Animalia","Chordata","Teleostei","Stomiiformes","Stomiidae","Chauliodus","Species"
-"94","LYCENCHELYS VERRILLI",NA,"Lycenchelys verrillii",159258,3132,"Animalia","Chordata","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Species"
-"95","GADIDAE",NA,"Gadidae",125469,NA,"Animalia","Chordata","Teleostei","Gadiformes","Gadidae",NA,"Family"
-"96","OSMERUS MORDAX",NA,"Osmerus mordax",126737,253,"Animalia","Chordata","Teleostei","Osmeriformes","Osmeridae","Osmerus","Species"
-"97","ANCHOA HEPSETUS",NA,"Anchoa hepsetus",158698,1133,"Animalia","Chordata","Teleostei","Clupeiformes","Engraulidae","Anchoa","Species"
-"98","SYMPHURUS SP",NA,"Symphurus",126113,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Genus"
-"99","ZENOPSIS CONCHIFERA",NA,"Zenopsis conchifer",127426,336,"Animalia","Chordata","Teleostei","Zeiformes","Zeidae","Zenopsis","Species"
-"100","ARGYROPELECUS ACULEATUS",NA,"Argyropelecus aculeatus",127306,130,"Animalia","Chordata","Teleostei","Stomiiformes","Sternoptychidae","Argyropelecus","Species"
-"101","LYCODES RETICULATUS",NA,"Lycodes reticulatus",127112,3143,"Animalia","Chordata","Teleostei","Perciformes","Zoarcidae","Lycodes","Species"
-"102","SELAR CRUMENOPHTHALMUS",NA,"Selar crumenophthalmus",159646,387,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Selar","Species"
-"103","HYPORHAMPHUS UNIFASCIATUS",NA,"Hyporhamphus unifasciatus",159281,1060,"Animalia","Chordata","Teleostei","Beloniformes","Hemiramphidae","Hyporhamphus","Species"
-"104","MYOXOCEPHALUS AENAEUS",NA,"Myoxocephalus aenaeus",159519,4117,"Animalia","Chordata","Teleostei","Perciformes","Cottidae","Myoxocephalus","Species"
-"105","ULVARIA SUBBIFURCATA",NA,"Ulvaria subbifurcata",159821,3796,"Animalia","Chordata","Teleostei","Perciformes","Stichaeidae","Ulvaria","Species"
-"106","MELANOSTIGMA ATLANTICUM",NA,"Melanostigma atlanticum",127120,3150,"Animalia","Chordata","Teleostei","Perciformes","Zoarcidae","Melanostigma","Species"
-"107","MONACANTHUS HISPIDUS",NA,"Stephanolepis hispida",307126,4281,"Animalia","Chordata","Teleostei","Tetraodontiformes","Monacanthidae","Monacanthus","Species"
-"108","PHOLIS GUNNELLUS",NA,"Pholis gunnellus",126996,3804,"Animalia","Chordata","Teleostei","Perciformes","Pholidae","Pholis","Species"
-"109","CHLOROPHTHALMIDAE",NA,"Chlorophthalmidae",125442,NA,"Animalia","Chordata","Teleostei","Aulopiformes","Chlorophthalmidae",NA,"Family"
-"110","ARCTOZENUS RISSOI",NA,"Arctozenus risso",126352,6977,"Animalia","Chordata","Teleostei","Aulopiformes","Paralepididae","Arctozenus","Species"
-"111","CERATOSCOPELUS MADERENSIS",NA,"Ceratoscopelus maderensis",126585,621,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae","Ceratoscopelus","Species"
-"112","ALOSA MEDIOCRIS",NA,"Alosa mediocris",158668,1582,"Animalia","Chordata","Teleostei","Clupeiformes","Alosidae","Alosa","Species"
-"113","POLYMIXIA NOBILIS",NA,"Polymixia nobilis",127163,7557,"Animalia","Chordata","Teleostei","Polymixiiformes","Polymixiidae","Polymixia","Species"
-"114","CHLOROPHTHALMUS SP",NA,"Chlorophthalmus",125664,NA,"Animalia","Chordata","Teleostei","Aulopiformes","Chlorophthalmidae","Chlorophthalmus","Genus"
-"115","MYCTOPHUM PUNCTATUM",NA,"Myctophum punctatum",126627,1328,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae","Myctophum","Species"
-"116","APOGONIDAE",NA,"Apogonidae",125518,NA,"Animalia","Chordata","Teleostei","Kurtiformes","Apogonidae",NA,"Family"
-"117","NAUCRATES DUCTOR",NA,"Naucrates ductor",126811,998,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Naucrates","Species"
-"118","MONOLENE SESSILICAUDA",NA,"Monolene sessilicauda",159213,4227,"Animalia","Chordata","Teleostei","Pleuronectiformes","Bothidae","Monolene","Species"
-"119","BENTHOSEMA GLACIALE",NA,"Benthosema glaciale",126580,21,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae","Benthosema","Species"
-"120","GASTEROSTEUS ACULEATUS",NA,"Gasterosteus aculeatus",126505,2420,"Animalia","Chordata","Teleostei","Perciformes","Gasterosteidae","Gasterosteus","Species"
-"121","MALLOTUS VILLOSUS",NA,"Mallotus villosus",126735,252,"Animalia","Chordata","Teleostei","Osmeriformes","Osmeridae","Mallotus","Species"
-"122","LIPARIS INQUILINUS",NA,"Liparis inquilinus",159528,4195,"Animalia","Chordata","Teleostei","Perciformes","Liparidae","Liparis","Species"
-"123","EUMICROTREMUS SPINOSUS",NA,"Eumicrotremus spinosus",127217,4185,"Animalia","Chordata","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Species"
-"124","CARCHARIAS TAURUS",NA,"Carcharias taurus",105843,747,"Animalia","Chordata","Elasmobranchii","Lamniformes","Odontaspididae","Carcharias","Species"
-"125","DIAPHUS DUMERILI",NA,"Diaphus dumerilii",126590,6590,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae","Diaphus","Species"
-"126","HYPEROGLYPHE PERCIFORMIS",NA,"Hyperoglyphe perciformis",126832,3921,"Animalia","Chordata","Teleostei","Scombriformes","Centrolophidae","Hyperoglyphe","Species"
-"127","POLYMIXIA LOWEI",NA,"Polymixia lowei",158923,3245,"Animalia","Chordata","Teleostei","Polymixiiformes","Polymixiidae","Polymixia","Species"
-"128","AETOBATIS NARINARI",NA,"Aetobatus narinari",217426,1250,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Aetobatidae","Aetobatis","Species"
-"129","DECAPTERUS PUNCTATUS",NA,"Decapterus punctatus",126808,994,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Decapterus","Species"
-"130","AULOSTOMUS MACULATUS",NA,"Aulostomus maculatus",278080,964,"Animalia","Chordata","Teleostei","Syngnathiformes","Aulostomidae","Aulostomus","Species"
-"131","CARCHARHINUS OBSCURUS",NA,"Carcharhinus obscurus",105796,878,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"132","DASYATIS AMERICANA",NA,"Hypanus americanus",1042856,1247,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Dasyatidae","Dasyatis","Species"
-"133","MYLIOBATIS FREMINVILLEI",NA,"Myliobatis freminvillei",399783,1251,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Myliobatidae","Myliobatis","Species"
-"134","CARCHARHINUS PLUMBEUS",NA,"Carcharhinus plumbeus",105797,880,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"135","DASYATIS SAY",NA,"Hypanus say",1042865,2575,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Dasyatidae","Dasyatis","Species"
-"136","SQUATINA DUMERIL",NA,"Squatina dumeril",158525,731,"Animalia","Chordata","Elasmobranchii","Squatiniformes","Squatinidae","Squatina","Species"
-"137","PRIACANTHUS ARENATUS",NA,"Priacanthus arenatus",127005,1149,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Priacanthidae","Priacanthus","Species"
-"138","SYNAGROPS BELLUS",NA,"Synagrops bellus",159584,3311,"Animalia","Chordata","Teleostei","Acropomatiformes","Acropomatidae","Synagrops","Species"
-"139","MICROPOGONIAS UNDULATUS",NA,"Micropogonias undulatus",151158,408,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Micropogonias","Species"
-"140","RAJA EGLANTERIA",NA,"Rostroraja eglanteria",1460141,1252,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Raja","Species"
-"141","DASYATIS CENTROURA",NA,"Bathytoshia centroura",1017389,2572,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Dasyatidae","Dasyatis","Species"
-"142","OPHIDION MARGINATUM",NA,"Ophidion marginatum",158767,3114,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Ophidion","Species"
-"143","PRIONOTUS PARALATUS",NA,"Prionotus paralatus",276287,4023,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"144","SCOMBER JAPONICUS",NA,"Scomber japonicus",127022,117,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Scomber","Species"
-"145","CARANGIDAE",NA,"Carangidae",125523,NA,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae",NA,"Family"
-"146","XIPHIAS GLADIUS",NA,"Xiphias gladius",127094,226,"Animalia","Chordata","Teleostei","Carangiformes","Xiphiidae","Xiphias","Species"
-"147","CARANX CRYSOS",NA,"Caranx crysos",126802,1933,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Caranx","Species"
-"148","SELENE SETAPINNIS",NA,"Selene setapinnis",159647,378,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Selene","Species"
-"149","STOMIIDAE",NA,"Stomiidae",125604,NA,"Animalia","Chordata","Teleostei","Stomiiformes","Stomiidae",NA,"Family"
-"150","SELENE VOMER",NA,"Selene vomer",159649,1004,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Selene","Species"
-"151","MYLIOBATIS GOODEI",NA,"Myliobatis goodei",271487,2583,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Myliobatidae","Myliobatis","Species"
-"152","CENTROSCYLLIUM FABRICII",NA,"Centroscyllium fabricii",105906,656,"Animalia","Chordata","Elasmobranchii","Squaliformes","Etmopteridae","Centroscyllium","Species"
-"153","SERIOLA DUMERILI",NA,"Seriola dumerili",126816,1005,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Seriola","Species"
-"154","BALISTIDAE",NA,"Balistidae",125607,NA,"Animalia","Chordata","Teleostei","Tetraodontiformes","Balistidae",NA,"Family"
-"155","OPHIDIIDAE",NA,"Ophidiidae",125505,NA,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae",NA,"Family"
-"156","NEMICHTHYS SCOLOPACEUS",NA,"Nemichthys scolopaceus",126306,2660,"Animalia","Chordata","Teleostei","Anguilliformes","Nemichthyidae","Nemichthys","Species"
-"157","MACROURUS BERGLAX",NA,"Macrourus berglax",126472,331,"Animalia","Chordata","Teleostei","Gadiformes","Macrouridae","Macrourus","Species"
-"158","GONOSTOMA ELONGATUM",NA,"Sigmops elongatus",221512,7383,"Animalia","Chordata","Teleostei","Stomiiformes","Gonostomatidae","Gonostoma","Species"
-"159","COELORHYNCHUS CARMINATUS",NA,"Coelorinchus caelorhincus",398381,1726,"Animalia","Chordata","Teleostei","Gadiformes","Macrouridae","Coelorhynchus","Species"
-"160","FISTULARIA TABACARIA",NA,"Fistularia tabacaria",159440,3275,"Animalia","Chordata","Teleostei","Syngnathiformes","Fistulariidae","Fistularia","Species"
-"161","ENGRAULIDAE",NA,"Engraulidae",125465,NA,"Animalia","Chordata","Teleostei","Clupeiformes","Engraulidae",NA,"Family"
-"162","MACRORHAMPHOSUS SCOLOPAX",NA,"Macroramphosus scolopax",127378,333,"Animalia","Chordata","Teleostei","Syngnathiformes","Centriscidae","Macrorhamphosus","Species"
-"163","OTOPHIDIUM OMOSTIGMUM",NA,"Otophidium omostigma",158771,3119,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Otophidium","Species"
-"164","BENTHODESMUS SIMONYI",NA,"Benthodesmus simonyi",127087,8553,"Animalia","Chordata","Teleostei","Scombriformes","Trichiuridae","Benthodesmus","Species"
-"165","DACTYLOPTERUS VOLITANS",NA,"Dactylopterus volitans",127232,1021,"Animalia","Chordata","Teleostei","Dactylopteriformes","Dactylopteridae","Dactylopterus","Species"
-"166","GYMNURA ALTAVELA",NA,"Gymnura altavela",105856,2577,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Gymnuridae","Gymnura","Species"
-"167","RHINOPTERA BONASUS",NA,"Rhinoptera bonasus",158544,2584,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Rhinopteridae","Rhinoptera","Species"
-"168","LAGOCEPHALUS LAEVIGATUS",NA,"Lagocephalus laevigatus",158933,1239,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Lagocephalus","Species"
-"169","RAJIFORMES",NA,"Rajiformes",10216,NA,"Animalia","Chordata","Elasmobranchii","Rajiformes",NA,NA,"Order"
-"170","ARIOMMA BONDI",NA,"Ariomma bondi",159592,961,"Animalia","Chordata","Teleostei","Scombriformes","Ariommatidae","Ariomma","Species"
-"171","MALACOCEPHALUS OCCIDENTALIS",NA,"Malacocephalus occidentalis",158741,4990,"Animalia","Chordata","Teleostei","Gadiformes","Macrouridae","Malacocephalus","Species"
-"172","MORIDAE",NA,"Moridae",125474,NA,"Animalia","Chordata","Teleostei","Gadiformes","Moridae",NA,"Family"
-"173","CLUPEIDAE",NA,"Clupeidae",125464,NA,"Animalia","Chordata","Teleostei","Clupeiformes","Clupeidae",NA,"Family"
-"174","DIAPHUS SP",NA,"Diaphus",125819,NA,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae","Diaphus","Genus"
-"175","SERIOLA ZONATA",NA,"Seriola zonata",159650,1008,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Seriola","Species"
-"176","SPHYRNA LEWINI",NA,"Sphyrna lewini",105816,912,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Sphyrnidae","Sphyrna","Species"
-"177","STROMATEIDAE",NA,"Stromateidae",125567,NA,"Animalia","Chordata","Teleostei","Scombriformes","Stromateidae",NA,"Family"
-"178","HOWELLA SHERBORNI",NA,"Howella sherborni",126995,5054,"Animalia","Chordata","Teleostei","Acropomatiformes","Howellidae","Howella","Species"
-"179","PARASUDIS TRUCULENTA",NA,"Parasudis truculenta",158868,2726,"Animalia","Chordata","Teleostei","Aulopiformes","Chlorophthalmidae","Parasudis","Species"
-"180","CARCHARHINUS SIGNATUS",NA,"Carcharhinus signatus",105798,883,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"181","BALISTES CAPRISCUS",NA,"Balistes capriscus",154721,7327,"Animalia","Chordata","Teleostei","Tetraodontiformes","Balistidae","Balistes","Species"
-"182","SYNGNATHUS FUSCUS",NA,"Syngnathus fuscus",159451,3301,"Animalia","Chordata","Teleostei","Syngnathiformes","Syngnathidae","Syngnathus","Species"
-"183","DIBRANCHUS ATLANTICUS",NA,"Dibranchus atlanticus",126558,4956,"Animalia","Chordata","Teleostei","Lophiiformes","Ogcocephalidae","Dibranchus","Species"
-"184","MENIDIA MENIDIA",NA,"Menidia menidia",159228,339,"Animalia","Chordata","Teleostei","Atheriniformes","Atherinopsidae","Menidia","Species"
-"185","ALEPISAURUS FEROX",NA,"Alepisaurus ferox",126333,99,"Animalia","Chordata","Teleostei","Aulopiformes","Alepisauridae","Alepisaurus","Species"
-"186","SCOMBEROMORUS MACULATUS",NA,"Scomberomorus maculatus",159342,126,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Scomberomorus","Species"
-"187","SYNODONTIDAE",NA,"Synodontidae",125449,NA,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae",NA,"Family"
-"188","ANCHOA MITCHILLI",NA,"Anchoa mitchilli",158699,545,"Animalia","Chordata","Teleostei","Clupeiformes","Engraulidae","Anchoa","Species"
-"189","LEIOSTOMUS XANTHURUS",NA,"Leiostomus xanthurus",159322,429,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Leiostomus","Species"
-"190","ANTIGONIA CAPROS",NA,"Antigonia capros",127418,3258,"Animalia","Chordata","Teleostei","Acanthuriformes","Antigoniidae","Antigonia","Species"
-"191","STOMIAS BOA",NA,"Stomias boa",127374,1806,"Animalia","Chordata","Teleostei","Stomiiformes","Stomiidae","Stomias","Species"
-"192","CENTROPRISTIS PHILADELPHICA",NA,"Centropristis philadelphica",159347,3317,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Centropristis","Species"
-"193","GYMNURA MICRURA",NA,"Gymnura micrura",158529,2579,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Gymnuridae","Gymnura","Species"
-"194","MENTICIRRHUS SAXATILIS",NA,"Menticirrhus saxatilis",159329,410,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Menticirrhus","Species"
-"195","MULLUS AURATUS",NA,"Mullus auratus",159418,1093,"Animalia","Chordata","Teleostei","Mulliformes","Mullidae","Mullus","Species"
-"196","ORTHOPRISTIS CHRYSOPTERA",NA,"Orthopristis chrysoptera",158810,5,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Haemulidae","Orthopristis","Species"
-"197","PORICHTHYS PLECTRODON",NA,"Porichthys plectrodon",158784,3072,"Animalia","Chordata","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys","Species"
-"198","PRIONOTUS SCITULUS",NA,"Prionotus scitulus",159575,4027,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"199","SCORPAENIDAE",NA,"Scorpaenidae",125595,NA,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae",NA,"Family"
-"200","STENOTOMUS CAPRINUS",NA,"Stenotomus caprinus",159810,1234,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Stenotomus","Species"
-"201","GERREIDAE",NA,"Gerreidae",151456,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Gerreidae",NA,"Family"
-"202","LACHNOLAIMUS MAXIMUS",NA,"Lachnolaimus maximus",158822,1071,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Lachnolaimus","Species"
-"203","MENTICIRRHUS AMERICANUS",NA,"Menticirrhus americanus",159326,409,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Menticirrhus","Species"
-"204","PARALICHTHYS SP",NA,"Paralichthys",158823,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Genus"
-"205","RACHYCENTRON CANADUM",NA,"Rachycentron canadum",127006,3542,"Animalia","Chordata","Teleostei","Carangiformes","Rachycentridae","Rachycentron","Species"
-"206","SYNODUS FOETENS",NA,"Synodus foetens",158758,2719,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Synodus","Species"
-"207","ALUTERUS SCRIPTUS",NA,"Aluterus scriptus",159491,4275,"Animalia","Chordata","Teleostei","Tetraodontiformes","Monacanthidae","Aluterus","Species"
-"208","CHILOMYCTERUS SCHOEPFI",NA,"Chilomycterus schoepfii",159488,6407,"Animalia","Chordata","Teleostei","Tetraodontiformes","Diodontidae","Chilomycterus","Species"
-"209","LAGODON RHOMBOIDES",NA,"Lagodon rhomboides",159249,3576,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Lagodon","Species"
-"210","OPHIDION HOLBROOKI",NA,"Ophidion holbrookii",272824,3113,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Ophidion","Species"
-"211","PRIONOTUS TRIBULUS",NA,"Prionotus tribulus",159577,4030,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"212","SPHOEROIDES DORSALIS",NA,"Sphoeroides dorsalis",275274,4294,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Sphoeroides","Species"
-"213","CHAETODIPTERUS FABER",NA,"Chaetodipterus faber",159703,1024,"Animalia","Chordata","Teleostei","Acanthuriformes","Ephippidae","Chaetodipterus","Species"
-"214","SYACIUM PAPILLOSUM",NA,"Syacium papillosum",158878,4233,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Syacium","Species"
-"215","TRACHINOCEPHALUS MYOPS",NA,"Trachinocephalus myops",158884,2724,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Trachinocephalus","Species"
-"216","LARIMUS FASCIATUS",NA,"Larimus fasciatus",159320,1182,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Larimus","Species"
-"217","TRIGLIDAE",NA,"Triglidae",125598,NA,"Animalia","Chordata","Teleostei","Perciformes","Triglidae",NA,"Family"
-"218","CENTROPRISTIS OCYURUS",NA,"Centropristis ocyurus",159346,3316,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Centropristis","Species"
-"219","DIPLECTRUM FORMOSUM",NA,"Diplectrum formosum",159350,1203,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Diplectrum","Species"
-"220","DIPLODUS HOLBROOKI",NA,"Diplodus holbrookii",273972,1231,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Diplodus","Species"
-"221","EQUETUS UMBROSUS",NA,"Pareques umbrosus",282143,3586,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Equetus","Species"
-"222","HAEMULIDAE",NA,"Haemulidae",125538,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Haemulidae",NA,"Family"
-"223","PAGRUS SEDECIM",NA,"Pagrus pagrus",127063,1756,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Pagrus","Species"
-"224","RHOMBOPLITES AURORUBENS",NA,"Rhomboplites aurorubens",159807,213,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae","Rhomboplites","Species"
-"225","SPARIDAE",NA,"Sparidae",125564,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae",NA,"Family"
-"226","HAEMULON AUROLINEATUM",NA,"Haemulon aurolineatum",158807,1128,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Haemulidae","Haemulon","Species"
-"227","HAEMULON PLUMIERI",NA,"Haemulon plumierii",158808,1140,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Haemulidae","Haemulon","Species"
-"228","REMORA REMORA",NA,"Remora remora",126853,1751,"Animalia","Chordata","Teleostei","Carangiformes","Echeneidae","Remora","Species"
-"229","CALAMUS LEUCOSTEUS",NA,"Calamus leucosteus",275970,1225,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Calamus","Species"
-"230","SERRANUS PHOEBE",NA,"Serranus phoebe",273903,3347,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Serranus","Species"
-"231","BELLATOR EGRETTA",NA,"Bellator egretta",276272,4013,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Bellator","Species"
-"232","CHAETODON OCELLATUS",NA,"Chaetodon ocellatus",159662,3604,"Animalia","Chordata","Teleostei","Acanthuriformes","Chaetodontidae","Chaetodon","Species"
-"233","EQUETUS LANCEOLATUS",NA,"Eques lanceolatus",1389965,3584,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Equetus","Species"
-"234","FISTULARIA SP",NA,"Fistularia",159438,NA,"Animalia","Chordata","Teleostei","Syngnathiformes","Fistulariidae","Fistularia","Genus"
-"235","GYMNOTHORAX NIGROMARGINATUS",NA,"Gymnothorax nigromarginatus",271860,2615,"Animalia","Chordata","Teleostei","Anguilliformes","Muraenidae","Gymnothorax","Species"
-"236","SARDINELLA AURITA",NA,"Sardinella aurita",126422,1043,"Animalia","Chordata","Teleostei","Clupeiformes","Dorosomatidae","Sardinella","Species"
-"237","SCARIDAE",NA,"Scaridae",125557,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Scaridae",NA,"Family"
-"238","SPHOEROIDES SPENGLERI",NA,"Sphoeroides spengleri",158935,1241,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Sphoeroides","Species"
-"239","ALECTIS CILIARIS",NA,"Alectis ciliaris",159629,988,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Alectis","Species"
-"240","CALAMUS CALAMUS",NA,"Calamus calamus",159242,1222,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Calamus","Species"
-"241","LACTOPHRYS QUADRICORNIS",NA,"Acanthostracion quadricornis",158920,92,"Animalia","Chordata","Teleostei","Tetraodontiformes","Ostraciidae","Lactophrys","Species"
-"242","OPHICHTHIDAE",NA,"Ophichthidae",125434,NA,"Animalia","Chordata","Teleostei","Anguilliformes","Ophichthidae",NA,"Family"
-"243","CYCLOPSETTA FIMBRIATA",NA,"Cyclopsetta fimbriata",158795,4219,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Cyclopsetta","Species"
-"244","GYMNOTHORAX MORINGA",NA,"Gymnothorax moringa",158584,7547,"Animalia","Chordata","Teleostei","Anguilliformes","Muraenidae","Gymnothorax","Species"
-"245","HOLACANTHUS BERMUDENSIS",NA,"Holacanthus bermudensis",159284,3608,"Animalia","Chordata","Teleostei","Acanthuriformes","Pomacanthidae","Holacanthus","Species"
-"246","SCORPAENA PLUMIERI",NA,"Scorpaena plumieri",159564,1201,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Scorpaena","Species"
-"247","ARCHOSARGUS PROBATOCEPHALUS",NA,"Archosargus probatocephalus",159238,441,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Archosargus","Species"
-"248","URANOSCOPIDAE",NA,"Uranoscopidae",125573,NA,"Animalia","Chordata","Teleostei","Perciformes","Uranoscopidae",NA,"Family"
-"249","ANCHOA LYOLEPIS",NA,"Anchoa lyolepis",275524,1132,"Animalia","Chordata","Teleostei","Clupeiformes","Engraulidae","Anchoa","Species"
-"250","OPISTHONEMA OGLINUM",NA,"Opisthonema oglinum",158695,1486,"Animalia","Chordata","Teleostei","Clupeiformes","Dorosomatidae","Opisthonema","Species"
-"251","SPHYRAENA BARRACUDA",NA,"Sphyraena barracuda",345843,1235,"Animalia","Chordata","Teleostei","Carangaria incertae sedis","Sphyraenidae","Sphyraena","Species"
-"252","CITHARICHTHYS MACROPS",NA,"Citharichthys macrops",159165,4214,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Species"
-"253","HEMIPTERONOTUS NOVACULA",NA,"Xyrichtys novacula",126971,4581,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Hemipteronotus","Species"
-"254","CHAETODON SEDENTARIUS",NA,"Chaetodon sedentarius",234107,3605,"Animalia","Chordata","Teleostei","Acanthuriformes","Chaetodontidae","Chaetodon","Species"
-"255","LUTJANUS CAMPECHANUS",NA,"Lutjanus campechanus",159795,1423,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae","Lutjanus","Species"
-"256","PRISTIGENYS ALTA",NA,"Pristigenys alta",159295,3518,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Priacanthidae","Pristigenys","Species"
-"257","ANCYLOPSETTA QUADROCELLATA",NA,"Ancylopsetta quadrocellata",308768,4206,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Ancylopsetta","Species"
-"258","ECHENEIS NAUCRATES",NA,"Echeneis naucrates",126848,2467,"Animalia","Chordata","Teleostei","Carangiformes","Echeneidae","Echeneis","Species"
-"259","CHLOROSCOMBRUS CHRYSURUS",NA,"Chloroscombrus chrysurus",159483,385,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Chloroscombrus","Species"
-"260","PEPRILUS ALEPIDOTUS",NA,"Peprilus paru",159827,28143,"Animalia","Chordata","Teleostei","Scombriformes","Stromateidae","Peprilus","Species"
-"261","ASTROSCOPUS Y-GRAECUM",NA,"Astroscopus ygraecum",159252,3704,"Animalia","Chordata","Teleostei","Perciformes","Uranoscopidae","Astroscopus","Species"
-"262","ETROPUS SP",NA,"Etropus",158797,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Etropus","Genus"
-"263","SCOMBEROMORUS CAVALLA",NA,"Scomberomorus cavalla",159340,120,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Scomberomorus","Species"
-"264","BOTHUS OCELLATUS",NA,"Bothus ocellatus",159275,4207,"Animalia","Chordata","Teleostei","Pleuronectiformes","Bothidae","Bothus","Species"
-"265","ECHIOPHIS INTERTINCTUS",NA,"Echiophis intertinctus",158609,2643,"Animalia","Chordata","Teleostei","Anguilliformes","Ophichthidae","Echiophis","Species"
-"266","ECHIOPHIS SP",NA,"Echiophis",158607,NA,"Animalia","Chordata","Teleostei","Anguilliformes","Ophichthidae","Echiophis","Genus"
-"267","SYMPHURUS UROSPILUS",NA,"Symphurus urospilus",274281,4270,"Animalia","Chordata","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Species"
-"268","DASYATIS SABINA",NA,"Hypanus sabinus",1042864,2574,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Dasyatidae","Dasyatis","Species"
-"269","HALICHOERES RADIATUS",NA,"Halichoeres radiatus",275793,1068,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Halichoeres","Species"
-"270","CARANX BARTHOLOMAEI",NA,"Caranx bartholomaei",302312,1913,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Caranx","Species"
-"271","BAIRDIELLA CHRYSOURA",NA,"Bairdiella chrysoura",159303,1165,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Bairdiella","Species"
-"272","CYNOSCION NOTHUS",NA,"Cynoscion nothus",159305,1175,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Cynoscion","Species"
-"273","OPHICHTHUS GOMESI",NA,"Ophichthus gomesii",271955,1104,"Animalia","Chordata","Teleostei","Anguilliformes","Ophichthidae","Ophichthus","Species"
-"274","TRINECTES MACULATUS",NA,"Trinectes maculatus",159271,4260,"Animalia","Chordata","Teleostei","Pleuronectiformes","Achiridae","Trinectes","Species"
-"275","STRONGYLURA MARINA",NA,"Strongylura marina",159256,974,"Animalia","Chordata","Teleostei","Beloniformes","Belonidae","Strongylura","Species"
-"276","SYMPHURUS PLAGIUSA",NA,"Symphurus plagiusa",159363,1019,"Animalia","Chordata","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Species"
-"277","ABLENNES HIANS",NA,"Ablennes hians",159246,972,"Animalia","Chordata","Teleostei","Beloniformes","Belonidae","Ablennes","Species"
-"278","PRIONOTUS OPHRYAS",NA,"Prionotus ophryas",159573,4022,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"279","SCOMBRIDAE",NA,"Scombridae",125559,NA,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae",NA,"Family"
-"280","PRIONOTUS RUBIO",NA,"Prionotus rubio",276289,4025,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"281","HIPPOCAMPUS ERECTUS",NA,"Hippocampus erectus",159445,3283,"Animalia","Chordata","Teleostei","Syngnathiformes","Syngnathidae","Hippocampus","Species"
-"282","PRIONOTUS ALATUS",NA,"Prionotus alatus",159570,4020,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"283","SCIAENOPS OCELLATUS",NA,"Sciaenops ocellatus",159335,1191,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Sciaenops","Species"
-"284","SPHYRAENA GUACHANCHO",NA,"Sphyraena guachancho",159814,1236,"Animalia","Chordata","Teleostei","Carangaria incertae sedis","Sphyraenidae","Sphyraena","Species"
-"285","TRICHIURUS LEPTURUS",NA,"Trichiurus lepturus",127089,1288,"Animalia","Chordata","Teleostei","Scombriformes","Trichiuridae","Trichiurus","Species"
-"286","ARIUS FELIS",NA,"Ariopsis felis",158709,947,"Animalia","Chordata","Teleostei","Siluriformes","Ariidae","Arius","Species"
-"287","HALIEUTICHTHYS ACULEATUS",NA,"Halieutichthys aculeatus",159190,3091,"Animalia","Chordata","Teleostei","Lophiiformes","Ogcocephalidae","Halieutichthys","Species"
-"288","ACANTHURUS BAHIANUS",NA,"Acanthurus bahianus",159578,68792,"Animalia","Chordata","Teleostei","Acanthuriformes","Acanthuridae","Acanthurus","Species"
-"289","ALUTERUS MONOCEROS",NA,"Aluterus monoceros",127407,4274,"Animalia","Chordata","Teleostei","Tetraodontiformes","Monacanthidae","Aluterus","Species"
-"290","OPHIDION GRAYI",NA,"Ophidion grayi",272823,3112,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Ophidion","Species"
-"291","CARANX LATUS",NA,"Caranx latus",126804,1935,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Caranx","Species"
-"292","SPHYRNA MOKARRAN",NA,"Sphyrna mokarran",105817,914,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Sphyrnidae","Sphyrna","Species"
-"293","SPHYRNA TIBURO",NA,"Sphyrna tiburo",158517,915,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Sphyrnidae","Sphyrna","Species"
-"294","BAGRE MARINUS",NA,"Bagre marinus",158713,959,"Animalia","Chordata","Teleostei","Siluriformes","Ariidae","Bagre","Species"
-"295","LUTJANIDAE",NA,"Lutjanidae",151453,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae",NA,"Family"
-"296","MUGIL CUREMA",NA,"Mugil curema",159416,1086,"Animalia","Chordata","Teleostei","Mugiliformes","Mugilidae","Mugil","Species"
-"297","CARCHARHINIDAE",NA,"Carcharhinidae",105689,NA,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae",NA,"Family"
-"298","MURAENIDAE",NA,"Muraenidae",125431,NA,"Animalia","Chordata","Teleostei","Anguilliformes","Muraenidae",NA,"Family"
-"299","OGCOCEPHALUS NASUTUS",NA,"Ogcocephalus nasutus",275908,3092,"Animalia","Chordata","Teleostei","Lophiiformes","Ogcocephalidae","Ogcocephalus","Species"
-"300","LUTJANUS SYNAGRIS",NA,"Lutjanus synagris",159800,181,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae","Lutjanus","Species"
-"301","KATHETOSTOMA ALBIGUTTA",NA,"Kathetostoma albigutta",159255,3706,"Animalia","Chordata","Teleostei","Perciformes","Uranoscopidae","Kathetostoma","Species"
-"302","SCOMBEROMORUS REGALIS",NA,"Scomberomorus regalis",273819,134,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Scomberomorus","Species"
-"303","PONTINUS RATHBUNI",NA,"Pontinus rathbuni",159556,3933,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Pontinus","Species"
-"304","SPHOEROIDES NEPHELUS",NA,"Sphoeroides nephelus",275280,1240,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Sphoeroides","Species"
-"305","SYNODUS INTERMEDIUS",NA,"Synodus intermedius",158759,2720,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Synodus","Species"
-"306","CANTHIGASTER ROSTRATA",NA,"Canthigaster rostrata",127411,4291,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Canthigaster","Species"
-"307","ARIOSOMA BALEARICUM",NA,"Ariosoma balearicum",126283,1744,"Animalia","Chordata","Teleostei","Anguilliformes","Congridae","Ariosoma","Species"
-"308","SERRANIDAE",NA,"Serranidae",125561,NA,"Animalia","Chordata","Teleostei","Perciformes","Serranidae",NA,"Family"
-"309","GYMNACHIRUS MELAS",NA,"Gymnachirus melas",159269,4257,"Animalia","Chordata","Teleostei","Pleuronectiformes","Achiridae","Gymnachirus","Species"
-"310","ARIOMMA REGULUS",NA,"Ariomma regulus",159594,962,"Animalia","Chordata","Teleostei","Scombriformes","Ariommatidae","Ariomma","Species"
-"311","PRIONOTUS ROSEUS",NA,"Prionotus roseus",159574,4024,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"312","APOGON PSEUDOMACULATUS",NA,"Apogon pseudomaculatus",159590,3530,"Animalia","Chordata","Teleostei","Kurtiformes","Apogonidae","Apogon","Species"
-"313","LABRIDAE",NA,"Labridae",125541,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae",NA,"Family"
-"314","OGCOCEPHALIDAE",NA,"Ogcocephalidae",125495,NA,"Animalia","Chordata","Teleostei","Lophiiformes","Ogcocephalidae",NA,"Family"
-"315","SCIAENIDAE",NA,"Sciaenidae",125558,NA,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae",NA,"Family"
-"316","BALISTES VETULA",NA,"Balistes vetula",127397,19,"Animalia","Chordata","Teleostei","Tetraodontiformes","Balistidae","Balistes","Species"
-"317","BLENNIIDAE",NA,"Blenniidae",125519,NA,"Animalia","Chordata","Teleostei","Blenniiformes","Blenniidae",NA,"Family"
-"318","CALAMUS BAJONADO",NA,"Calamus bajonado",159241,1221,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Calamus","Species"
-"319","CHAETODON STRIATUS",NA,"Chaetodon striatus",159663,3606,"Animalia","Chordata","Teleostei","Acanthuriformes","Chaetodontidae","Chaetodon","Species"
-"320","MYCTEROPERCA PHENAX",NA,"Mycteroperca phenax",159233,1213,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Mycteroperca","Species"
-"321","SYNODUS SYNODUS",NA,"Synodus synodus",126373,2723,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Synodus","Species"
-"322","BELLATOR BRACHYCHIR",NA,"Bellator brachychir",276271,4012,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Bellator","Species"
-"323","OPHICHTHUS PUNCTICEPS",NA,"Ophichthus puncticeps",158646,2656,"Animalia","Chordata","Teleostei","Anguilliformes","Ophichthidae","Ophichthus","Species"
-"324","FOETOREPUS AGASSIZI",NA,"Foetorepus agassizii",276339,10187,"Animalia","Chordata","Teleostei","Callionymiformes","Callionymidae","Foetorepus","Species"
-"325","HOLACANTHUS CILIARIS",NA,"Holacanthus ciliaris",276012,3609,"Animalia","Chordata","Teleostei","Acanthuriformes","Pomacanthidae","Holacanthus","Species"
-"326","EPINEPHELUS MYSTACINUS",NA,"Hyporthodus mystacinus",475099,1206,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Epinephelus","Species"
-"327","SAURIDA NORMANI",NA,"Saurida normani",272117,2718,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Saurida","Species"
-"328","JENKINSIA LAMPROTAENIA",NA,"Jenkinsia lamprotaenia",281198,1461,"Animalia","Chordata","Teleostei","Clupeiformes","Spratelloididae","Jenkinsia","Species"
-"329","ANCYLOPSETTA DILECTA",NA,"Ancylopsetta dilecta",276008,4205,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Ancylopsetta","Species"
-"330","LACTOPHRYS POLYGONIA",NA,"Acanthostracion polygonium",1577312,4287,"Animalia","Chordata","Teleostei","Tetraodontiformes","Ostraciidae","Lactophrys","Species"
-"331","SYNODUS POEYI",NA,"Synodus poeyi",158760,2722,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Synodus","Species"
-"332","PERISTEDION GRACILE",NA,"Peristedion gracile",159548,4017,"Animalia","Chordata","Teleostei","Perciformes","Peristediidae","Peristedion","Species"
-"333","ACANTHURUS CHIRURGUS",NA,"Acanthurus chirurgus",159580,943,"Animalia","Chordata","Teleostei","Acanthuriformes","Acanthuridae","Acanthurus","Species"
-"334","BOTHUS LUNATUS",NA,"Bothus lunatus",274187,978,"Animalia","Chordata","Teleostei","Pleuronectiformes","Bothidae","Bothus","Species"
-"335","CHROMIS ENCHRYSURUS",NA,"Chromis enchrysurus",304153,3643,"Animalia","Chordata","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Chromis","Species"
-"336","HOLOCENTRUS ADSCENSIONIS",NA,"Holocentrus adscensionis",159378,1061,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae","Holocentrus","Species"
-"337","MYCTEROPERCA BONACI",NA,"Mycteroperca bonaci",159231,1209,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Mycteroperca","Species"
-"338","GASTROPSETTA FRONTALIS",NA,"Gastropsetta frontalis",158820,4224,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Gastropsetta","Species"
-"339","PRIONOTUS LONGISPINOSUS",NA,"Prionotus longispinosus",276282,4026,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"340","TETRAODONTIDAE",NA,"Tetraodontidae",125612,NA,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae",NA,"Family"
-"341","ANTENNARIUS RADIOSUS",NA,"Fowlerichthys radiosus",712508,3087,"Animalia","Chordata","Teleostei","Lophiiformes","Antennariidae","Antennarius","Species"
-"342","CONGRIDAE",NA,"Congridae",125427,NA,"Animalia","Chordata","Teleostei","Anguilliformes","Congridae",NA,"Family"
-"343","BEMBROPS GOBIOIDES",NA,"Bembrops gobioides",159843,3697,"Animalia","Chordata","Teleostei","Perciformes","Bembropidae","Bembrops","Species"
-"344","ANTIMORA ROSTRATA",NA,"Antimora rostrata",126486,2005,"Animalia","Chordata","Teleostei","Gadiformes","Moridae","Antimora","Species"
-"345","PHYSICULUS FULVUS",NA,"Physiculus fulvus",158987,28217,"Animalia","Chordata","Teleostei","Gadiformes","Moridae","Physiculus","Species"
-"346","HOPLOSTETHUS MEDITERRANEUS",NA,"Hoplostethus mediterraneus",126404,4964,"Animalia","Chordata","Teleostei","Trachichthyiformes","Trachichthyidae","Hoplostethus","Species"
-"347","SPHYRAENA BOREALIS",NA,"Sphyraena borealis",159813,3679,"Animalia","Chordata","Teleostei","Carangaria incertae sedis","Sphyraenidae","Sphyraena","Species"
-"348","RHIZOPRIONODON TERRAENOVAE",NA,"Rhizoprionodon terraenovae",158510,905,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Rhizoprionodon","Species"
-"349","PROMETHICHTHYS PROMETHEUS",NA,"Promethichthys prometheus",126866,5008,"Animalia","Chordata","Teleostei","Scombriformes","Gempylidae","Promethichthys","Species"
-"350","CARANX HIPPOS",NA,"Caranx hippos",126803,71,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Caranx","Species"
-"351","MUGIL CEPHALUS",NA,"Mugil cephalus",126983,785,"Animalia","Chordata","Teleostei","Mugiliformes","Mugilidae","Mugil","Species"
-"352","CORYPHAENA EQUISETIS",NA,"Coryphaena equiselis",126845,7,"Animalia","Chordata","Teleostei","Carangiformes","Coryphaenidae","Coryphaena","Species"
-"353","CARCHARHINUS LIMBATUS",NA,"Carcharhinus limbatus",105793,874,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"354","CITHARICHTHYS SP",NA,"Citharichthys",158786,NA,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Genus"
-"355","SYNAGROPS SPINOSUS",NA,"Parascombrops spinosus",1486846,14336,"Animalia","Chordata","Teleostei","Acropomatiformes","Acropomatidae","Synagrops","Species"
-"356","XENOCEPHALUS EGREGIUS",NA,"Xenocephalus egregius",394993,3705,"Animalia","Chordata","Teleostei","Perciformes","Uranoscopidae","Xenocephalus","Species"
-"357","ETMOPTERUS PRINCEPS",NA,"Etmopterus princeps",105911,683,"Animalia","Chordata","Elasmobranchii","Squaliformes","Etmopteridae","Etmopterus","Species"
-"358","EPIGONUS PANDIONIS",NA,"Epigonus pandionis",159706,10770,"Animalia","Chordata","Teleostei","Acropomatiformes","Epigonidae","Epigonus","Species"
-"359","POECILOPSETTA BEANI",NA,"Poecilopsetta beanii",275847,58866,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Poecilopsetta","Species"
-"360","GADELLA IMBERBIS",NA,"Gadella imberbis",158964,2010,"Animalia","Chordata","Teleostei","Gadiformes","Moridae","Gadella","Species"
-"361","SARDA SARDA",NA,"Sarda sarda",127021,115,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Sarda","Species"
-"362","ANCHOVIELLA PERFASCIATA",NA,"Anchoviella perfasciata",158701,1678,"Animalia","Chordata","Teleostei","Clupeiformes","Engraulidae","Anchoviella","Species"
-"363","MORONE SAXATILIS",NA,"Morone saxatilis",151179,353,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Moronidae","Morone","Species"
-"364","ACIPENSER OXYRHYNCHUS",NA,"Acipenser oxyrinchus",151802,2593,"Animalia","Chordata","Chondrostei","Acipenseriformes","Acipenseridae","Acipenser","Species"
-"365","STELLIFER LANCEOLATUS",NA,"Stellifer lanceolatus",159337,1193,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Stellifer","Species"
-"366","POGONIAS CROMIS",NA,"Pogonias cromis",159333,425,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Pogonias","Species"
-"367","EQUETUS ACUMINATUS",NA,"Pareques acuminatus",282139,3583,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Equetus","Species"
-"368","STERNOPTYCHIDAE",NA,"Sternoptychidae",125603,NA,"Animalia","Chordata","Teleostei","Stomiiformes","Sternoptychidae",NA,"Family"
-"369","MERLUCCIUS SP",NA,"Merluccius",125762,NA,"Animalia","Chordata","Teleostei","Gadiformes","Merlucciidae","Merluccius","Genus"
-"370","COTTIDAE",NA,"Cottidae",125589,NA,"Animalia","Chordata","Teleostei","Perciformes","Cottidae",NA,"Family"
-"371","ENGRAULIS EURYSTOLE",NA,"Engraulis eurystole",158702,1662,"Animalia","Chordata","Teleostei","Clupeiformes","Engraulidae","Engraulis","Species"
-"372","GONOSTOMATIDAE",NA,"Gonostomatidae",125601,NA,"Animalia","Chordata","Teleostei","Stomiiformes","Gonostomatidae",NA,"Family"
-"373","SYMPHURUS PUSILLUS",NA,"Symphurus pusillus",159364,4269,"Animalia","Chordata","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Species"
-"374","CAULOLATILUS CYANOPS",NA,"Caulolatilus cyanops",159402,984,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Malacanthidae","Caulolatilus","Species"
-"375","ETROPUS MICROSTOMUS",NA,"Etropus microstomus",158801,4222,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Etropus","Species"
-"376","TRACHINOTUS CAROLINUS",NA,"Trachinotus carolinus",159652,380,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Trachinotus","Species"
-"377","EUCINOSTOMUS GULA",NA,"Eucinostomus gula",159733,1050,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Gerreidae","Eucinostomus","Species"
-"378","SCORPAENA CALCARATA",NA,"Scorpaena calcarata",159563,3939,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Scorpaena","Species"
-"379","OPSANUS TAU",NA,"Opsanus tau",158782,3069,"Animalia","Chordata","Teleostei","Batrachoidiformes","Batrachoididae","Opsanus","Species"
-"380","SALMO SALAR",NA,"Salmo salar",127186,236,"Animalia","Chordata","Teleostei","Salmoniformes","Salmonidae","Salmo","Species"
-"381","HYGOPHUM TAANINGI",NA,"Hygophum taaningi",126605,16291,"Animalia","Chordata","Teleostei","Myctophiformes","Myctophidae","Hygophum","Species"
-"382","TYLOSURUS CROCODILUS",NA,"Tylosurus crocodilus",159259,977,"Animalia","Chordata","Teleostei","Beloniformes","Belonidae","Tylosurus","Species"
-"383","CALAMUS PENNA",NA,"Calamus penna",159245,1227,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Calamus","Species"
-"384","ELAGATIS BIPINNULATA",NA,"Elagatis bipinnulata",126809,412,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Elagatis","Species"
-"385","SIMENCHELYS PARASITICUS",NA,"Simenchelys parasitica",126327,9102,"Animalia","Chordata","Teleostei","Anguilliformes","Synaphobranchidae","Simenchelys","Species"
-"386","CUBICEPS PAUCIRADIATUS",NA,"Cubiceps pauciradiatus",159424,5049,"Animalia","Chordata","Teleostei","Scombriformes","Nomeidae","Cubiceps","Species"
-"387","GONOSTOMA ATLANTICUM",NA,"Gonostoma atlanticum",127293,5052,"Animalia","Chordata","Teleostei","Stomiiformes","Gonostomatidae","Gonostoma","Species"
-"388","GAIDROPSARUS ENSIS",NA,"Gaidropsarus ensis",126453,8425,"Animalia","Chordata","Teleostei","Gadiformes","Lotidae","Gaidropsarus","Species"
-"389","SYMPHURUS CIVITATUS",NA,"Symphurus civitatum",305637,4263,"Animalia","Chordata","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Species"
-"390","ETROPUS CROSSOTUS",NA,"Etropus crossotus",158799,4221,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Etropus","Species"
-"391","OPHIDION BEANI",NA,"Ophidion holbrookii",272824,3113,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Ophidion","Species"
-"392","SCORPAENA BRASILIENSIS",NA,"Scorpaena brasiliensis",159562,3938,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Scorpaena","Species"
-"393","SYACIUM GUNTERI",NA,"Syacium gunteri",275839,4231,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Syacium","Species"
-"394","BELLATOR MILITARIS",NA,"Bellator militaris",159568,4014,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Bellator","Species"
-"395","MYCTEROPERCA MICROLEPIS",NA,"Mycteroperca microlepis",273880,1212,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Mycteroperca","Species"
-"396","CYNOSCION NEBULOSUS",NA,"Cynoscion nebulosus",159312,405,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Cynoscion","Species"
-"397","NARCINE BRASILIENSIS",NA,"Narcine brasiliensis",157866,2551,"Animalia","Chordata","Elasmobranchii","Torpediniformes","Narcinidae","Narcine","Species"
-"398","ARGENTINA STRIATA",NA,"Argentina striata",158718,2701,"Animalia","Chordata","Teleostei","Argentiniformes","Argentinidae","Argentina","Species"
-"399","SYNGNATHIDAE",NA,"Syngnathidae",125606,NA,"Animalia","Chordata","Teleostei","Syngnathiformes","Syngnathidae",NA,"Family"
-"400","SYMPHURUS DIOMEDIANUS",NA,"Symphurus diomedeanus",159358,1018,"Animalia","Chordata","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Species"
-"401","SYACIUM MICRURUM",NA,"Syacium micrurum",158877,4232,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Syacium","Species"
-"402","SPHYRAENA SP",NA,"Sphyraena",126084,NA,"Animalia","Chordata","Teleostei","Carangaria incertae sedis","Sphyraenidae","Sphyraena","Genus"
-"403","EUCINOSTOMUS ARGENTEUS",NA,"Eucinostomus argenteus",159732,1049,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Gerreidae","Eucinostomus","Species"
-"404","OGCOCEPHALUS PARVUS",NA,"Ogcocephalus parvus",159193,3093,"Animalia","Chordata","Teleostei","Lophiiformes","Ogcocephalidae","Ogcocephalus","Species"
-"405","CARAPUS BERMUDENSIS",NA,"Carapus bermudensis",158995,3128,"Animalia","Chordata","Teleostei","Ophidiiformes","Carapidae","Carapus","Species"
-"406","SPHYRNA ZYGAENA",NA,"Sphyrna zygaena",105819,917,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Sphyrnidae","Sphyrna","Species"
-"407","FISTULARIA PETIMBA",NA,"Fistularia petimba",159439,3276,"Animalia","Chordata","Teleostei","Syngnathiformes","Fistulariidae","Fistularia","Species"
-"408","PARALICHTHYS LETHOSTIGMA",NA,"Paralichthys lethostigma",158829,981,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Species"
-"409","UROPHYCIS FLORIDANA",NA,"Urophycis floridana",158990,1882,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Species"
-"410","CARANX RUBER",NA,"Caranx ruber",302432,1918,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Caranx","Species"
-"411","HAEMULON STRIATUM",NA,"Haemulon striatum",275739,1143,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Haemulidae","Haemulon","Species"
-"412","CHAETODON ACULEATUS",NA,"Prognathodes aculeatus",273369,3600,"Animalia","Chordata","Teleostei","Acanthuriformes","Chaetodontidae","Chaetodon","Species"
-"413","PSEUDUPENEUS MACULATUS",NA,"Pseudupeneus maculatus",159421,1094,"Animalia","Chordata","Teleostei","Mulliformes","Mullidae","Pseudupeneus","Species"
-"414","SERIOLA RIVOLIANA",NA,"Seriola rivoliana",126818,1007,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Seriola","Species"
-"415","CITHARICHTHYS CORNUTUS",NA,"Citharichthys cornutus",158792,4211,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Species"
-"416","LEPOPHIDIUM JEANNAE",NA,"Lepophidium jeannae",159138,3110,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Lepophidium","Species"
-"417","HISTRIO HISTRIO",NA,"Histrio histrio",126533,3089,"Animalia","Chordata","Teleostei","Lophiiformes","Antennariidae","Histrio","Species"
-"418","MONACANTHUS CILIATUS",NA,"Monacanthus ciliatus",159497,4280,"Animalia","Chordata","Teleostei","Tetraodontiformes","Monacanthidae","Monacanthus","Species"
-"419","DIODON HYSTRIX",NA,"Diodon hystrix",127403,1022,"Animalia","Chordata","Teleostei","Tetraodontiformes","Diodontidae","Diodon","Species"
-"420","ABUDEFDUF SAXATILIS",NA,"Abudefduf saxatilis",159288,1119,"Animalia","Chordata","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Abudefduf","Species"
-"421","MYRIPRISTIS JACOBUS",NA,"Myripristis jacobus",159385,1063,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae","Myripristis","Species"
-"422","LUTJANUS VIVANUS",NA,"Lutjanus vivanus",159801,185,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae","Lutjanus","Species"
-"423","ISURUS OXYRINCHUS",NA,"Isurus oxyrinchus",105839,752,"Animalia","Chordata","Elasmobranchii","Lamniformes","Lamnidae","Isurus","Species"
-"424","CHAETODONTIDAE",NA,"Chaetodontidae",125528,NA,"Animalia","Chordata","Teleostei","Acanthuriformes","Chaetodontidae",NA,"Family"
-"425","ASTROSCOPUS GUTTATUS",NA,"Astroscopus guttatus",159251,3703,"Animalia","Chordata","Teleostei","Perciformes","Uranoscopidae","Astroscopus","Species"
-"426","ALUTERUS HEUDELOTI",NA,"Aluterus heudelotii",159489,4273,"Animalia","Chordata","Teleostei","Tetraodontiformes","Monacanthidae","Aluterus","Species"
-"427","CYNOSCION ARENARIUS",NA,"Cynoscion arenarius",276077,1170,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Cynoscion","Species"
-"428","PARALICHTHYS ALBIGUTTA",NA,"Paralichthys albigutta",158825,980,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Species"
-"429","CALAMUS NODOSUS",NA,"Calamus nodosus",159243,1226,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Calamus","Species"
-"430","ANTENNARIUS OCELLATUS",NA,"Fowlerichthys ocellatus",712507,3085,"Animalia","Chordata","Teleostei","Lophiiformes","Antennariidae","Antennarius","Species"
-"431","ACANTHURUS COERULEUS",NA,"Acanthurus coeruleus",159581,944,"Animalia","Chordata","Teleostei","Acanthuriformes","Acanthuridae","Acanthurus","Species"
-"432","NICHOLSINA USTA",NA,"Nicholsina usta",159298,1151,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Scaridae","Nicholsina","Species"
-"433","RYPTICUS SUBBIFRENATUS",NA,"Rypticus subbifrenatus",275964,3355,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Rypticus","Species"
-"434","BOTHUS ROBINSI",NA,"Bothus robinsi",159277,4208,"Animalia","Chordata","Teleostei","Pleuronectiformes","Bothidae","Bothus","Species"
-"435","MYCTEROPERCA INTERSTITIALIS",NA,"Mycteroperca interstitialis",273878,1211,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Mycteroperca","Species"
-"436","PRIONOTUS STEARNSI",NA,"Prionotus stearnsi",159576,4028,"Animalia","Chordata","Teleostei","Perciformes","Triglidae","Prionotus","Species"
-"437","HOLOCENTRIDAE",NA,"Holocentridae",125458,NA,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae",NA,"Family"
-"438","NEOMERINTHE HEMINGWAYI",NA,"Neomerinthe hemingwayi",159554,3930,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Neomerinthe","Species"
-"439","OSTICHTHYS TRACHYPOMA",NA,"Ostichthys trachypoma",159399,3252,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae","Ostichthys","Species"
-"440","MANTA BIROSTRIS",NA,"Mobula birostris",1026118,2061,"Animalia","Chordata","Elasmobranchii","Myliobatiformes","Mobulidae","Manta","Species"
-"441","ATHERINIDAE",NA,"Atherinidae",125438,NA,"Animalia","Chordata","Teleostei","Atheriniformes","Atherinidae",NA,"Family"
-"442","SCORPAENA DISPAR",NA,"Scorpaena dispar",274706,3940,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Scorpaena","Species"
-"443","CALAMUS PRORIDENS",NA,"Calamus proridens",275973,1229,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sparidae","Calamus","Species"
-"444","URASPIS SECUNDA",NA,"Uraspis secunda",159658,1012,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Uraspis","Species"
-"445","TETRAPTURUS ALBIDUS",NA,"Kajikia albida",712906,219,"Animalia","Chordata","Teleostei","Carangiformes","Istiophoridae","Tetrapturus","Species"
-"446","CYTTOPSIS ROSEA",NA,"Cyttopsis rosea",127425,4953,"Animalia","Chordata","Teleostei","Zeiformes","Parazenidae","Cyttopsis","Species"
-"447","CLEPTICUS PARRAE",NA,"Clepticus parrae",280214,3656,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Clepticus","Species"
-"448","DIODON HOLOCANTHUS",NA,"Diodon holocanthus",127402,4659,"Animalia","Chordata","Teleostei","Tetraodontiformes","Diodontidae","Diodon","Species"
-"449","SCHULTZEA BETA",NA,"Schultzea beta",282691,3340,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Schultzea","Species"
-"450","EPINEPHELUS GUTTATUS",NA,"Epinephelus guttatus",159352,15,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Epinephelus","Species"
-"451","GYMNOTHORAX SAXICOLA",NA,"Gymnothorax saxicola",158585,2616,"Animalia","Chordata","Teleostei","Anguilliformes","Muraenidae","Gymnothorax","Species"
-"452","UROPHYCIS EARLLI",NA,"Urophycis earllii",158989,1885,"Animalia","Chordata","Teleostei","Gadiformes","Phycidae","Urophycis","Species"
-"453","ANTHIAS NICHOLSI",NA,"Anthias nicholsi",159344,3313,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Anthias","Species"
-"454","EPINEPHELUS NIVEATUS",NA,"Hyporthodus niveatus",475101,1208,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Epinephelus","Species"
-"455","LOPHIUS GASTROPHYSUS",NA,"Lophius gastrophysus",159185,1078,"Animalia","Chordata","Teleostei","Lophiiformes","Lophiidae","Lophius","Species"
-"456","CHAUNAX STIGMAEUS",NA,"Chaunax stigmaeus",159151,3090,"Animalia","Chordata","Teleostei","Lophiiformes","Chaunacidae","Chaunax","Species"
-"457","TRICHIURIDAE",NA,"Trichiuridae",125571,NA,"Animalia","Chordata","Teleostei","Scombriformes","Trichiuridae",NA,"Family"
-"458","CHAETODON AYA",NA,"Prognathodes aya",273370,3601,"Animalia","Chordata","Teleostei","Acanthuriformes","Chaetodontidae","Chaetodon","Species"
-"459","HEMANTHIAS AUREORUBENS",NA,"Baldwinella aureorubens",1015364,3324,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Hemanthias","Species"
-"460","ANGUILLA ROSTRATA",NA,"Anguilla rostrata",158562,296,"Animalia","Chordata","Teleostei","Anguilliformes","Anguillidae","Anguilla","Species"
-"461","CITHARICHTHYS SPILOPTERUS",NA,"Citharichthys spilopterus",159166,4216,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Species"
-"462","UPENEUS PARVUS",NA,"Upeneus parvus",159422,1095,"Animalia","Chordata","Teleostei","Mulliformes","Mullidae","Upeneus","Species"
-"463","SAURIDA BRASILIENSIS",NA,"Saurida brasiliensis",158756,2716,"Animalia","Chordata","Teleostei","Aulopiformes","Synodontidae","Saurida","Species"
-"464","LUTJANUS ANALIS",NA,"Lutjanus analis",159792,1403,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae","Lutjanus","Species"
-"465","SCORPAENA AGASSIZI",NA,"Scorpaena agassizii",159560,3934,"Animalia","Chordata","Teleostei","Perciformes","Scorpaenidae","Scorpaena","Species"
-"466","HEMANTHIAS VIVANUS",NA,"Baldwinella vivanus",1019849,3327,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Hemanthias","Species"
-"467","HYPLEUROCHILUS GEMINATUS",NA,"Hypleurochilus geminatus",159602,3759,"Animalia","Chordata","Teleostei","Blenniiformes","Blenniidae","Hypleurochilus","Species"
-"468","OPSANUS PARDUS",NA,"Opsanus pardus",275648,3068,"Animalia","Chordata","Teleostei","Batrachoidiformes","Batrachoididae","Opsanus","Species"
-"469","PARABLENNIUS MARMOREUS",NA,"Parablennius marmoreus",159609,3769,"Animalia","Chordata","Teleostei","Blenniiformes","Blenniidae","Parablennius","Species"
-"470","HOLANTHIAS MARTINICENSIS",NA,"Pronotogrammus martinicensis",282365,3328,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Holanthias","Species"
-"471","LOPHIIFORMES",NA,"Lophiiformes",10316,NA,"Animalia","Chordata","Teleostei","Lophiiformes",NA,NA,"Order"
-"472","CLINIDAE",NA,"Clinidae",125530,NA,"Animalia","Chordata","Teleostei","Blenniiformes","Clinidae",NA,"Family"
-"473","ARIOMMA MELANUM",NA,"Ariomma melana",403239,3916,"Animalia","Chordata","Teleostei","Scombriformes","Ariommatidae","Ariomma","Species"
-"474","EPINEPHELUS MORIO",NA,"Epinephelus morio",159354,17,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Epinephelus","Species"
-"475","MEMBRAS MARTINICA",NA,"Membras martinica",159220,3240,"Animalia","Chordata","Teleostei","Atheriniformes","Atherinopsidae","Membras","Species"
-"476","GOBIIDAE",NA,"Gobiidae",125537,NA,"Animalia","Chordata","Teleostei","Gobiiformes","Gobiidae",NA,"Family"
-"477","PARALICHTHYS SQUAMILENTUS",NA,"Paralichthys squamilentus",158827,4230,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Species"
-"478","APOGON MACULATUS",NA,"Apogon maculatus",159589,3526,"Animalia","Chordata","Teleostei","Kurtiformes","Apogonidae","Apogon","Species"
-"479","CARCHARHINUS ACRONOTUS",NA,"Carcharhinus acronotus",158508,857,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"480","MOLA MOLA",NA,"Mola mola",127405,1732,"Animalia","Chordata","Teleostei","Tetraodontiformes","Molidae","Mola","Species"
-"481","SYNGNATHUS LOUISIANAE",NA,"Syngnathus louisianae",159453,3304,"Animalia","Chordata","Teleostei","Syngnathiformes","Syngnathidae","Syngnathus","Species"
-"482","XENOLEPIDICHTHYS DALGLEISHI",NA,"Xenolepidichthys dalgleishi",159432,3257,"Animalia","Chordata","Teleostei","Zeiformes","Grammicolepididae","Xenolepidichthys","Species"
-"483","SERRANUS ATROBRANCHUS",NA,"Serranus atrobranchus",273891,3343,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Serranus","Species"
-"484","APELTES QUADRACUS",NA,"Apeltes quadracus",159436,3269,"Animalia","Chordata","Teleostei","Perciformes","Gasterosteidae","Apeltes","Species"
-"485","CYPSELURUS CYANOPTERUS",NA,"Cheilopogon cyanopterus",217862,7695,"Animalia","Chordata","Teleostei","Beloniformes","Exocoetidae","Cypselurus","Species"
-"486","COOKEOLUS JAPONICUS",NA,"Cookeolus japonicus",127003,3517,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Priacanthidae","Cookeolus","Species"
-"487","POMACENTRIDAE",NA,"Pomacentridae",125553,NA,"Animalia","Chordata","Teleostei","Ovalentaria incertae sedis","Pomacentridae",NA,"Family"
-"488","DECODON PUELLARIS",NA,"Decodon puellaris",276747,3657,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Labridae","Decodon","Species"
-"489","PARAHOLLARDIA LINEATA",NA,"Parahollardia lineata",282046,4272,"Animalia","Chordata","Teleostei","Tetraodontiformes","Triacanthodidae","Parahollardia","Species"
-"490","ALOPIAS VULPINUS",NA,"Alopias vulpinus",105836,2535,"Animalia","Chordata","Elasmobranchii","Lamniformes","Alopiidae","Alopias","Species"
-"491","POLYMETME THAEOCORYLA",NA,"Polymetme thaeocoryla",127301,57353,"Animalia","Chordata","Teleostei","Stomiiformes","Phosichthyidae","Polymetme","Species"
-"492","CETORHINUS MAXIMUS",NA,"Cetorhinus maximus",105837,90,"Animalia","Chordata","Elasmobranchii","Lamniformes","Cetorhinidae","Cetorhinus","Species"
-"493","PRISTIPOMOIDES AQUILONARIS",NA,"Pristipomoides aquilonaris",159805,198,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Lutjanidae","Pristipomoides","Species"
-"494","CORYPHAENA HIPPURUS",NA,"Coryphaena hippurus",126846,6,"Animalia","Chordata","Teleostei","Carangiformes","Coryphaenidae","Coryphaena","Species"
-"495","ETROPUS RIMOSUS",NA,"Etropus rimosus",158802,4223,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Etropus","Species"
-"496","DIPLECTRUM BIVITTATUM",NA,"Diplectrum bivittatum",276176,3318,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Diplectrum","Species"
-"497","CAULOLATILUS MICROPS",NA,"Caulolatilus microps",159404,987,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Malacanthidae","Caulolatilus","Species"
-"498","ETMOPTERUS GRACILISPINIS",NA,"Etmopterus gracilispinis",158523,678,"Animalia","Chordata","Elasmobranchii","Squaliformes","Etmopteridae","Etmopterus","Species"
-"499","SERIOLA FASCIATA",NA,"Seriola fasciata",126817,1006,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Seriola","Species"
-"500","LAEMONEMA BARBATULUM",NA,"Laemonema barbatulum",158979,28218,"Animalia","Chordata","Teleostei","Gadiformes","Moridae","Laemonema","Species"
-"501","CAULOLATILUS CHRYSOPS",NA,"Caulolatilus chrysops",159403,983,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Malacanthidae","Caulolatilus","Species"
-"502","CORNIGER SPINOSUS",NA,"Corniger spinosus",280402,3246,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae","Corniger","Species"
-"503","HOLOCENTRUS RUFUS",NA,"Holocentrus rufus",276189,1062,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae","Holocentrus","Species"
-"504","SARDA ORIENTALIS",NA,"Sarda orientalis",219713,114,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Sarda","Species"
-"505","REINHARDTIUS HIPPOGLOSSOIDES",NA,"Reinhardtius hippoglossoides",127144,516,"Animalia","Chordata","Teleostei","Pleuronectiformes","Pleuronectidae","Reinhardtius","Species"
-"506","CANTHIDERMIS SUFFLAMEN",NA,"Canthidermis sufflamen",127399,4279,"Animalia","Chordata","Teleostei","Tetraodontiformes","Balistidae","Canthidermis","Species"
-"507","TRACHINOTUS FALCATUS",NA,"Trachinotus falcatus",367285,1010,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Trachinotus","Species"
-"508","CHILOMYCTERUS ATINGA",NA,"Chilomycterus reticulatus",219964,10206,"Animalia","Chordata","Teleostei","Tetraodontiformes","Diodontidae","Chilomycterus","Species"
-"509","EPINEPHELUS FLAVOLIMBATUS",NA,"Hyporthodus flavolimbatus",475077,1205,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Epinephelus","Species"
-"510","OPHIDION SELENOPS",NA,"Ophidion selenops",158768,3116,"Animalia","Chordata","Teleostei","Ophidiiformes","Ophidiidae","Ophidion","Species"
-"511","PRIACANTHUS CRUENTATUS",NA,"Heteropriacanthus cruentatus",127004,1150,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Priacanthidae","Priacanthus","Species"
-"512","CAPROIDAE",NA,"Caproidae",125613,NA,"Animalia","Chordata","Teleostei","Acanthuriformes","Caproidae",NA,"Family"
-"513","NESIARCHUS NASUTUS",NA,"Nesiarchus nasutus",126865,7573,"Animalia","Chordata","Teleostei","Scombriformes","Gempylidae","Nesiarchus","Species"
-"514","SQUALIDAE",NA,"Squalidae",105716,NA,"Animalia","Chordata","Elasmobranchii","Squaliformes","Squalidae",NA,"Family"
-"515","OLIGOPLITES SAURUS",NA,"Oligoplites saurus",159645,1001,"Animalia","Chordata","Teleostei","Carangiformes","Carangidae","Oligoplites","Species"
-"516","CITHARICHTHYS GYMNORHINUS",NA,"Citharichthys gymnorhinus",158793,4213,"Animalia","Chordata","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Species"
-"517","SPHOEROIDES PACHYGASTER",NA,"Sphoeroides pachygaster",127417,4296,"Animalia","Chordata","Teleostei","Tetraodontiformes","Tetraodontidae","Sphoeroides","Species"
-"518","EULEPTORHAMPHUS VELOX",NA,"Euleptorhamphus velox",159276,3155,"Animalia","Chordata","Teleostei","Beloniformes","Hemiramphidae","Euleptorhamphus","Species"
-"519","ELOPS SAURUS",NA,"Elops saurus",157875,175,"Animalia","Chordata","Teleostei","Elopiformes","Elopidae","Elops","Species"
-"520","MENTICIRRHUS LITTORALIS",NA,"Menticirrhus littoralis",159327,411,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Sciaenidae","Menticirrhus","Species"
-"521","PLECTRYPOPS RETROSPINIS",NA,"Plectrypops retrospinis",277960,3253,"Animalia","Chordata","Teleostei","Holocentriformes","Holocentridae","Plectrypops","Species"
-"522","VINCIGUERRIA SP",NA,"Vinciguerria",126194,NA,"Animalia","Chordata","Teleostei","Stomiiformes","Phosichthyidae","Vinciguerria","Genus"
-"523","GEPHYROBERYX DARWINI",NA,"Gephyroberyx darwinii",126401,4962,"Animalia","Chordata","Teleostei","Trachichthyiformes","Trachichthyidae","Gephyroberyx","Species"
-"524","AMMODYTES AMERICANUS",NA,"Ammodytes americanus",159587,3820,"Animalia","Chordata","Teleostei","Perciformes","Ammodytidae","Ammodytes","Species"
-"525","CYCLOPTERIDAE",NA,"Cyclopteridae",125590,NA,"Animalia","Chordata","Teleostei","Perciformes","Cyclopteridae",NA,"Family"
-"526","MALACANTHUS PLUMIERI",NA,"Malacanthus plumieri",277261,3541,"Animalia","Chordata","Teleostei","Eupercaria incertae sedis","Malacanthidae","Malacanthus","Species"
-"527","ZOARCIDAE",NA,"Zoarcidae",125575,NA,"Animalia","Chordata","Teleostei","Perciformes","Zoarcidae",NA,"Family"
-"528","LACTOPHRYS TRIGONUS",NA,"Lactophrys trigonus",158931,1107,"Animalia","Chordata","Teleostei","Tetraodontiformes","Ostraciidae","Lactophrys","Species"
-"529","ANTIGONIA COMBATIA",NA,"Antigonia combatia",159429,3259,"Animalia","Chordata","Teleostei","Acanthuriformes","Antigoniidae","Antigonia","Species"
-"530","EUTHYNNUS ALLETTERATUS",NA,"Euthynnus alletteratus",127017,97,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Euthynnus","Species"
-"531","SERRANUS NOTOSPILUS",NA,"Serranus notospilus",273901,3346,"Animalia","Chordata","Teleostei","Perciformes","Serranidae","Serranus","Species"
-"532","CARCHARHINUS FALCIFORMIS",NA,"Carcharhinus falciformis",105789,868,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"533","CYPSELURUS MELANURUS",NA,"Cheilopogon melanurus",272157,1030,"Animalia","Chordata","Teleostei","Beloniformes","Exocoetidae","Cypselurus","Species"
-"534","POMACANTHUS ARCUATUS",NA,"Pomacanthus arcuatus",159287,1117,"Animalia","Chordata","Teleostei","Acanthuriformes","Pomacanthidae","Pomacanthus","Species"
-"535","GEMPYLUS SERPENS",NA,"Gempylus serpens",126862,1041,"Animalia","Chordata","Teleostei","Scombriformes","Gempylidae","Gempylus","Species"
-"536","MEGALOPS ATLANTICUS",NA,"Megalops atlanticus",126430,1079,"Animalia","Chordata","Teleostei","Elopiformes","Megalopidae","Megalops","Species"
-"537","CARCHARHINUS BREVIPINNA",NA,"Carcharhinus brevipinna",105788,865,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Carcharhinus","Species"
-"538","GALEOCERDO CUVIER",NA,"Galeocerdo cuvier",105799,886,"Animalia","Chordata","Elasmobranchii","Carcharhiniformes","Galeocerdonidae","Galeocerdo","Species"
-"539","LAMNA NASUS",NA,"Lamna nasus",105841,88,"Animalia","Chordata","Elasmobranchii","Lamniformes","Lamnidae","Lamna","Species"
-"540","AUXIS THAZARD",NA,"Auxis thazard",127016,94,"Animalia","Chordata","Teleostei","Scombriformes","Scombridae","Auxis","Species"
-"541","BREVIRAJA PLUTONIA",NA,"Fenestraja plutonia",158550,51799,"Animalia","Chordata","Elasmobranchii","Rajiformes","Rajidae","Breviraja","Species"
+verbatim_name,verbatim_aphia_id,accepted_name,aphia_id,SpecCode,kingdom,phylum,class,order,family,genus,rank
+ALOSA PSEUDOHARENGUS,NA,Alosa pseudoharengus,158669,1583,Animalia,Chordata,Teleostei,Clupeiformes,Alosidae,Alosa,Species
+BREVOORTIA TYRANNUS,NA,Brevoortia tyrannus,158691,1592,Animalia,Chordata,Teleostei,Clupeiformes,Alosidae,Brevoortia,Species
+CLUPEA HARENGUS,NA,Clupea harengus,126417,24,Animalia,Chordata,Teleostei,Clupeiformes,Clupeidae,Clupea,Species
+GADUS MORHUA,NA,Gadus morhua,126436,69,Animalia,Chordata,Teleostei,Gadiformes,Gadidae,Gadus,Species
+LEUCORAJA ERINACEA,NA,Leucoraja erinaceus,1577339,2557,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja,Species
+LIMANDA FERRUGINEA,NA,Myzopsetta ferruginea,1571969,521,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Limanda,Species
+LOPHIUS AMERICANUS,NA,Lophius americanus,159184,532,Animalia,Chordata,Teleostei,Lophiiformes,Lophiidae,Lophius,Species
+MERLUCCIUS BILINEARIS,NA,Merluccius bilinearis,158962,323,Animalia,Chordata,Teleostei,Gadiformes,Merlucciidae,Merluccius,Species
+PEPRILUS TRIACANTHUS,NA,Peprilus triacanthus,159828,492,Animalia,Chordata,Teleostei,Scombriformes,Stromateidae,Peprilus,Species
+PSEUDOPLEURONECTES AMERICANUS,NA,Pseudopleuronectes americanus,158885,524,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes,Species
+SCOPHTHALMUS AQUOSUS,NA,Scophthalmus aquosus,158907,530,Animalia,Chordata,Teleostei,Pleuronectiformes,Scophthalmidae,Scophthalmus,Species
+SQUALUS ACANTHIAS,NA,Squalus acanthias,105923,139,Animalia,Chordata,Elasmobranchii,Squaliformes,Squalidae,Squalus,Species
+UROPHYCIS CHUSS,NA,Urophycis chuss,126503,312,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Species
+DIPTURUS LAEVIS,NA,Dipturus laevis,158548,2561,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Dipturus,Species
+HIPPOGLOSSOIDES PLATESSOIDES,NA,Hippoglossoides platessoides,127137,4239,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Hippoglossoides,Species
+LEUCORAJA OCELLATA,NA,Leucoraja ocellata,158553,2562,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja,Species
+MYOXOCEPHALUS OCTODECEMSPINOSUS,NA,Myoxocephalus octodecemspinosus,159520,4120,Animalia,Chordata,Teleostei,Perciformes,Cottidae,Myoxocephalus,Species
+PARALICHTHYS OBLONGUS,NA,Hippoglossina oblonga,158833,4229,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Paralichthys,Species
+PRIONOTUS CAROLINUS,NA,Prionotus carolinus,159571,1243,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+TAUTOGOLABRUS ADSPERSUS,NA,Tautogolabrus adspersus,159785,3672,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Tautogolabrus,Species
+HEMITRIPTERUS AMERICANUS,NA,Hemitripterus americanus,159518,4097,Animalia,Chordata,Teleostei,Perciformes,Hemitripteridae,Hemitripterus,Species
+MACROZOARCES AMERICANUS,NA,Zoarces americanus,159267,480,Animalia,Chordata,Teleostei,Perciformes,Zoarcidae,Macrozoarces,Species
+STENOTOMUS CHRYSOPS,NA,Stenotomus chrysops,159811,452,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Stenotomus,Species
+TAUTOGA ONITIS,NA,Tautoga onitis,158830,458,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Tautoga,Species
+ALOSA SAPIDISSIMA,NA,Alosa sapidissima,158670,1584,Animalia,Chordata,Teleostei,Clupeiformes,Alosidae,Alosa,Species
+SCOMBER SCOMBRUS,NA,Scomber scombrus,127023,118,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Scomber,Species
+CENTROPRISTIS STRIATA,NA,Centropristis striata,159348,361,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Centropristis,Species
+CYNOSCION REGALIS,NA,Cynoscion regalis,159313,406,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Cynoscion,Species
+PARALICHTHYS DENTATUS,NA,Paralichthys dentatus,158826,1338,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Paralichthys,Species
+UROPHYCIS TENUIS,NA,Urophycis tenuis,126504,313,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Species
+CITHARICHTHYS ARCTIFRONS,NA,Citharichthys arctifrons,158791,4209,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,Species
+GLYPTOCEPHALUS CYNOGLOSSUS,NA,Glyptocephalus cynoglossus,127136,26,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Glyptocephalus,Species
+LIPARIS ATLANTICUS,NA,Liparis atlanticus,159524,4186,Animalia,Chordata,Teleostei,Perciformes,Liparidae,Liparis,Species
+UROPHYCIS REGIA,NA,Urophycis regia,158991,1883,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Species
+LEPOPHIDIUM PROFUNDORUM,NA,Lepophidium profundorum,158762,5420,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Lepophidium,Species
+HELICOLENUS DACTYLOPTERUS,NA,Helicolenus dactylopterus,127251,76,Animalia,Chordata,Teleostei,Perciformes,Sebastidae,Helicolenus,Species
+LEUCORAJA GARMANI,NA,Leucoraja garmani,158552,1253,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja,Species
+LOPHOLATILUS CHAMAELEONTICEPS,NA,Lopholatilus chamaeleonticeps,159406,362,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Malacanthidae,Lopholatilus,Species
+MAUROLICUS WEITZMANI,NA,Maurolicus weitzmani,158838,51611,Animalia,Chordata,Teleostei,Stomiiformes,Sternoptychidae,Maurolicus,Species
+PERISTEDION MINIATUM,NA,Peristedion miniatum,159550,4018,Animalia,Chordata,Teleostei,Perciformes,Peristediidae,Peristedion,Species
+ARGENTINA SILUS,NA,Argentina silus,126715,2700,Animalia,Chordata,Teleostei,Argentiniformes,Argentinidae,Argentina,Species
+MYCTOPHIDAE,NA,Myctophidae,125498,NA,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,NA,Family
+ENCHELYOPUS CIMBRIUS,NA,Enchelyopus cimbrius,126450,1874,Animalia,Chordata,Teleostei,Gadiformes,Lotidae,Enchelyopus,Species
+PONTINUS LONGISPINIS,NA,Pontinus longispinis,159555,3931,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Pontinus,Species
+SCYLIORHINUS RETIFER,NA,Scyliorhinus retifer,158516,853,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Scyliorhinidae,Scyliorhinus,Species
+MERLUCCIUS ALBIDUS,NA,Merluccius albidus,158748,1080,Animalia,Chordata,Teleostei,Gadiformes,Merlucciidae,Merluccius,Species
+MELANOGRAMMUS AEGLEFINUS,NA,Melanogrammus aeglefinus,126437,1381,Animalia,Chordata,Teleostei,Gadiformes,Gadidae,Melanogrammus,Species
+SPHOEROIDES MACULATUS,NA,Sphoeroides maculatus,158934,1181,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Sphoeroides,Species
+CONGER OCEANICUS,NA,Conger oceanicus,158566,300,Animalia,Chordata,Teleostei,Anguilliformes,Congridae,Conger,Species
+OPHICHTHUS CRUENTIFER,NA,Ophichthus cruentifer,158644,2654,Animalia,Chordata,Teleostei,Anguilliformes,Ophichthidae,Ophichthus,Species
+UROPHYCIS SP,NA,Urophycis,125774,NA,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Genus
+TRACHURUS LATHAMI,NA,Trachurus lathami,159655,369,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Trachurus,Species
+TORPEDO NOBILIANA,NA,Tetronarce nobiliana,321911,2553,Animalia,Chordata,Elasmobranchii,Torpediniformes,Torpedinidae,Torpedo,Species
+ANGUILLIFORMES,NA,Anguilliformes,10295,NA,Animalia,Chordata,Teleostei,Anguilliformes,NA,NA,Order
+RAJA SP,NA,Raja,105766,NA,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Raja,Genus
+ALOSA AESTIVALIS,NA,Alosa aestivalis,158667,1574,Animalia,Chordata,Teleostei,Clupeiformes,Alosidae,Alosa,Species
+LUMPENUS LUMPRETAEFORMIS,NA,Lumpenus lampretaeformis,154675,1380,Animalia,Chordata,Teleostei,Perciformes,Stichaeidae,Lumpenus,Species
+CHLOROPHTHALMUS AGASSIZI,NA,Chlorophthalmus agassizi,126336,1808,Animalia,Chordata,Teleostei,Aulopiformes,Chlorophthalmidae,Chlorophthalmus,Species
+AMBLYRAJA RADIATA,NA,Amblyraja radiata,105865,2565,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Amblyraja,Species
+MYXINE GLUTINOSA,NA,Myxine glutinosa,101170,2513,Animalia,Chordata,Myxini,Myxiniformes,Myxinidae,Myxine,Species
+MALACORAJA SENTA,NA,Malacoraja senta,158554,2568,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Malacoraja,Species
+MACROURIDAE,NA,Macrouridae,125471,NA,Animalia,Chordata,Teleostei,Gadiformes,Macrouridae,NA,Family
+UROPHYCIS CHESTERI,NA,Phycis chesteri,158988,1880,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Species
+SEBASTES FASCIATUS,NA,Sebastes fasciatus,127252,3969,Animalia,Chordata,Teleostei,Perciformes,Sebastidae,Sebastes,Species
+TRIGLOPS MURRAYI,NA,Triglops murrayi,127205,4146,Animalia,Chordata,Teleostei,Perciformes,Cottidae,Triglops,Species
+ASPIDOPHOROIDES MONOPTERYGIUS,NA,Aspidophoroides monopterygius,159459,4157,Animalia,Chordata,Teleostei,Perciformes,Agonidae,Aspidophoroides,Species
+OGCOCEPHALUS CORNIGER,NA,Ogcocephalus corniger,159192,3095,Animalia,Chordata,Teleostei,Lophiiformes,Ogcocephalidae,Ogcocephalus,Species
+POLLACHIUS VIRENS,NA,Pollachius virens,126441,1343,Animalia,Chordata,Teleostei,Gadiformes,Gadidae,Pollachius,Species
+HIPPOGLOSSUS HIPPOGLOSSUS,NA,Hippoglossus hippoglossus,127138,1371,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Hippoglossus,Species
+AMMODYTES DUBIUS,NA,Ammodytes dubius,151520,3821,Animalia,Chordata,Teleostei,Perciformes,Ammodytidae,Ammodytes,Species
+ARTEDIELLUS SP,NA,Artediellus,126147,NA,Animalia,Chordata,Teleostei,Perciformes,Cottidae,Artediellus,Genus
+BROSME BROSME,NA,Brosme brosme,126447,51,Animalia,Chordata,Teleostei,Gadiformes,Lotidae,Brosme,Species
+CYCLOPTERUS LUMPUS,NA,Cyclopterus lumpus,127214,62,Animalia,Chordata,Teleostei,Perciformes,Cyclopteridae,Cyclopterus,Species
+ANARHICHAS LUPUS,NA,Anarhichas lupus,126758,2501,Animalia,Chordata,Teleostei,Perciformes,Anarhichadidae,Anarhichas,Species
+ETRUMEUS TERES,NA,Etrumeus sadina,584793,1455,Animalia,Chordata,Teleostei,Clupeiformes,Dussumieriidae,Etrumeus,Species
+MYOXOCEPHALUS SCORPIUS,NA,Myoxocephalus scorpius,127203,1329,Animalia,Chordata,Teleostei,Perciformes,Cottidae,Myoxocephalus,Species
+CAREPROCTUS RANULA,NA,Careproctus ranula,159523,54217,Animalia,Chordata,Teleostei,Perciformes,Liparidae,Careproctus,Species
+NEZUMIA BAIRDI,NA,Nezumia bairdii,183289,3104,Animalia,Chordata,Teleostei,Gadiformes,Macrouridae,Nezumia,Species
+CRYPTACANTHODES MACULATUS,NA,Cryptacanthodes maculatus,159675,3815,Animalia,Chordata,Teleostei,Perciformes,Cryptacanthodidae,Cryptacanthodes,Species
+PETROMYZON MARINUS,NA,Petromyzon marinus,101174,2530,Animalia,Chordata,Petromyzonti,Petromyzontiformes,Petromyzontidae,Petromyzon,Species
+DECAPTERUS MACARELLUS,NA,Decapterus macarellus,126807,993,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Decapterus,Species
+MUSTELUS CANIS,NA,Mustelus canis,158518,2539,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Triakidae,Mustelus,Species
+PRIONOTUS EVOLANS,NA,Prionotus evolans,159572,1244,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+POMATOMUS SALTATRIX,NA,Pomatomus saltatrix,151482,364,Animalia,Chordata,Teleostei,Scombriformes,Pomatomidae,Pomatomus,Species
+BOTHIDAE,NA,Bothidae,125576,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,Bothidae,NA,Family
+PLEURONECTIDAE,NA,Pleuronectidae,125579,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,NA,Family
+PARALEPIS COREGONOIDES,NA,Paralepis coregonoides,126361,1757,Animalia,Chordata,Teleostei,Aulopiformes,Paralepididae,Paralepis,Species
+PLEURONECTIFORMES,NA,Pleuronectiformes,10331,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,NA,NA,Order
+POLYIPNUS CLARUS,NA,Polyipnus clarus,158840,47696,Animalia,Chordata,Teleostei,Stomiiformes,Sternoptychidae,Polyipnus,Species
+ALUTERUS SCHOEPFI,NA,Aluterus schoepfii,159490,1081,Animalia,Chordata,Teleostei,Tetraodontiformes,Monacanthidae,Aluterus,Species
+SCOMBERESOX SAURUS,NA,Scomberesox saurus,126392,1084,Animalia,Chordata,Teleostei,Beloniformes,Scomberesocidae,Scomberesox,Species
+LUMPENUS MACULATUS,NA,Leptoclinus maculatus,127072,3788,Animalia,Chordata,Teleostei,Perciformes,Stichaeidae,Lumpenus,Species
+CHAULIODUS SLOANI,NA,Chauliodus sloani,127338,1786,Animalia,Chordata,Teleostei,Stomiiformes,Stomiidae,Chauliodus,Species
+LYCENCHELYS VERRILLI,NA,Lycenchelys verrillii,159258,3132,Animalia,Chordata,Teleostei,Perciformes,Zoarcidae,Lycenchelys,Species
+GADIDAE,NA,Gadidae,125469,NA,Animalia,Chordata,Teleostei,Gadiformes,Gadidae,NA,Family
+OSMERUS MORDAX,NA,Osmerus mordax,126737,253,Animalia,Chordata,Teleostei,Osmeriformes,Osmeridae,Osmerus,Species
+ANCHOA HEPSETUS,NA,Anchoa hepsetus,158698,1133,Animalia,Chordata,Teleostei,Clupeiformes,Engraulidae,Anchoa,Species
+SYMPHURUS SP,NA,Symphurus,126113,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,Cynoglossidae,Symphurus,Genus
+ZENOPSIS CONCHIFERA,NA,Zenopsis conchifer,127426,336,Animalia,Chordata,Teleostei,Zeiformes,Zeidae,Zenopsis,Species
+ARGYROPELECUS ACULEATUS,NA,Argyropelecus aculeatus,127306,130,Animalia,Chordata,Teleostei,Stomiiformes,Sternoptychidae,Argyropelecus,Species
+LYCODES RETICULATUS,NA,Lycodes reticulatus,127112,3143,Animalia,Chordata,Teleostei,Perciformes,Zoarcidae,Lycodes,Species
+SELAR CRUMENOPHTHALMUS,NA,Selar crumenophthalmus,159646,387,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Selar,Species
+HYPORHAMPHUS UNIFASCIATUS,NA,Hyporhamphus unifasciatus,159281,1060,Animalia,Chordata,Teleostei,Beloniformes,Hemiramphidae,Hyporhamphus,Species
+MYOXOCEPHALUS AENAEUS,NA,Myoxocephalus aenaeus,159519,4117,Animalia,Chordata,Teleostei,Perciformes,Cottidae,Myoxocephalus,Species
+ULVARIA SUBBIFURCATA,NA,Ulvaria subbifurcata,159821,3796,Animalia,Chordata,Teleostei,Perciformes,Stichaeidae,Ulvaria,Species
+MELANOSTIGMA ATLANTICUM,NA,Melanostigma atlanticum,127120,3150,Animalia,Chordata,Teleostei,Perciformes,Zoarcidae,Melanostigma,Species
+MONACANTHUS HISPIDUS,NA,Stephanolepis hispida,307126,4281,Animalia,Chordata,Teleostei,Tetraodontiformes,Monacanthidae,Monacanthus,Species
+PHOLIS GUNNELLUS,NA,Pholis gunnellus,126996,3804,Animalia,Chordata,Teleostei,Perciformes,Pholidae,Pholis,Species
+CHLOROPHTHALMIDAE,NA,Chlorophthalmidae,125442,NA,Animalia,Chordata,Teleostei,Aulopiformes,Chlorophthalmidae,NA,Family
+ARCTOZENUS RISSOI,NA,Arctozenus risso,126352,6977,Animalia,Chordata,Teleostei,Aulopiformes,Paralepididae,Arctozenus,Species
+CERATOSCOPELUS MADERENSIS,NA,Ceratoscopelus maderensis,126585,621,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,Ceratoscopelus,Species
+ALOSA MEDIOCRIS,NA,Alosa mediocris,158668,1582,Animalia,Chordata,Teleostei,Clupeiformes,Alosidae,Alosa,Species
+POLYMIXIA NOBILIS,NA,Polymixia nobilis,127163,7557,Animalia,Chordata,Teleostei,Polymixiiformes,Polymixiidae,Polymixia,Species
+CHLOROPHTHALMUS SP,NA,Chlorophthalmus,125664,NA,Animalia,Chordata,Teleostei,Aulopiformes,Chlorophthalmidae,Chlorophthalmus,Genus
+MYCTOPHUM PUNCTATUM,NA,Myctophum punctatum,126627,1328,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,Myctophum,Species
+APOGONIDAE,NA,Apogonidae,125518,NA,Animalia,Chordata,Teleostei,Kurtiformes,Apogonidae,NA,Family
+"NAUCRATES DUCTOR",NA,Naucrates ductor,126811,998,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Naucrates,Species
+MONOLENE SESSILICAUDA,NA,Monolene sessilicauda,159213,4227,Animalia,Chordata,Teleostei,Pleuronectiformes,Bothidae,Monolene,Species
+BENTHOSEMA GLACIALE,NA,Benthosema glaciale,126580,21,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,Benthosema,Species
+GASTEROSTEUS ACULEATUS,NA,Gasterosteus aculeatus,126505,2420,Animalia,Chordata,Teleostei,Perciformes,Gasterosteidae,Gasterosteus,Species
+MALLOTUS VILLOSUS,NA,Mallotus villosus,126735,252,Animalia,Chordata,Teleostei,Osmeriformes,Osmeridae,Mallotus,Species
+LIPARIS INQUILINUS,NA,Liparis inquilinus,159528,4195,Animalia,Chordata,Teleostei,Perciformes,Liparidae,Liparis,Species
+EUMICROTREMUS SPINOSUS,NA,Eumicrotremus spinosus,127217,4185,Animalia,Chordata,Teleostei,Perciformes,Cyclopteridae,Eumicrotremus,Species
+CARCHARIAS TAURUS,NA,Carcharias taurus,105843,747,Animalia,Chordata,Elasmobranchii,Lamniformes,Odontaspididae,Carcharias,Species
+DIAPHUS DUMERILI,NA,Diaphus dumerilii,126590,6590,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,Diaphus,Species
+HYPEROGLYPHE PERCIFORMIS,NA,Hyperoglyphe perciformis,126832,3921,Animalia,Chordata,Teleostei,Scombriformes,Centrolophidae,Hyperoglyphe,Species
+POLYMIXIA LOWEI,NA,Polymixia lowei,158923,3245,Animalia,Chordata,Teleostei,Polymixiiformes,Polymixiidae,Polymixia,Species
+AETOBATIS NARINARI,NA,Aetobatus narinari,217426,1250,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Aetobatidae,Aetobatis,Species
+DECAPTERUS PUNCTATUS,NA,Decapterus punctatus,126808,994,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Decapterus,Species
+AULOSTOMUS MACULATUS,NA,Aulostomus maculatus,278080,964,Animalia,Chordata,Teleostei,Syngnathiformes,Aulostomidae,Aulostomus,Species
+CARCHARHINUS OBSCURUS,NA,Carcharhinus obscurus,105796,878,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+DASYATIS AMERICANA,NA,Hypanus americanus,1042856,1247,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Species
+MYLIOBATIS FREMINVILLEI,NA,Myliobatis freminvillei,399783,1251,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Myliobatidae,Myliobatis,Species
+CARCHARHINUS PLUMBEUS,NA,Carcharhinus plumbeus,105797,880,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+DASYATIS SAY,NA,Hypanus say,1042865,2575,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Species
+SQUATINA DUMERIL,NA,Squatina dumeril,158525,731,Animalia,Chordata,Elasmobranchii,Squatiniformes,Squatinidae,Squatina,Species
+PRIACANTHUS ARENATUS,NA,Priacanthus arenatus,127005,1149,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Priacanthidae,Priacanthus,Species
+SYNAGROPS BELLUS,NA,Synagrops bellus,159584,3311,Animalia,Chordata,Teleostei,Acropomatiformes,Acropomatidae,Synagrops,Species
+MICROPOGONIAS UNDULATUS,NA,Micropogonias undulatus,151158,408,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Micropogonias,Species
+RAJA EGLANTERIA,NA,Rostroraja eglanteria,1460141,1252,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Raja,Species
+DASYATIS CENTROURA,NA,Bathytoshia centroura,1017389,2572,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Species
+OPHIDION MARGINATUM,NA,Ophidion marginatum,158767,3114,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Species
+PRIONOTUS PARALATUS,NA,Prionotus paralatus,276287,4023,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+SCOMBER JAPONICUS,NA,Scomber japonicus,127022,117,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Scomber,Species
+CARANGIDAE,NA,Carangidae,125523,NA,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,NA,Family
+XIPHIAS GLADIUS,NA,Xiphias gladius,127094,226,Animalia,Chordata,Teleostei,Carangiformes,Xiphiidae,Xiphias,Species
+CARANX CRYSOS,NA,Caranx crysos,126802,1933,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Caranx,Species
+SELENE SETAPINNIS,NA,Selene setapinnis,159647,378,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Selene,Species
+STOMIIDAE,NA,Stomiidae,125604,NA,Animalia,Chordata,Teleostei,Stomiiformes,Stomiidae,NA,Family
+SELENE VOMER,NA,Selene vomer,159649,1004,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Selene,Species
+MYLIOBATIS GOODEI,NA,Myliobatis goodei,271487,2583,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Myliobatidae,Myliobatis,Species
+CENTROSCYLLIUM FABRICII,NA,Centroscyllium fabricii,105906,656,Animalia,Chordata,Elasmobranchii,Squaliformes,Etmopteridae,Centroscyllium,Species
+SERIOLA DUMERILI,NA,Seriola dumerili,126816,1005,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Seriola,Species
+BALISTIDAE,NA,Balistidae,125607,NA,Animalia,Chordata,Teleostei,Tetraodontiformes,Balistidae,NA,Family
+OPHIDIIDAE,NA,Ophidiidae,125505,NA,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,NA,Family
+NEMICHTHYS SCOLOPACEUS,NA,Nemichthys scolopaceus,126306,2660,Animalia,Chordata,Teleostei,Anguilliformes,Nemichthyidae,Nemichthys,Species
+MACROURUS BERGLAX,NA,Macrourus berglax,126472,331,Animalia,Chordata,Teleostei,Gadiformes,Macrouridae,Macrourus,Species
+GONOSTOMA ELONGATUM,NA,Sigmops elongatus,221512,7383,Animalia,Chordata,Teleostei,Stomiiformes,Gonostomatidae,Gonostoma,Species
+COELORHYNCHUS CARMINATUS,NA,Coelorinchus caelorhincus,398381,1726,Animalia,Chordata,Teleostei,Gadiformes,Macrouridae,Coelorhynchus,Species
+FISTULARIA TABACARIA,NA,Fistularia tabacaria,159440,3275,Animalia,Chordata,Teleostei,Syngnathiformes,Fistulariidae,Fistularia,Species
+ENGRAULIDAE,NA,Engraulidae,125465,NA,Animalia,Chordata,Teleostei,Clupeiformes,Engraulidae,NA,Family
+MACRORHAMPHOSUS SCOLOPAX,NA,Macroramphosus scolopax,127378,333,Animalia,Chordata,Teleostei,Syngnathiformes,Centriscidae,Macrorhamphosus,Species
+OTOPHIDIUM OMOSTIGMUM,NA,Otophidium omostigma,158771,3119,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Otophidium,Species
+BENTHODESMUS SIMONYI,NA,Benthodesmus simonyi,127087,8553,Animalia,Chordata,Teleostei,Scombriformes,Trichiuridae,Benthodesmus,Species
+DACTYLOPTERUS VOLITANS,NA,Dactylopterus volitans,127232,1021,Animalia,Chordata,Teleostei,Dactylopteriformes,Dactylopteridae,Dactylopterus,Species
+GYMNURA ALTAVELA,NA,Gymnura altavela,105856,2577,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Gymnuridae,Gymnura,Species
+RHINOPTERA BONASUS,NA,Rhinoptera bonasus,158544,2584,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Rhinopteridae,Rhinoptera,Species
+LAGOCEPHALUS LAEVIGATUS,NA,Lagocephalus laevigatus,158933,1239,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Lagocephalus,Species
+RAJIFORMES,NA,Rajiformes,10216,NA,Animalia,Chordata,Elasmobranchii,Rajiformes,NA,NA,Order
+ARIOMMA BONDI,NA,Ariomma bondi,159592,961,Animalia,Chordata,Teleostei,Scombriformes,Ariommatidae,Ariomma,Species
+MALACOCEPHALUS OCCIDENTALIS,NA,Malacocephalus occidentalis,158741,4990,Animalia,Chordata,Teleostei,Gadiformes,Macrouridae,Malacocephalus,Species
+MORIDAE,NA,Moridae,125474,NA,Animalia,Chordata,Teleostei,Gadiformes,Moridae,NA,Family
+CLUPEIDAE,NA,Clupeidae,125464,NA,Animalia,Chordata,Teleostei,Clupeiformes,Clupeidae,NA,Family
+DIAPHUS SP,NA,Diaphus,125819,NA,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,Diaphus,Genus
+SERIOLA ZONATA,NA,Seriola zonata,159650,1008,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Seriola,Species
+SPHYRNA LEWINI,NA,Sphyrna lewini,105816,912,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Sphyrnidae,Sphyrna,Species
+STROMATEIDAE,NA,Stromateidae,125567,NA,Animalia,Chordata,Teleostei,Scombriformes,Stromateidae,NA,Family
+HOWELLA SHERBORNI,NA,Howella sherborni,126995,5054,Animalia,Chordata,Teleostei,Acropomatiformes,Howellidae,Howella,Species
+PARASUDIS TRUCULENTA,NA,Parasudis truculenta,158868,2726,Animalia,Chordata,Teleostei,Aulopiformes,Chlorophthalmidae,Parasudis,Species
+CARCHARHINUS SIGNATUS,NA,Carcharhinus signatus,105798,883,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+BALISTES CAPRISCUS,NA,Balistes capriscus,154721,7327,Animalia,Chordata,Teleostei,Tetraodontiformes,Balistidae,Balistes,Species
+SYNGNATHUS FUSCUS,NA,Syngnathus fuscus,159451,3301,Animalia,Chordata,Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Species
+DIBRANCHUS ATLANTICUS,NA,Dibranchus atlanticus,126558,4956,Animalia,Chordata,Teleostei,Lophiiformes,Ogcocephalidae,Dibranchus,Species
+MENIDIA MENIDIA,NA,Menidia menidia,159228,339,Animalia,Chordata,Teleostei,Atheriniformes,Atherinopsidae,Menidia,Species
+ALEPISAURUS FEROX,NA,Alepisaurus ferox,126333,99,Animalia,Chordata,Teleostei,Aulopiformes,Alepisauridae,Alepisaurus,Species
+SCOMBEROMORUS MACULATUS,NA,Scomberomorus maculatus,159342,126,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Scomberomorus,Species
+SYNODONTIDAE,NA,Synodontidae,125449,NA,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,NA,Family
+ANCHOA MITCHILLI,NA,Anchoa mitchilli,158699,545,Animalia,Chordata,Teleostei,Clupeiformes,Engraulidae,Anchoa,Species
+LEIOSTOMUS XANTHURUS,NA,Leiostomus xanthurus,159322,429,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Leiostomus,Species
+ANTIGONIA CAPROS,NA,Antigonia capros,127418,3258,Animalia,Chordata,Teleostei,Acanthuriformes,Antigoniidae,Antigonia,Species
+STOMIAS BOA,NA,Stomias boa,127374,1806,Animalia,Chordata,Teleostei,Stomiiformes,Stomiidae,Stomias,Species
+CENTROPRISTIS PHILADELPHICA,NA,Centropristis philadelphica,159347,3317,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Centropristis,Species
+GYMNURA MICRURA,NA,Gymnura micrura,158529,2579,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Gymnuridae,Gymnura,Species
+MENTICIRRHUS SAXATILIS,NA,Menticirrhus saxatilis,159329,410,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Menticirrhus,Species
+MULLUS AURATUS,NA,Mullus auratus,159418,1093,Animalia,Chordata,Teleostei,Mulliformes,Mullidae,Mullus,Species
+ORTHOPRISTIS CHRYSOPTERA,NA,Orthopristis chrysoptera,158810,5,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Haemulidae,Orthopristis,Species
+PORICHTHYS PLECTRODON,NA,Porichthys plectrodon,158784,3072,Animalia,Chordata,Teleostei,Batrachoidiformes,Batrachoididae,Porichthys,Species
+PRIONOTUS SCITULUS,NA,Prionotus scitulus,159575,4027,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+SCORPAENIDAE,NA,Scorpaenidae,125595,NA,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,NA,Family
+STENOTOMUS CAPRINUS,NA,Stenotomus caprinus,159810,1234,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Stenotomus,Species
+GERREIDAE,NA,Gerreidae,151456,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Gerreidae,NA,Family
+LACHNOLAIMUS MAXIMUS,NA,Lachnolaimus maximus,158822,1071,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Lachnolaimus,Species
+MENTICIRRHUS AMERICANUS,NA,Menticirrhus americanus,159326,409,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Menticirrhus,Species
+PARALICHTHYS SP,NA,Paralichthys,158823,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Paralichthys,Genus
+RACHYCENTRON CANADUM,NA,Rachycentron canadum,127006,3542,Animalia,Chordata,Teleostei,Carangiformes,Rachycentridae,Rachycentron,Species
+SYNODUS FOETENS,NA,Synodus foetens,158758,2719,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Synodus,Species
+ALUTERUS SCRIPTUS,NA,Aluterus scriptus,159491,4275,Animalia,Chordata,Teleostei,Tetraodontiformes,Monacanthidae,Aluterus,Species
+CHILOMYCTERUS SCHOEPFI,NA,Chilomycterus schoepfii,159488,6407,Animalia,Chordata,Teleostei,Tetraodontiformes,Diodontidae,Chilomycterus,Species
+LAGODON RHOMBOIDES,NA,Lagodon rhomboides,159249,3576,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Lagodon,Species
+OPHIDION HOLBROOKI,NA,Ophidion holbrookii,272824,3113,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Species
+PRIONOTUS TRIBULUS,NA,Prionotus tribulus,159577,4030,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+SPHOEROIDES DORSALIS,NA,Sphoeroides dorsalis,275274,4294,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Sphoeroides,Species
+CHAETODIPTERUS FABER,NA,Chaetodipterus faber,159703,1024,Animalia,Chordata,Teleostei,Acanthuriformes,Ephippidae,Chaetodipterus,Species
+SYACIUM PAPILLOSUM,NA,Syacium papillosum,158878,4233,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Syacium,Species
+TRACHINOCEPHALUS MYOPS,NA,Trachinocephalus myops,158884,2724,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Trachinocephalus,Species
+LARIMUS FASCIATUS,NA,Larimus fasciatus,159320,1182,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Larimus,Species
+TRIGLIDAE,NA,Triglidae,125598,NA,Animalia,Chordata,Teleostei,Perciformes,Triglidae,NA,Family
+CENTROPRISTIS OCYURUS,NA,Centropristis ocyurus,159346,3316,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Centropristis,Species
+DIPLECTRUM FORMOSUM,NA,Diplectrum formosum,159350,1203,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Diplectrum,Species
+DIPLODUS HOLBROOKI,NA,Diplodus holbrookii,273972,1231,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Species
+EQUETUS UMBROSUS,NA,Pareques umbrosus,282143,3586,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Equetus,Species
+HAEMULIDAE,NA,Haemulidae,125538,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Haemulidae,NA,Family
+PAGRUS SEDECIM,NA,Pagrus pagrus,127063,1756,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Pagrus,Species
+RHOMBOPLITES AURORUBENS,NA,Rhomboplites aurorubens,159807,213,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,Rhomboplites,Species
+SPARIDAE,NA,Sparidae,125564,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,NA,Family
+HAEMULON AUROLINEATUM,NA,Haemulon aurolineatum,158807,1128,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Haemulidae,Haemulon,Species
+HAEMULON PLUMIERI,NA,Haemulon plumierii,158808,1140,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Haemulidae,Haemulon,Species
+REMORA REMORA,NA,Remora remora,126853,1751,Animalia,Chordata,Teleostei,Carangiformes,Echeneidae,Remora,Species
+CALAMUS LEUCOSTEUS,NA,Calamus leucosteus,275970,1225,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Calamus,Species
+SERRANUS PHOEBE,NA,Serranus phoebe,273903,3347,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Serranus,Species
+BELLATOR EGRETTA,NA,Bellator egretta,276272,4013,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Bellator,Species
+CHAETODON OCELLATUS,NA,Chaetodon ocellatus,159662,3604,Animalia,Chordata,Teleostei,Acanthuriformes,Chaetodontidae,Chaetodon,Species
+EQUETUS LANCEOLATUS,NA,Eques lanceolatus,1389965,3584,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Equetus,Species
+FISTULARIA SP,NA,Fistularia,159438,NA,Animalia,Chordata,Teleostei,Syngnathiformes,Fistulariidae,Fistularia,Genus
+GYMNOTHORAX NIGROMARGINATUS,NA,Gymnothorax nigromarginatus,271860,2615,Animalia,Chordata,Teleostei,Anguilliformes,Muraenidae,Gymnothorax,Species
+SARDINELLA AURITA,NA,Sardinella aurita,126422,1043,Animalia,Chordata,Teleostei,Clupeiformes,Dorosomatidae,Sardinella,Species
+SCARIDAE,NA,Scaridae,125557,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Scaridae,NA,Family
+SPHOEROIDES SPENGLERI,NA,Sphoeroides spengleri,158935,1241,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Sphoeroides,Species
+ALECTIS CILIARIS,NA,Alectis ciliaris,159629,988,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Alectis,Species
+CALAMUS CALAMUS,NA,Calamus calamus,159242,1222,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Calamus,Species
+LACTOPHRYS QUADRICORNIS,NA,Acanthostracion quadricornis,158920,92,Animalia,Chordata,Teleostei,Tetraodontiformes,Ostraciidae,Lactophrys,Species
+OPHICHTHIDAE,NA,Ophichthidae,125434,NA,Animalia,Chordata,Teleostei,Anguilliformes,Ophichthidae,NA,Family
+CYCLOPSETTA FIMBRIATA,NA,Cyclopsetta fimbriata,158795,4219,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Cyclopsetta,Species
+GYMNOTHORAX MORINGA,NA,Gymnothorax moringa,158584,7547,Animalia,Chordata,Teleostei,Anguilliformes,Muraenidae,Gymnothorax,Species
+HOLACANTHUS BERMUDENSIS,NA,Holacanthus bermudensis,159284,3608,Animalia,Chordata,Teleostei,Acanthuriformes,Pomacanthidae,Holacanthus,Species
+SCORPAENA PLUMIERI,NA,Scorpaena plumieri,159564,1201,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Scorpaena,Species
+ARCHOSARGUS PROBATOCEPHALUS,NA,Archosargus probatocephalus,159238,441,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Archosargus,Species
+URANOSCOPIDAE,NA,Uranoscopidae,125573,NA,Animalia,Chordata,Teleostei,Perciformes,Uranoscopidae,NA,Family
+ANCHOA LYOLEPIS,NA,Anchoa lyolepis,275524,1132,Animalia,Chordata,Teleostei,Clupeiformes,Engraulidae,Anchoa,Species
+OPISTHONEMA OGLINUM,NA,Opisthonema oglinum,158695,1486,Animalia,Chordata,Teleostei,Clupeiformes,Dorosomatidae,Opisthonema,Species
+SPHYRAENA BARRACUDA,NA,Sphyraena barracuda,345843,1235,Animalia,Chordata,Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Species
+CITHARICHTHYS MACROPS,NA,Citharichthys macrops,159165,4214,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,Species
+HEMIPTERONOTUS NOVACULA,NA,Xyrichtys novacula,126971,4581,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Hemipteronotus,Species
+CHAETODON SEDENTARIUS,NA,Chaetodon sedentarius,234107,3605,Animalia,Chordata,Teleostei,Acanthuriformes,Chaetodontidae,Chaetodon,Species
+LUTJANUS CAMPECHANUS,NA,Lutjanus campechanus,159795,1423,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,Lutjanus,Species
+PRISTIGENYS ALTA,NA,Pristigenys alta,159295,3518,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Priacanthidae,Pristigenys,Species
+ANCYLOPSETTA QUADROCELLATA,NA,Ancylopsetta quadrocellata,308768,4206,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Ancylopsetta,Species
+ECHENEIS NAUCRATES,NA,Echeneis naucrates,126848,2467,Animalia,Chordata,Teleostei,Carangiformes,Echeneidae,Echeneis,Species
+CHLOROSCOMBRUS CHRYSURUS,NA,Chloroscombrus chrysurus,159483,385,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Chloroscombrus,Species
+PEPRILUS ALEPIDOTUS,NA,Peprilus paru,159827,28143,Animalia,Chordata,Teleostei,Scombriformes,Stromateidae,Peprilus,Species
+ASTROSCOPUS Y-GRAECUM,NA,Astroscopus ygraecum,159252,3704,Animalia,Chordata,Teleostei,Perciformes,Uranoscopidae,Astroscopus,Species
+ETROPUS SP,NA,Etropus,158797,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Etropus,Genus
+SCOMBEROMORUS CAVALLA,NA,Scomberomorus cavalla,159340,120,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Scomberomorus,Species
+BOTHUS OCELLATUS,NA,Bothus ocellatus,159275,4207,Animalia,Chordata,Teleostei,Pleuronectiformes,Bothidae,Bothus,Species
+ECHIOPHIS INTERTINCTUS,NA,Echiophis intertinctus,158609,2643,Animalia,Chordata,Teleostei,Anguilliformes,Ophichthidae,Echiophis,Species
+ECHIOPHIS SP,NA,Echiophis,158607,NA,Animalia,Chordata,Teleostei,Anguilliformes,Ophichthidae,Echiophis,Genus
+SYMPHURUS UROSPILUS,NA,Symphurus urospilus,274281,4270,Animalia,Chordata,Teleostei,Pleuronectiformes,Cynoglossidae,Symphurus,Species
+DASYATIS SABINA,NA,Hypanus sabinus,1042864,2574,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Species
+HALICHOERES RADIATUS,NA,Halichoeres radiatus,275793,1068,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Halichoeres,Species
+CARANX BARTHOLOMAEI,NA,Caranx bartholomaei,302312,1913,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Caranx,Species
+BAIRDIELLA CHRYSOURA,NA,Bairdiella chrysoura,159303,1165,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Bairdiella,Species
+CYNOSCION NOTHUS,NA,Cynoscion nothus,159305,1175,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Cynoscion,Species
+OPHICHTHUS GOMESI,NA,Ophichthus gomesii,271955,1104,Animalia,Chordata,Teleostei,Anguilliformes,Ophichthidae,Ophichthus,Species
+TRINECTES MACULATUS,NA,Trinectes maculatus,159271,4260,Animalia,Chordata,Teleostei,Pleuronectiformes,Achiridae,Trinectes,Species
+STRONGYLURA MARINA,NA,Strongylura marina,159256,974,Animalia,Chordata,Teleostei,Beloniformes,Belonidae,Strongylura,Species
+SYMPHURUS PLAGIUSA,NA,Symphurus plagiusa,159363,1019,Animalia,Chordata,Teleostei,Pleuronectiformes,Cynoglossidae,Symphurus,Species
+ABLENNES HIANS,NA,Ablennes hians,159246,972,Animalia,Chordata,Teleostei,Beloniformes,Belonidae,Ablennes,Species
+PRIONOTUS OPHRYAS,NA,Prionotus ophryas,159573,4022,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+SCOMBRIDAE,NA,Scombridae,125559,NA,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,NA,Family
+PRIONOTUS RUBIO,NA,Prionotus rubio,276289,4025,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+HIPPOCAMPUS ERECTUS,NA,Hippocampus erectus,159445,3283,Animalia,Chordata,Teleostei,Syngnathiformes,Syngnathidae,Hippocampus,Species
+PRIONOTUS ALATUS,NA,Prionotus alatus,159570,4020,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+SCIAENOPS OCELLATUS,NA,Sciaenops ocellatus,159335,1191,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Sciaenops,Species
+SPHYRAENA GUACHANCHO,NA,Sphyraena guachancho,159814,1236,Animalia,Chordata,Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Species
+TRICHIURUS LEPTURUS,NA,Trichiurus lepturus,127089,1288,Animalia,Chordata,Teleostei,Scombriformes,Trichiuridae,Trichiurus,Species
+ARIUS FELIS,NA,Ariopsis felis,158709,947,Animalia,Chordata,Teleostei,Siluriformes,Ariidae,Arius,Species
+HALIEUTICHTHYS ACULEATUS,NA,Halieutichthys aculeatus,159190,3091,Animalia,Chordata,Teleostei,Lophiiformes,Ogcocephalidae,Halieutichthys,Species
+ACANTHURUS BAHIANUS,NA,Acanthurus bahianus,159578,68792,Animalia,Chordata,Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Species
+ALUTERUS MONOCEROS,NA,Aluterus monoceros,127407,4274,Animalia,Chordata,Teleostei,Tetraodontiformes,Monacanthidae,Aluterus,Species
+OPHIDION GRAYI,NA,Ophidion grayi,272823,3112,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Species
+CARANX LATUS,NA,Caranx latus,126804,1935,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Caranx,Species
+SPHYRNA MOKARRAN,NA,Sphyrna mokarran,105817,914,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Sphyrnidae,Sphyrna,Species
+SPHYRNA TIBURO,NA,Sphyrna tiburo,158517,915,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Sphyrnidae,Sphyrna,Species
+BAGRE MARINUS,NA,Bagre marinus,158713,959,Animalia,Chordata,Teleostei,Siluriformes,Ariidae,Bagre,Species
+LUTJANIDAE,NA,Lutjanidae,151453,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,NA,Family
+MUGIL CUREMA,NA,Mugil curema,159416,1086,Animalia,Chordata,Teleostei,Mugiliformes,Mugilidae,Mugil,Species
+CARCHARHINIDAE,NA,Carcharhinidae,105689,NA,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,NA,Family
+MURAENIDAE,NA,Muraenidae,125431,NA,Animalia,Chordata,Teleostei,Anguilliformes,Muraenidae,NA,Family
+OGCOCEPHALUS NASUTUS,NA,Ogcocephalus nasutus,275908,3092,Animalia,Chordata,Teleostei,Lophiiformes,Ogcocephalidae,Ogcocephalus,Species
+LUTJANUS SYNAGRIS,NA,Lutjanus synagris,159800,181,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,Lutjanus,Species
+KATHETOSTOMA ALBIGUTTA,NA,Kathetostoma albigutta,159255,3706,Animalia,Chordata,Teleostei,Perciformes,Uranoscopidae,Kathetostoma,Species
+SCOMBEROMORUS REGALIS,NA,Scomberomorus regalis,273819,134,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Scomberomorus,Species
+PONTINUS RATHBUNI,NA,Pontinus rathbuni,159556,3933,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Pontinus,Species
+SPHOEROIDES NEPHELUS,NA,Sphoeroides nephelus,275280,1240,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Sphoeroides,Species
+SYNODUS INTERMEDIUS,NA,Synodus intermedius,158759,2720,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Synodus,Species
+CANTHIGASTER ROSTRATA,NA,Canthigaster rostrata,127411,4291,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Canthigaster,Species
+ARIOSOMA BALEARICUM,NA,Ariosoma balearicum,126283,1744,Animalia,Chordata,Teleostei,Anguilliformes,Congridae,Ariosoma,Species
+SERRANIDAE,NA,Serranidae,125561,NA,Animalia,Chordata,Teleostei,Perciformes,Serranidae,NA,Family
+GYMNACHIRUS MELAS,NA,Gymnachirus melas,159269,4257,Animalia,Chordata,Teleostei,Pleuronectiformes,Achiridae,Gymnachirus,Species
+ARIOMMA REGULUS,NA,Ariomma regulus,159594,962,Animalia,Chordata,Teleostei,Scombriformes,Ariommatidae,Ariomma,Species
+PRIONOTUS ROSEUS,NA,Prionotus roseus,159574,4024,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+APOGON PSEUDOMACULATUS,NA,Apogon pseudomaculatus,159590,3530,Animalia,Chordata,Teleostei,Kurtiformes,Apogonidae,Apogon,Species
+LABRIDAE,NA,Labridae,125541,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,NA,Family
+OGCOCEPHALIDAE,NA,Ogcocephalidae,125495,NA,Animalia,Chordata,Teleostei,Lophiiformes,Ogcocephalidae,NA,Family
+SCIAENIDAE,NA,Sciaenidae,125558,NA,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,NA,Family
+BALISTES VETULA,NA,Balistes vetula,127397,19,Animalia,Chordata,Teleostei,Tetraodontiformes,Balistidae,Balistes,Species
+BLENNIIDAE,NA,Blenniidae,125519,NA,Animalia,Chordata,Teleostei,Blenniiformes,Blenniidae,NA,Family
+CALAMUS BAJONADO,NA,Calamus bajonado,159241,1221,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Calamus,Species
+CHAETODON STRIATUS,NA,Chaetodon striatus,159663,3606,Animalia,Chordata,Teleostei,Acanthuriformes,Chaetodontidae,Chaetodon,Species
+MYCTEROPERCA PHENAX,NA,Mycteroperca phenax,159233,1213,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Mycteroperca,Species
+SYNODUS SYNODUS,NA,Synodus synodus,126373,2723,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Synodus,Species
+BELLATOR BRACHYCHIR,NA,Bellator brachychir,276271,4012,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Bellator,Species
+OPHICHTHUS PUNCTICEPS,NA,Ophichthus puncticeps,158646,2656,Animalia,Chordata,Teleostei,Anguilliformes,Ophichthidae,Ophichthus,Species
+FOETOREPUS AGASSIZI,NA,Foetorepus agassizii,276339,10187,Animalia,Chordata,Teleostei,Callionymiformes,Callionymidae,Foetorepus,Species
+HOLACANTHUS CILIARIS,NA,Holacanthus ciliaris,276012,3609,Animalia,Chordata,Teleostei,Acanthuriformes,Pomacanthidae,Holacanthus,Species
+EPINEPHELUS MYSTACINUS,NA,Hyporthodus mystacinus,475099,1206,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Epinephelus,Species
+SAURIDA NORMANI,NA,Saurida normani,272117,2718,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Saurida,Species
+JENKINSIA LAMPROTAENIA,NA,Jenkinsia lamprotaenia,281198,1461,Animalia,Chordata,Teleostei,Clupeiformes,Spratelloididae,Jenkinsia,Species
+ANCYLOPSETTA DILECTA,NA,Ancylopsetta dilecta,276008,4205,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Ancylopsetta,Species
+LACTOPHRYS POLYGONIA,NA,Acanthostracion polygonium,1577312,4287,Animalia,Chordata,Teleostei,Tetraodontiformes,Ostraciidae,Lactophrys,Species
+SYNODUS POEYI,NA,Synodus poeyi,158760,2722,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Synodus,Species
+PERISTEDION GRACILE,NA,Peristedion gracile,159548,4017,Animalia,Chordata,Teleostei,Perciformes,Peristediidae,Peristedion,Species
+ACANTHURUS CHIRURGUS,NA,Acanthurus chirurgus,159580,943,Animalia,Chordata,Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Species
+BOTHUS LUNATUS,NA,Bothus lunatus,274187,978,Animalia,Chordata,Teleostei,Pleuronectiformes,Bothidae,Bothus,Species
+CHROMIS ENCHRYSURUS,NA,Chromis enchrysurus,304153,3643,Animalia,Chordata,Teleostei,Ovalentaria incertae sedis,Pomacentridae,Chromis,Species
+HOLOCENTRUS ADSCENSIONIS,NA,Holocentrus adscensionis,159378,1061,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,Holocentrus,Species
+MYCTEROPERCA BONACI,NA,Mycteroperca bonaci,159231,1209,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Mycteroperca,Species
+GASTROPSETTA FRONTALIS,NA,Gastropsetta frontalis,158820,4224,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Gastropsetta,Species
+PRIONOTUS LONGISPINOSUS,NA,Prionotus longispinosus,276282,4026,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+TETRAODONTIDAE,NA,Tetraodontidae,125612,NA,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,NA,Family
+ANTENNARIUS RADIOSUS,NA,Fowlerichthys radiosus,712508,3087,Animalia,Chordata,Teleostei,Lophiiformes,Antennariidae,Antennarius,Species
+CONGRIDAE,NA,Congridae,125427,NA,Animalia,Chordata,Teleostei,Anguilliformes,Congridae,NA,Family
+BEMBROPS GOBIOIDES,NA,Bembrops gobioides,159843,3697,Animalia,Chordata,Teleostei,Perciformes,Bembropidae,Bembrops,Species
+ANTIMORA ROSTRATA,NA,Antimora rostrata,126486,2005,Animalia,Chordata,Teleostei,Gadiformes,Moridae,Antimora,Species
+PHYSICULUS FULVUS,NA,Physiculus fulvus,158987,28217,Animalia,Chordata,Teleostei,Gadiformes,Moridae,Physiculus,Species
+HOPLOSTETHUS MEDITERRANEUS,NA,Hoplostethus mediterraneus,126404,4964,Animalia,Chordata,Teleostei,Trachichthyiformes,Trachichthyidae,Hoplostethus,Species
+SPHYRAENA BOREALIS,NA,Sphyraena borealis,159813,3679,Animalia,Chordata,Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Species
+RHIZOPRIONODON TERRAENOVAE,NA,Rhizoprionodon terraenovae,158510,905,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Rhizoprionodon,Species
+PROMETHICHTHYS PROMETHEUS,NA,Promethichthys prometheus,126866,5008,Animalia,Chordata,Teleostei,Scombriformes,Gempylidae,Promethichthys,Species
+CARANX HIPPOS,NA,Caranx hippos,126803,71,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Caranx,Species
+MUGIL CEPHALUS,NA,Mugil cephalus,126983,785,Animalia,Chordata,Teleostei,Mugiliformes,Mugilidae,Mugil,Species
+CORYPHAENA EQUISETIS,NA,Coryphaena equiselis,126845,7,Animalia,Chordata,Teleostei,Carangiformes,Coryphaenidae,Coryphaena,Species
+CARCHARHINUS LIMBATUS,NA,Carcharhinus limbatus,105793,874,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+CITHARICHTHYS SP,NA,Citharichthys,158786,NA,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,Genus
+SYNAGROPS SPINOSUS,NA,Parascombrops spinosus,1486846,14336,Animalia,Chordata,Teleostei,Acropomatiformes,Acropomatidae,Synagrops,Species
+XENOCEPHALUS EGREGIUS,NA,Xenocephalus egregius,394993,3705,Animalia,Chordata,Teleostei,Perciformes,Uranoscopidae,Xenocephalus,Species
+ETMOPTERUS PRINCEPS,NA,Etmopterus princeps,105911,683,Animalia,Chordata,Elasmobranchii,Squaliformes,Etmopteridae,Etmopterus,Species
+EPIGONUS PANDIONIS,NA,Epigonus pandionis,159706,10770,Animalia,Chordata,Teleostei,Acropomatiformes,Epigonidae,Epigonus,Species
+POECILOPSETTA BEANI,NA,Poecilopsetta beanii,275847,58866,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Poecilopsetta,Species
+GADELLA IMBERBIS,NA,Gadella imberbis,158964,2010,Animalia,Chordata,Teleostei,Gadiformes,Moridae,Gadella,Species
+SARDA SARDA,NA,Sarda sarda,127021,115,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Sarda,Species
+ANCHOVIELLA PERFASCIATA,NA,Anchoviella perfasciata,158701,1678,Animalia,Chordata,Teleostei,Clupeiformes,Engraulidae,Anchoviella,Species
+MORONE SAXATILIS,NA,Morone saxatilis,151179,353,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Moronidae,Morone,Species
+ACIPENSER OXYRHYNCHUS,NA,Acipenser oxyrinchus,151802,2593,Animalia,Chordata,Chondrostei,Acipenseriformes,Acipenseridae,Acipenser,Species
+STELLIFER LANCEOLATUS,NA,Stellifer lanceolatus,159337,1193,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Stellifer,Species
+POGONIAS CROMIS,NA,Pogonias cromis,159333,425,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Pogonias,Species
+EQUETUS ACUMINATUS,NA,Pareques acuminatus,282139,3583,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Equetus,Species
+STERNOPTYCHIDAE,NA,Sternoptychidae,125603,NA,Animalia,Chordata,Teleostei,Stomiiformes,Sternoptychidae,NA,Family
+MERLUCCIUS SP,NA,Merluccius,125762,NA,Animalia,Chordata,Teleostei,Gadiformes,Merlucciidae,Merluccius,Genus
+COTTIDAE,NA,Cottidae,125589,NA,Animalia,Chordata,Teleostei,Perciformes,Cottidae,NA,Family
+ENGRAULIS EURYSTOLE,NA,Engraulis eurystole,158702,1662,Animalia,Chordata,Teleostei,Clupeiformes,Engraulidae,Engraulis,Species
+GONOSTOMATIDAE,NA,Gonostomatidae,125601,NA,Animalia,Chordata,Teleostei,Stomiiformes,Gonostomatidae,NA,Family
+SYMPHURUS PUSILLUS,NA,Symphurus pusillus,159364,4269,Animalia,Chordata,Teleostei,Pleuronectiformes,Cynoglossidae,Symphurus,Species
+CAULOLATILUS CYANOPS,NA,Caulolatilus cyanops,159402,984,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Malacanthidae,Caulolatilus,Species
+ETROPUS MICROSTOMUS,NA,Etropus microstomus,158801,4222,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Etropus,Species
+TRACHINOTUS CAROLINUS,NA,Trachinotus carolinus,159652,380,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Trachinotus,Species
+EUCINOSTOMUS GULA,NA,Eucinostomus gula,159733,1050,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Gerreidae,Eucinostomus,Species
+SCORPAENA CALCARATA,NA,Scorpaena calcarata,159563,3939,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Scorpaena,Species
+OPSANUS TAU,NA,Opsanus tau,158782,3069,Animalia,Chordata,Teleostei,Batrachoidiformes,Batrachoididae,Opsanus,Species
+SALMO SALAR,NA,Salmo salar,127186,236,Animalia,Chordata,Teleostei,Salmoniformes,Salmonidae,Salmo,Species
+HYGOPHUM TAANINGI,NA,Hygophum taaningi,126605,16291,Animalia,Chordata,Teleostei,Myctophiformes,Myctophidae,Hygophum,Species
+TYLOSURUS CROCODILUS,NA,Tylosurus crocodilus,159259,977,Animalia,Chordata,Teleostei,Beloniformes,Belonidae,Tylosurus,Species
+CALAMUS PENNA,NA,Calamus penna,159245,1227,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Calamus,Species
+ELAGATIS BIPINNULATA,NA,Elagatis bipinnulata,126809,412,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Elagatis,Species
+SIMENCHELYS PARASITICUS,NA,Simenchelys parasitica,126327,9102,Animalia,Chordata,Teleostei,Anguilliformes,Synaphobranchidae,Simenchelys,Species
+CUBICEPS PAUCIRADIATUS,NA,Cubiceps pauciradiatus,159424,5049,Animalia,Chordata,Teleostei,Scombriformes,Nomeidae,Cubiceps,Species
+GONOSTOMA ATLANTICUM,NA,Gonostoma atlanticum,127293,5052,Animalia,Chordata,Teleostei,Stomiiformes,Gonostomatidae,Gonostoma,Species
+GAIDROPSARUS ENSIS,NA,Gaidropsarus ensis,126453,8425,Animalia,Chordata,Teleostei,Gadiformes,Lotidae,Gaidropsarus,Species
+SYMPHURUS CIVITATUS,NA,Symphurus civitatum,305637,4263,Animalia,Chordata,Teleostei,Pleuronectiformes,Cynoglossidae,Symphurus,Species
+ETROPUS CROSSOTUS,NA,Etropus crossotus,158799,4221,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Etropus,Species
+OPHIDION BEANI,NA,Ophidion holbrookii,272824,3113,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Species
+SCORPAENA BRASILIENSIS,NA,Scorpaena brasiliensis,159562,3938,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Scorpaena,Species
+SYACIUM GUNTERI,NA,Syacium gunteri,275839,4231,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Syacium,Species
+BELLATOR MILITARIS,NA,Bellator militaris,159568,4014,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Bellator,Species
+MYCTEROPERCA MICROLEPIS,NA,Mycteroperca microlepis,273880,1212,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Mycteroperca,Species
+CYNOSCION NEBULOSUS,NA,Cynoscion nebulosus,159312,405,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Cynoscion,Species
+"NARCINE BRASILIENSIS",NA,Narcine brasiliensis,157866,2551,Animalia,Chordata,Elasmobranchii,Torpediniformes,Narcinidae,Narcine,Species
+ARGENTINA STRIATA,NA,Argentina striata,158718,2701,Animalia,Chordata,Teleostei,Argentiniformes,Argentinidae,Argentina,Species
+SYNGNATHIDAE,NA,Syngnathidae,125606,NA,Animalia,Chordata,Teleostei,Syngnathiformes,Syngnathidae,NA,Family
+SYMPHURUS DIOMEDIANUS,NA,Symphurus diomedeanus,159358,1018,Animalia,Chordata,Teleostei,Pleuronectiformes,Cynoglossidae,Symphurus,Species
+SYACIUM MICRURUM,NA,Syacium micrurum,158877,4232,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Syacium,Species
+SPHYRAENA SP,NA,Sphyraena,126084,NA,Animalia,Chordata,Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Genus
+EUCINOSTOMUS ARGENTEUS,NA,Eucinostomus argenteus,159732,1049,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Gerreidae,Eucinostomus,Species
+OGCOCEPHALUS PARVUS,NA,Ogcocephalus parvus,159193,3093,Animalia,Chordata,Teleostei,Lophiiformes,Ogcocephalidae,Ogcocephalus,Species
+CARAPUS BERMUDENSIS,NA,Carapus bermudensis,158995,3128,Animalia,Chordata,Teleostei,Ophidiiformes,Carapidae,Carapus,Species
+SPHYRNA ZYGAENA,NA,Sphyrna zygaena,105819,917,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Sphyrnidae,Sphyrna,Species
+FISTULARIA PETIMBA,NA,Fistularia petimba,159439,3276,Animalia,Chordata,Teleostei,Syngnathiformes,Fistulariidae,Fistularia,Species
+PARALICHTHYS LETHOSTIGMA,NA,Paralichthys lethostigma,158829,981,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Paralichthys,Species
+UROPHYCIS FLORIDANA,NA,Urophycis floridana,158990,1882,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Species
+CARANX RUBER,NA,Caranx ruber,302432,1918,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Caranx,Species
+HAEMULON STRIATUM,NA,Haemulon striatum,275739,1143,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Haemulidae,Haemulon,Species
+CHAETODON ACULEATUS,NA,Prognathodes aculeatus,273369,3600,Animalia,Chordata,Teleostei,Acanthuriformes,Chaetodontidae,Chaetodon,Species
+PSEUDUPENEUS MACULATUS,NA,Pseudupeneus maculatus,159421,1094,Animalia,Chordata,Teleostei,Mulliformes,Mullidae,Pseudupeneus,Species
+SERIOLA RIVOLIANA,NA,Seriola rivoliana,126818,1007,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Seriola,Species
+CITHARICHTHYS CORNUTUS,NA,Citharichthys cornutus,158792,4211,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,Species
+LEPOPHIDIUM JEANNAE,NA,Lepophidium jeannae,159138,3110,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Lepophidium,Species
+HISTRIO HISTRIO,NA,Histrio histrio,126533,3089,Animalia,Chordata,Teleostei,Lophiiformes,Antennariidae,Histrio,Species
+MONACANTHUS CILIATUS,NA,Monacanthus ciliatus,159497,4280,Animalia,Chordata,Teleostei,Tetraodontiformes,Monacanthidae,Monacanthus,Species
+DIODON HYSTRIX,NA,Diodon hystrix,127403,1022,Animalia,Chordata,Teleostei,Tetraodontiformes,Diodontidae,Diodon,Species
+ABUDEFDUF SAXATILIS,NA,Abudefduf saxatilis,159288,1119,Animalia,Chordata,Teleostei,Ovalentaria incertae sedis,Pomacentridae,Abudefduf,Species
+MYRIPRISTIS JACOBUS,NA,Myripristis jacobus,159385,1063,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,Myripristis,Species
+LUTJANUS VIVANUS,NA,Lutjanus vivanus,159801,185,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,Lutjanus,Species
+ISURUS OXYRINCHUS,NA,Isurus oxyrinchus,105839,752,Animalia,Chordata,Elasmobranchii,Lamniformes,Lamnidae,Isurus,Species
+CHAETODONTIDAE,NA,Chaetodontidae,125528,NA,Animalia,Chordata,Teleostei,Acanthuriformes,Chaetodontidae,NA,Family
+ASTROSCOPUS GUTTATUS,NA,Astroscopus guttatus,159251,3703,Animalia,Chordata,Teleostei,Perciformes,Uranoscopidae,Astroscopus,Species
+ALUTERUS HEUDELOTI,NA,Aluterus heudelotii,159489,4273,Animalia,Chordata,Teleostei,Tetraodontiformes,Monacanthidae,Aluterus,Species
+CYNOSCION ARENARIUS,NA,Cynoscion arenarius,276077,1170,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Cynoscion,Species
+PARALICHTHYS ALBIGUTTA,NA,Paralichthys albigutta,158825,980,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Paralichthys,Species
+CALAMUS NODOSUS,NA,Calamus nodosus,159243,1226,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Calamus,Species
+ANTENNARIUS OCELLATUS,NA,Fowlerichthys ocellatus,712507,3085,Animalia,Chordata,Teleostei,Lophiiformes,Antennariidae,Antennarius,Species
+ACANTHURUS COERULEUS,NA,Acanthurus coeruleus,159581,944,Animalia,Chordata,Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Species
+NICHOLSINA USTA,NA,Nicholsina usta,159298,1151,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Scaridae,Nicholsina,Species
+RYPTICUS SUBBIFRENATUS,NA,Rypticus subbifrenatus,275964,3355,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Rypticus,Species
+BOTHUS ROBINSI,NA,Bothus robinsi,159277,4208,Animalia,Chordata,Teleostei,Pleuronectiformes,Bothidae,Bothus,Species
+MYCTEROPERCA INTERSTITIALIS,NA,Mycteroperca interstitialis,273878,1211,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Mycteroperca,Species
+PRIONOTUS STEARNSI,NA,Prionotus stearnsi,159576,4028,Animalia,Chordata,Teleostei,Perciformes,Triglidae,Prionotus,Species
+HOLOCENTRIDAE,NA,Holocentridae,125458,NA,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,NA,Family
+NEOMERINTHE HEMINGWAYI,NA,Neomerinthe hemingwayi,159554,3930,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Neomerinthe,Species
+OSTICHTHYS TRACHYPOMA,NA,Ostichthys trachypoma,159399,3252,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,Ostichthys,Species
+MANTA BIROSTRIS,NA,Mobula birostris,1026118,2061,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Mobulidae,Manta,Species
+ATHERINIDAE,NA,Atherinidae,125438,NA,Animalia,Chordata,Teleostei,Atheriniformes,Atherinidae,NA,Family
+SCORPAENA DISPAR,NA,Scorpaena dispar,274706,3940,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Scorpaena,Species
+CALAMUS PRORIDENS,NA,Calamus proridens,275973,1229,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sparidae,Calamus,Species
+URASPIS SECUNDA,NA,Uraspis secunda,159658,1012,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Uraspis,Species
+TETRAPTURUS ALBIDUS,NA,Kajikia albida,712906,219,Animalia,Chordata,Teleostei,Carangiformes,Istiophoridae,Tetrapturus,Species
+CYTTOPSIS ROSEA,NA,Cyttopsis rosea,127425,4953,Animalia,Chordata,Teleostei,Zeiformes,Parazenidae,Cyttopsis,Species
+CLEPTICUS PARRAE,NA,Clepticus parrae,280214,3656,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Clepticus,Species
+DIODON HOLOCANTHUS,NA,Diodon holocanthus,127402,4659,Animalia,Chordata,Teleostei,Tetraodontiformes,Diodontidae,Diodon,Species
+SCHULTZEA BETA,NA,Schultzea beta,282691,3340,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Schultzea,Species
+EPINEPHELUS GUTTATUS,NA,Epinephelus guttatus,159352,15,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Epinephelus,Species
+GYMNOTHORAX SAXICOLA,NA,Gymnothorax saxicola,158585,2616,Animalia,Chordata,Teleostei,Anguilliformes,Muraenidae,Gymnothorax,Species
+UROPHYCIS EARLLI,NA,Urophycis earllii,158989,1885,Animalia,Chordata,Teleostei,Gadiformes,Phycidae,Urophycis,Species
+ANTHIAS NICHOLSI,NA,Anthias nicholsi,159344,3313,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Anthias,Species
+EPINEPHELUS NIVEATUS,NA,Hyporthodus niveatus,475101,1208,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Epinephelus,Species
+LOPHIUS GASTROPHYSUS,NA,Lophius gastrophysus,159185,1078,Animalia,Chordata,Teleostei,Lophiiformes,Lophiidae,Lophius,Species
+CHAUNAX STIGMAEUS,NA,Chaunax stigmaeus,159151,3090,Animalia,Chordata,Teleostei,Lophiiformes,Chaunacidae,Chaunax,Species
+TRICHIURIDAE,NA,Trichiuridae,125571,NA,Animalia,Chordata,Teleostei,Scombriformes,Trichiuridae,NA,Family
+CHAETODON AYA,NA,Prognathodes aya,273370,3601,Animalia,Chordata,Teleostei,Acanthuriformes,Chaetodontidae,Chaetodon,Species
+HEMANTHIAS AUREORUBENS,NA,Baldwinella aureorubens,1015364,3324,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Hemanthias,Species
+ANGUILLA ROSTRATA,NA,Anguilla rostrata,158562,296,Animalia,Chordata,Teleostei,Anguilliformes,Anguillidae,Anguilla,Species
+CITHARICHTHYS SPILOPTERUS,NA,Citharichthys spilopterus,159166,4216,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,Species
+UPENEUS PARVUS,NA,Upeneus parvus,159422,1095,Animalia,Chordata,Teleostei,Mulliformes,Mullidae,Upeneus,Species
+SAURIDA BRASILIENSIS,NA,Saurida brasiliensis,158756,2716,Animalia,Chordata,Teleostei,Aulopiformes,Synodontidae,Saurida,Species
+LUTJANUS ANALIS,NA,Lutjanus analis,159792,1403,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,Lutjanus,Species
+SCORPAENA AGASSIZI,NA,Scorpaena agassizii,159560,3934,Animalia,Chordata,Teleostei,Perciformes,Scorpaenidae,Scorpaena,Species
+HEMANTHIAS VIVANUS,NA,Baldwinella vivanus,1019849,3327,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Hemanthias,Species
+HYPLEUROCHILUS GEMINATUS,NA,Hypleurochilus geminatus,159602,3759,Animalia,Chordata,Teleostei,Blenniiformes,Blenniidae,Hypleurochilus,Species
+OPSANUS PARDUS,NA,Opsanus pardus,275648,3068,Animalia,Chordata,Teleostei,Batrachoidiformes,Batrachoididae,Opsanus,Species
+PARABLENNIUS MARMOREUS,NA,Parablennius marmoreus,159609,3769,Animalia,Chordata,Teleostei,Blenniiformes,Blenniidae,Parablennius,Species
+HOLANTHIAS MARTINICENSIS,NA,Pronotogrammus martinicensis,282365,3328,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Holanthias,Species
+LOPHIIFORMES,NA,Lophiiformes,10316,NA,Animalia,Chordata,Teleostei,Lophiiformes,NA,NA,Order
+CLINIDAE,NA,Clinidae,125530,NA,Animalia,Chordata,Teleostei,Blenniiformes,Clinidae,NA,Family
+ARIOMMA MELANUM,NA,Ariomma melana,403239,3916,Animalia,Chordata,Teleostei,Scombriformes,Ariommatidae,Ariomma,Species
+EPINEPHELUS MORIO,NA,Epinephelus morio,159354,17,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Epinephelus,Species
+MEMBRAS MARTINICA,NA,Membras martinica,159220,3240,Animalia,Chordata,Teleostei,Atheriniformes,Atherinopsidae,Membras,Species
+GOBIIDAE,NA,Gobiidae,125537,NA,Animalia,Chordata,Teleostei,Gobiiformes,Gobiidae,NA,Family
+PARALICHTHYS SQUAMILENTUS,NA,Paralichthys squamilentus,158827,4230,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Paralichthys,Species
+APOGON MACULATUS,NA,Apogon maculatus,159589,3526,Animalia,Chordata,Teleostei,Kurtiformes,Apogonidae,Apogon,Species
+CARCHARHINUS ACRONOTUS,NA,Carcharhinus acronotus,158508,857,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+MOLA MOLA,NA,Mola mola,127405,1732,Animalia,Chordata,Teleostei,Tetraodontiformes,Molidae,Mola,Species
+SYNGNATHUS LOUISIANAE,NA,Syngnathus louisianae,159453,3304,Animalia,Chordata,Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Species
+XENOLEPIDICHTHYS DALGLEISHI,NA,Xenolepidichthys dalgleishi,159432,3257,Animalia,Chordata,Teleostei,Zeiformes,Grammicolepididae,Xenolepidichthys,Species
+SERRANUS ATROBRANCHUS,NA,Serranus atrobranchus,273891,3343,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Serranus,Species
+APELTES QUADRACUS,NA,Apeltes quadracus,159436,3269,Animalia,Chordata,Teleostei,Perciformes,Gasterosteidae,Apeltes,Species
+CYPSELURUS CYANOPTERUS,NA,Cheilopogon cyanopterus,217862,7695,Animalia,Chordata,Teleostei,Beloniformes,Exocoetidae,Cypselurus,Species
+COOKEOLUS JAPONICUS,NA,Cookeolus japonicus,127003,3517,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Priacanthidae,Cookeolus,Species
+POMACENTRIDAE,NA,Pomacentridae,125553,NA,Animalia,Chordata,Teleostei,Ovalentaria incertae sedis,Pomacentridae,NA,Family
+DECODON PUELLARIS,NA,Decodon puellaris,276747,3657,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Labridae,Decodon,Species
+PARAHOLLARDIA LINEATA,NA,Parahollardia lineata,282046,4272,Animalia,Chordata,Teleostei,Tetraodontiformes,Triacanthodidae,Parahollardia,Species
+ALOPIAS VULPINUS,NA,Alopias vulpinus,105836,2535,Animalia,Chordata,Elasmobranchii,Lamniformes,Alopiidae,Alopias,Species
+POLYMETME THAEOCORYLA,NA,Polymetme thaeocoryla,127301,57353,Animalia,Chordata,Teleostei,Stomiiformes,Phosichthyidae,Polymetme,Species
+CETORHINUS MAXIMUS,NA,Cetorhinus maximus,105837,90,Animalia,Chordata,Elasmobranchii,Lamniformes,Cetorhinidae,Cetorhinus,Species
+PRISTIPOMOIDES AQUILONARIS,NA,Pristipomoides aquilonaris,159805,198,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Lutjanidae,Pristipomoides,Species
+CORYPHAENA HIPPURUS,NA,Coryphaena hippurus,126846,6,Animalia,Chordata,Teleostei,Carangiformes,Coryphaenidae,Coryphaena,Species
+ETROPUS RIMOSUS,NA,Etropus rimosus,158802,4223,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Etropus,Species
+DIPLECTRUM BIVITTATUM,NA,Diplectrum bivittatum,276176,3318,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Diplectrum,Species
+CAULOLATILUS MICROPS,NA,Caulolatilus microps,159404,987,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Malacanthidae,Caulolatilus,Species
+ETMOPTERUS GRACILISPINIS,NA,Etmopterus gracilispinis,158523,678,Animalia,Chordata,Elasmobranchii,Squaliformes,Etmopteridae,Etmopterus,Species
+SERIOLA FASCIATA,NA,Seriola fasciata,126817,1006,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Seriola,Species
+LAEMONEMA BARBATULUM,NA,Laemonema barbatulum,158979,28218,Animalia,Chordata,Teleostei,Gadiformes,Moridae,Laemonema,Species
+CAULOLATILUS CHRYSOPS,NA,Caulolatilus chrysops,159403,983,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Malacanthidae,Caulolatilus,Species
+CORNIGER SPINOSUS,NA,Corniger spinosus,280402,3246,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,Corniger,Species
+HOLOCENTRUS RUFUS,NA,Holocentrus rufus,276189,1062,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,Holocentrus,Species
+SARDA ORIENTALIS,NA,Sarda orientalis,219713,114,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Sarda,Species
+REINHARDTIUS HIPPOGLOSSOIDES,NA,Reinhardtius hippoglossoides,127144,516,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Reinhardtius,Species
+CANTHIDERMIS SUFFLAMEN,NA,Canthidermis sufflamen,127399,4279,Animalia,Chordata,Teleostei,Tetraodontiformes,Balistidae,Canthidermis,Species
+TRACHINOTUS FALCATUS,NA,Trachinotus falcatus,367285,1010,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Trachinotus,Species
+CHILOMYCTERUS ATINGA,NA,Chilomycterus reticulatus,219964,10206,Animalia,Chordata,Teleostei,Tetraodontiformes,Diodontidae,Chilomycterus,Species
+EPINEPHELUS FLAVOLIMBATUS,NA,Hyporthodus flavolimbatus,475077,1205,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Epinephelus,Species
+OPHIDION SELENOPS,NA,Ophidion selenops,158768,3116,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Species
+PRIACANTHUS CRUENTATUS,NA,Heteropriacanthus cruentatus,127004,1150,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Priacanthidae,Priacanthus,Species
+CAPROIDAE,NA,Caproidae,125613,NA,Animalia,Chordata,Teleostei,Acanthuriformes,Caproidae,NA,Family
+NESIARCHUS NASUTUS,NA,Nesiarchus nasutus,126865,7573,Animalia,Chordata,Teleostei,Scombriformes,Gempylidae,Nesiarchus,Species
+SQUALIDAE,NA,Squalidae,105716,NA,Animalia,Chordata,Elasmobranchii,Squaliformes,Squalidae,NA,Family
+OLIGOPLITES SAURUS,NA,Oligoplites saurus,159645,1001,Animalia,Chordata,Teleostei,Carangiformes,Carangidae,Oligoplites,Species
+CITHARICHTHYS GYMNORHINUS,NA,Citharichthys gymnorhinus,158793,4213,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,Species
+SPHOEROIDES PACHYGASTER,NA,Sphoeroides pachygaster,127417,4296,Animalia,Chordata,Teleostei,Tetraodontiformes,Tetraodontidae,Sphoeroides,Species
+EULEPTORHAMPHUS VELOX,NA,Euleptorhamphus velox,159276,3155,Animalia,Chordata,Teleostei,Beloniformes,Hemiramphidae,Euleptorhamphus,Species
+ELOPS SAURUS,NA,Elops saurus,157875,175,Animalia,Chordata,Teleostei,Elopiformes,Elopidae,Elops,Species
+MENTICIRRHUS LITTORALIS,NA,Menticirrhus littoralis,159327,411,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Sciaenidae,Menticirrhus,Species
+PLECTRYPOPS RETROSPINIS,NA,Plectrypops retrospinis,277960,3253,Animalia,Chordata,Teleostei,Holocentriformes,Holocentridae,Plectrypops,Species
+VINCIGUERRIA SP,NA,Vinciguerria,126194,NA,Animalia,Chordata,Teleostei,Stomiiformes,Phosichthyidae,Vinciguerria,Genus
+GEPHYROBERYX DARWINI,NA,Gephyroberyx darwinii,126401,4962,Animalia,Chordata,Teleostei,Trachichthyiformes,Trachichthyidae,Gephyroberyx,Species
+AMMODYTES AMERICANUS,NA,Ammodytes americanus,159587,3820,Animalia,Chordata,Teleostei,Perciformes,Ammodytidae,Ammodytes,Species
+CYCLOPTERIDAE,NA,Cyclopteridae,125590,NA,Animalia,Chordata,Teleostei,Perciformes,Cyclopteridae,NA,Family
+MALACANTHUS PLUMIERI,NA,Malacanthus plumieri,277261,3541,Animalia,Chordata,Teleostei,Eupercaria incertae sedis,Malacanthidae,Malacanthus,Species
+ZOARCIDAE,NA,Zoarcidae,125575,NA,Animalia,Chordata,Teleostei,Perciformes,Zoarcidae,NA,Family
+LACTOPHRYS TRIGONUS,NA,Lactophrys trigonus,158931,1107,Animalia,Chordata,Teleostei,Tetraodontiformes,Ostraciidae,Lactophrys,Species
+ANTIGONIA COMBATIA,NA,Antigonia combatia,159429,3259,Animalia,Chordata,Teleostei,Acanthuriformes,Antigoniidae,Antigonia,Species
+EUTHYNNUS ALLETTERATUS,NA,Euthynnus alletteratus,127017,97,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Euthynnus,Species
+SERRANUS NOTOSPILUS,NA,Serranus notospilus,273901,3346,Animalia,Chordata,Teleostei,Perciformes,Serranidae,Serranus,Species
+CARCHARHINUS FALCIFORMIS,NA,Carcharhinus falciformis,105789,868,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+CYPSELURUS MELANURUS,NA,Cheilopogon melanurus,272157,1030,Animalia,Chordata,Teleostei,Beloniformes,Exocoetidae,Cypselurus,Species
+POMACANTHUS ARCUATUS,NA,Pomacanthus arcuatus,159287,1117,Animalia,Chordata,Teleostei,Acanthuriformes,Pomacanthidae,Pomacanthus,Species
+GEMPYLUS SERPENS,NA,Gempylus serpens,126862,1041,Animalia,Chordata,Teleostei,Scombriformes,Gempylidae,Gempylus,Species
+MEGALOPS ATLANTICUS,NA,Megalops atlanticus,126430,1079,Animalia,Chordata,Teleostei,Elopiformes,Megalopidae,Megalops,Species
+CARCHARHINUS BREVIPINNA,NA,Carcharhinus brevipinna,105788,865,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Species
+GALEOCERDO CUVIER,NA,Galeocerdo cuvier,105799,886,Animalia,Chordata,Elasmobranchii,Carcharhiniformes,Galeocerdonidae,Galeocerdo,Species
+LAMNA NASUS,NA,Lamna nasus,105841,88,Animalia,Chordata,Elasmobranchii,Lamniformes,Lamnidae,Lamna,Species
+AUXIS THAZARD,NA,Auxis thazard,127016,94,Animalia,Chordata,Teleostei,Scombriformes,Scombridae,Auxis,Species
+BREVIRAJA PLUTONIA,NA,Fenestraja plutonia,158550,51799,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Breviraja,Species

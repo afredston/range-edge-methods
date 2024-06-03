@@ -46,8 +46,9 @@ sppdat <- unique(dat[, c("verbatim_name", "verbatim_aphia_id",
                      "accepted_name", "aphia_id", "SpecCode", "kingdom", "phylum", 
                      "class", "order", "family", "genus", "rank")])
 
-write.csv(sppdat, file=here("data","species_data.csv"))
-write.csv(hauldat, file=here("data","haul_data.csv"))
+# base write.csv introduced weird errors into the haul_id column 
+readr::write_csv(sppdat, file=here("data","species_data.csv"))
+readr::write_csv(hauldat, file=here("data","haul_data.csv"))
 
 # now we can cut those columns out of dat and only keep the columns that vary in each row and are used in the analysis 
 dat <- dat[,c("haul_id","num_cpue", 

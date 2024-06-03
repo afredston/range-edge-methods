@@ -2,19 +2,26 @@ library(here)
 library(tidyverse)
 #library(ggnewscale)
 
-load(here("data","dat.RData"))
+source(here("functions","calc_all_edges.R"))
+load(here("data","dat_zeros.RData"))
+hauldat <- read_csv(here("data","haul_data.csv"), col_types = cols(haul_id = col_character())) 
 
 focal_spp <- c('Urophycis tenuis')
 edgetype <- "eq"
 
+dat <- as_tibble(dat_zeros) %>% 
+  filter(accepted_name==focal_spp) %>% 
+  left_join(hauldat, by="haul_id")
+
+rm(dat_zeros)
+
 # read in all functions
-funs <- list.files("functions")
-sapply(funs, function(x)
-  source(file.path("functions", x)))
+# funs <- list.files("functions")
+# sapply(funs, function(x)
+#   source(file.path("functions", x)))
 
 dat <- dat %>% 
-  filter(year>1971, 
-         accepted_name==focal_spp)
+  filter(year>1971)
 
 edgetidy <- calc_all_edges(dat, edgetype, focal_spp)
 
@@ -31,11 +38,13 @@ edgetidy <- calc_all_edges(dat, edgetype, focal_spp)
 
 colorblind_safe <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
 
+title <- ifelse(edgetype=="eq", paste0(focal_spp, " Equatorward Edge"), paste0(focal_spp, " Poleward Edge"))
+
 ggplot(edgetidy, aes(x=year, y=lat_position, color=Method, fill=Method, group=Method)) +
   geom_line(aes(linetype=sig))  +
-scale_color_manual(values=colorblind_safe) +
+  scale_color_manual(values=colorblind_safe) +
   scale_fill_manual(values=colorblind_safe) +
-  labs(title="White hake equatorward edge", x="Year", y="Latitude") +
+  labs(title=title, x="Year", y="Latitude") +
   guides(linetype="none") +
   theme_bw() +
   NULL
@@ -50,7 +59,7 @@ spp_of_interest <- lasorte %>%
   filter(`N/S`=="S", # focus on southerly species so they don't run out of the study region
          COM > 100, # and common species
          NB > 0 # with a northward shift in 2007
-         )
+  )
 
 # looked up some range maps
 # let's focus on the black vulture--it definitively has a poleward edge in the US 
