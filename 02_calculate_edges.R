@@ -65,3 +65,5 @@ spp_of_interest <- lasorte %>%
 # let's focus on the black vulture--it definitively has a poleward edge in the US 
 
 # download data from https://netapp.audubon.org/CBCObservation/Historical/ResultsBySpecies.aspx?1
+# that didn't work. used https://survey123.arcgis.com/share/7dc33b4fff77468a8bba855291f86527?portalUrl=https://audubon.maps.arcgis.com instead 
+

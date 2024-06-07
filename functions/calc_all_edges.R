@@ -84,6 +84,21 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
   edgetidy <- edgedat %>% 
     pivot_longer(!year, names_to="Method", values_to="lat_position")
   
+  edgeresid <- edgetidy %>% 
+    group_by(Method) %>%
+    nest() %>%
+    mutate(
+      model = purrr::map(data, ~lm(lat_position ~ year, data=.x)),
+      tidymodel = purrr::map(model, augment)
+    ) %>%
+    unnest(tidymodel) %>%
+    select(-data, -model) %>% 
+    group_by(Method) %>% 
+    summarise(conditional_sd = sqrt(mean(.resid^2)))
+  # I GOT THIS FROM THE MHW POWER ANALYSIS BUT THAT WAS AN AUTOREGRESSIVE MODEL
+  # NOT SURE THIS IS THE RIGHT SD TO USE
+  # CHECK IN TEXTBOOKS LATER 
+  
   edgelm <- edgetidy %>% 
     group_by(Method) %>%
     nest() %>%
@@ -93,7 +108,8 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
     ) %>%
     unnest(tidymodel) %>%
     select(-data, -model) %>% 
-    filter(term=="year")
+    filter(term=="year") %>% 
+    left_join(edgeresid)
   
   if(edgetype=="eq"){
     edgetidy <- left_join(edgetidy, edgelm) %>% 
