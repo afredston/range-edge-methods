@@ -25,31 +25,12 @@ dat <- dat %>%
 
 edgetidy <- calc_all_edges(dat, edgetype, focal_spp)
 
-# note that dat does NOT have zeros
-# it is presence and abundance data only
-# no absences! 
-# need to fix this 
+write_csv(edgetidy, file=here("results",paste0(focal_spp, "_", edgetype, "_results.csv")))
 
 # also note I'm not adding in flags for doing this with lots of species
 # for example, no flag to drop years without enough data points to calculate these metrics
 # since this is for illustration only 
 
-# make plots
-
-colorblind_safe <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
-
-title <- ifelse(edgetype=="eq", paste0(focal_spp, " Equatorward Edge"), paste0(focal_spp, " Poleward Edge"))
-
-ggplot(edgetidy, aes(x=year, y=lat_position, color=Method, fill=Method, group=Method)) +
-  geom_line(aes(linetype=sig))  +
-  scale_color_manual(values=colorblind_safe) +
-  scale_fill_manual(values=colorblind_safe) +
-  labs(title=title, x="Year", y="Latitude") +
-  guides(linetype="none") +
-  theme_bw() +
-  NULL
-
-# choosing a bird
 
 lasorte <- read_csv(here("data","la_sorte_thompson_2007_supp.csv")) #https://doi.org/10.6084/m9.figshare.c.3299831.v1
 
@@ -65,5 +46,7 @@ spp_of_interest <- lasorte %>%
 # let's focus on the black vulture--it definitively has a poleward edge in the US 
 
 # download data from https://netapp.audubon.org/CBCObservation/Historical/ResultsBySpecies.aspx?1
-# that didn't work. used https://survey123.arcgis.com/share/7dc33b4fff77468a8bba855291f86527?portalUrl=https://audubon.maps.arcgis.com instead 
+# as of personal communication with CBC team in june 2024, the data portal has a bug that doesn't allow data download later than the 115th CBC (2015), so I downloaded 1975 (the start year of La Sorte and Jetz) - 2014
+
+
 
