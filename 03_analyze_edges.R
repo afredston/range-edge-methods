@@ -22,15 +22,22 @@ edgetidy %>%
 
 colorblind_safe <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
 
-title <- ifelse(edgetype=="eq", paste0(focal_spp, " Equatorward Edge"), paste0(focal_spp, " Poleward Edge"))
+title <- ifelse(edgetype=="eq", paste0(focal_spp, " equatorward edge"), paste0(focal_spp, " poleward edge"))
 
-ggplot(edgetidy, aes(x=year, y=lat_position, color=Method, fill=Method, group=Method)) +
-  geom_line(aes(linetype=sig))  +
+# once final species are chosen can italicize title more easily
+
+fishplot <- ggplot(edgetidy, aes(x=year, y=lat_position, color=Method, fill=Method, group=Method)) +
+  geom_line(aes(linetype=sig), lwd=0.8)  +
   scale_color_manual(values=colorblind_safe) +
   scale_fill_manual(values=colorblind_safe) +
   labs(title=title, x="Year", y="Latitude") +
   guides(linetype="none") +
   theme_bw() +
+  theme(legend.position=c(0.38, 0.3),
+        legend.background = element_rect(fill="transparent")) +
+ # theme(legend.position="bottom",
+ #   legend.position.inside = c(0.5, 0.5)) +
   NULL
+#fishplot
+ggsave(fishplot, filename=here("figures","fish_edge.png"), width=8, height=4, dpi=160)
 
-# choosing a bird

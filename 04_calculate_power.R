@@ -1,6 +1,7 @@
 set.seed(42)
 library(tidyverse)
 library(doParallel)
+library(here)
 detectCores()
 registerDoParallel(cores=4)
 # three nested for loops
@@ -19,7 +20,7 @@ error = 0.75 # from mean(edgetidy$conditional_sd)
 out_true <- array(dim=c(length(shiftrate), length(sampleyrs)))
 mod_stats <- NULL
 sum_stats <- NULL
-iters <- 2
+iters <- 100
 
 simulate_edge_shifts <- function(shiftrate, sampleyrs, error) {
   for(j in 1:length(shiftrate)){
@@ -51,7 +52,7 @@ simulate_edge_shifts <- function(shiftrate, sampleyrs, error) {
     select(rate, sig_time_series_length) %>% 
     distinct()
   
-  rm(mod_stats) # gets large when we run the outer for loop 
+#  rm(mod_stats) # gets large when we run the outer for loop 
   
   sum_stats <- rbind(sum_stats, sum_stats_tmp)
   return(sum_stats)
@@ -61,3 +62,5 @@ power_out <- foreach(i = seq(1, iters, 1), .combine='rbind') %dopar% {
   #  library(dplyr)
   simulate_edge_shifts(shiftrate=shiftrate, sampleyrs=sampleyrs, error=error)     
 }
+
+saveRDS(power_out, file=here("results","simulated_time_series_summary.rds"))

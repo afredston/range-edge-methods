@@ -3,17 +3,18 @@ library(tidyverse)
 #library(ggnewscale)
 
 source(here("functions","calc_all_edges.R"))
-load(here("data","dat_zeros.RData"))
-hauldat <- read_csv(here("data","haul_data.csv"), col_types = cols(haul_id = col_character())) 
+load(here("data","fishdat.RData"))
+# hauldat <- read_csv(here("data","haul_data.csv"), col_types = cols(haul_id = col_character())) 
+
+fishdat <- dat 
 
 focal_spp <- c('Urophycis tenuis')
 edgetype <- "eq"
 
-dat <- as_tibble(dat_zeros) %>% 
-  filter(accepted_name==focal_spp) %>% 
-  left_join(hauldat, by="haul_id")
+dat <- as_tibble(fishdat) %>% 
+  filter(accepted_name==focal_spp) 
 
-rm(dat_zeros)
+# rm(dat_zeros)
 
 # read in all functions
 # funs <- list.files("functions")
@@ -31,6 +32,7 @@ write_csv(edgetidy, file=here("results",paste0(focal_spp, "_", edgetype, "_resul
 # for example, no flag to drop years without enough data points to calculate these metrics
 # since this is for illustration only 
 
+# choosing a bird
 
 lasorte <- read_csv(here("data","la_sorte_thompson_2007_supp.csv")) #https://doi.org/10.6084/m9.figshare.c.3299831.v1
 
