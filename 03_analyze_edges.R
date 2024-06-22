@@ -84,18 +84,18 @@ birdplot <- ggplot(bird_edgetidy, aes(x=year, y=lat_position, color=Method, fill
 
 ggsave(birdplot, filename=here("figures","bird_edge.png"), width=8, height=4, dpi=160)
 
-sd_dat <- bind_rows(bird_edgetidy, fish_edgetidy) %>% 
-  group_by(Species, Method) %>% 
-  summarise(SD = sd(lat_position))
-
-sd_gg_fish <- sd_dat %>%
-  filter(Species == focal_fish) %>% 
-  ggplot(aes(x=Method, y=SD, color=Method, fill=Method)) + 
-  geom_point() +
-  scale_color_manual(values=colorblind_safe) +
-  scale_fill_manual(values=colorblind_safe) +
-  labs(title=title, x="Method", y="Standard deviation of latitude") +
-  theme_bw() +
-  NULL
-  sd_gg_fish
+# sd_dat <- bind_rows(bird_edgetidy, fish_edgetidy) %>% 
+#   group_by(Species, Method) %>% 
+#   summarise(SD = sd(lat_position))
+# 
+# sd_gg_fish <- sd_dat %>%
+#   filter(Species == focal_fish) %>% 
+#   ggplot(aes(x=Method, y=SD, color=Method, fill=Method)) + 
+#   geom_point() +
+#   scale_color_manual(values=colorblind_safe) +
+#   scale_fill_manual(values=colorblind_safe) +
+#   labs(title=title, x="Method", y="Standard deviation of latitude") +
+#   theme_bw() +
+#   NULL
+#   sd_gg_fish
  

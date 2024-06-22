@@ -16,7 +16,7 @@ registerDoParallel(cores=4)
 shiftrate = seq(0.1, 10, 0.1) / 111 # "true" shift rate -- convert from km/yr to lat/yr 
 yrs = 100 
 sampleyrs <- seq(1, 100, 1)
-error = 0.75 # from mean(edgetidy$conditional_sd)
+error = 0.65 # from mean(fish_edgetidy$conditional_sd) and mean(bird_edgetidy$conditional_sd)
 out_true <- array(dim=c(length(shiftrate), length(sampleyrs)))
 mod_stats <- NULL
 sum_stats <- NULL
