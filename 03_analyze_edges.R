@@ -20,17 +20,17 @@ fish_edgetidy %>%
 
 # make plots
 
-colorblind_safe <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
+colorblind_safe_eq <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
+colorblind_safe_pol <- c( '#EECC66','#004488', '#6699CC',  '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
 
-title <- ifelse(fish_edgetype=="eq", paste0(focal_fish, " equatorward edge"), paste0(focal_fish, " poleward edge"))
-
+fishtitle <- expression(paste(italic("Urophycis tenuis")," equatorward edge"))
 # once final species are chosen can italicize title more easily
 
 fishplot <- ggplot(fish_edgetidy, aes(x=year, y=lat_position, color=Method, fill=Method, group=Method)) +
   geom_line(aes(linetype=sig), lwd=0.8)  +
-  scale_color_manual(values=colorblind_safe) +
-  scale_fill_manual(values=colorblind_safe) +
-  labs(title=title, x="Year", y="Latitude") +
+  scale_color_manual(values=colorblind_safe_eq) +
+  scale_fill_manual(values=colorblind_safe_eq) +
+  labs(title=fishtitle, x="Year", y="Latitude") +
   guides(linetype="none") +
   theme_bw() +
   theme(legend.position=c(0.38, 0.3),
@@ -61,17 +61,15 @@ bird_edgetidy %>%
 
 # make plots
 
-colorblind_safe <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
-
-title <- ifelse(bird_edgetype=="eq", paste0(focal_bird, " equatorward edge"), paste0(focal_bird, " poleward edge"))
+birdtitle <- expression(paste(italic("Coragyps atratus")," poleward edge"))
 
 # once final species are chosen can italicize title more easily
 
 birdplot <- ggplot(bird_edgetidy, aes(x=year, y=lat_position, color=Method, fill=Method, group=Method)) +
   geom_line(aes(linetype=sig), lwd=0.8)  +
-  scale_color_manual(values=colorblind_safe) +
-  scale_fill_manual(values=colorblind_safe) +
-  labs(title=title, x="Year", y="Latitude") +
+  scale_color_manual(values=colorblind_safe_pol) +
+  scale_fill_manual(values=colorblind_safe_pol) +
+  labs(title=birdtitle, x="Year", y="Latitude") +
   guides(linetype="none",
          fill=guide_legend(ncol=2),
          color=guide_legend(ncol=2)) +
@@ -83,19 +81,3 @@ birdplot <- ggplot(bird_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   NULL
 
 ggsave(birdplot, filename=here("figures","bird_edge.png"), width=8, height=4, dpi=160)
-
-# sd_dat <- bind_rows(bird_edgetidy, fish_edgetidy) %>% 
-#   group_by(Species, Method) %>% 
-#   summarise(SD = sd(lat_position))
-# 
-# sd_gg_fish <- sd_dat %>%
-#   filter(Species == focal_fish) %>% 
-#   ggplot(aes(x=Method, y=SD, color=Method, fill=Method)) + 
-#   geom_point() +
-#   scale_color_manual(values=colorblind_safe) +
-#   scale_fill_manual(values=colorblind_safe) +
-#   labs(title=title, x="Method", y="Standard deviation of latitude") +
-#   theme_bw() +
-#   NULL
-#   sd_gg_fish
- 

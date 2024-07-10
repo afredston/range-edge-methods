@@ -17,16 +17,14 @@ source(here("functions","calculate_slope.R"))
 
 # I combine this with code from Easton White to extract every possible time-series of length k, not just the first. so to explore the power of a five-year time-series, we test every five-year window in the full time series, not just years 1 to 5. 
 
-# the outer for loop (parallelized) repeats the above 1000 times, and each time it records how long the time-series needs to be (for a given rate of range shift j) to always get significant shifts. if this value is equal to the upper value of k, it means we never got consistently significant shifts for that value of j. 
+# the outer for loop (parallelized) repeats the above 100 times, and each time it records the power of the combination of shift rate and time-series length, defined as the proportion of times the different time-series subsets are significantly different from zero and in the correct direction. 
 
 # get "true" parameters 
-shiftrate = seq(0.1, 10, 0.1) / 111 # "true" shift rate -- convert from km/yr to lat/yr 
-yrs = 100 
+shiftrate_prep = seq(0.1, 10, 0.1) / 111 # "true" shift rate -- convert from km/yr to lat/yr  -- but these numbers are ugly so let's slightly shift this to ...
+shiftrate <- seq(0.001, 0.1, 0.001)
 sampleyrs <- seq(1, 100, 1)
 error = 0.65 # from mean(fish_edgetidy$conditional_sd) and mean(bird_edgetidy$conditional_sd)
-out_true <- array(dim=c(length(shiftrate), length(sampleyrs)))
-mod_stats <- NULL
-sum_stats <- NULL
+out_true <- array(dim=c(length(shiftrate), length(sampleyrs))) 
 iters <- 100
 ts_lengths <- seq(3, 100, 1) # need to run a regression so must have >2 points 
 subset_times <- create_subsamples(sampleyrs)
@@ -40,7 +38,8 @@ for(j in 1:length(shiftrate)){
   for(k in 1:length(sampleyrs)){
     # simulate edge position using the true rate of shift, number of years passed, and a random error term based on the standard deviation of the actual data 
     out_true[j,k] <- shiftrate[j] * sampleyrs[k] + rnorm(n = 1, mean = 0, sd = error)
-  }}
+  }
+  }
 
 # calculate power for subsamples, sensu White 2019
 # could rewrite with apply to speed up ... 
@@ -63,3 +62,11 @@ power_out <- foreach(i = seq(1, iters, 1)) %dopar% {
   }
 
 saveRDS(power_out, file=here("results","simulated_time_series_summary.rds"))
+
+save(shiftrate,
+     sampleyrs,
+     error,
+     iters,
+     ts_lengths,
+     alpha,
+     file=here("results","parameters.Rdata"))
