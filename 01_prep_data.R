@@ -32,8 +32,9 @@ file_names <- dir(here("data","cbc_black_vulture_manual_download"), full.names=T
 birddat <- read_csv(file_names, id = "name", skip=3) %>% # first three rows have no data except saying "black vulture"
   mutate(year = as.numeric(str_sub(sub(".csv","",name), start=-4)),
          num_cpue = Number_By_Party_Hours, 
-         latitude = Latitude) %>% # extract year value from file name
-  select(latitude, year, num_cpue)
+         latitude = Latitude,
+         longitude = Longitude) %>% # extract year value from file name
+  select(latitude, longitude, year, num_cpue)
 
 save(birddat, file=here("data","birddat.Rdata"))
 #########
@@ -64,8 +65,9 @@ dat <- dat[!haul_id %in% neus_bad_hauls]
 
 # STEP 2: calculate CPUE. as per NOAA staff, the reported biomass is calibrated to the pre-2009 30-minute tow duration (which is why we divide all wgt by 0.5 regardless of year). the average trawl swept area value is also provided by NOAA staff. 
 
-dat <- dat[,wgt_cpue := wgt/0.5][,wgt_cpua := wgt/0.0384][,num_cpue := num/0.5][,num_cpua := num/0.0384]
+fishdat <- dat[,wgt_cpue := wgt/0.5][,wgt_cpua := wgt/0.0384][,num_cpue := num/0.5][,num_cpua := num/0.0384]
 
 # now stopping here because the analysis doesn't end up needing zeros 
 
-save(dat, file=here("data","fishdat.Rdata"))
+save(fishdat, file=here("data","fishdat.Rdata"))
+rm(list = ls())

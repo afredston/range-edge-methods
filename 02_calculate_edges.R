@@ -14,7 +14,7 @@ load(here("data","fishdat.RData"))
 focal_fish <- c('Urophycis tenuis')
 fish_edgetype <- "eq"
 
-fishdat <- as_tibble(dat) %>% 
+fishdat <- as_tibble(fishdat) %>% 
   filter(accepted_name==focal_fish) 
 
 # rm(dat_zeros)
