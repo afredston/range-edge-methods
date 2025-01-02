@@ -9,7 +9,7 @@ sea_lonrange <- c(-77, -66)
 sea_latrange <- c(35, 45)
 
 if(file.exists(here("data","oisst.tif"))==FALSE){
-  oisst <- "ncdcOisst2Agg_LonPM180"
+  oisst <- "ncdcOisst2Agg_LonPM180" # https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst2Agg_LonPM180.html 
   oisst_fields <- "sst"
   # split up into decades for easier downloading
   oisst_time1 <- c("1982-01-01T12:00:00Z","1989-12-31") # same time interval for all regions
