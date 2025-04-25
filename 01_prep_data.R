@@ -15,10 +15,13 @@
 
 # looked up some range maps
 # let's focus on the black vulture--it definitively has a poleward edge in the US 
-
 library(data.table)
 library(tidyverse)
 library(here)
+library(sf)
+library(terra)
+bird_mask <- vect(here("data","vulture_mask.shp"))
+fish_mask <- rast(here("data","hake_mask.tif"))
 
 #########
 # BIRD DATA
@@ -36,7 +39,16 @@ birddat <- read_csv(file_names, id = "name", skip=3) %>% # first three rows have
          longitude = Longitude) %>% # extract year value from file name
   select(latitude, longitude, year, num_cpue)
 
-save(birddat, file=here("data","birddat.Rdata"))
+birddat_sf <- st_as_sf(birddat, coords=c("longitude","latitude"), crs = 4326)
+
+birddat_crop <- st_crop(birddat_sf, bird_mask) |> # crop to extent of bird mask 
+  mutate(longitude = sf::st_coordinates(geometry)[,1],
+         latitude = sf::st_coordinates(geometry)[,2]) |> 
+  as.data.frame() |> 
+  select(-geometry)  # un-spatialize after cropping 
+  
+
+save(birddat_crop, file=here("data","birddat.Rdata"))
 #########
 # FISH DATA
 #########
@@ -69,5 +81,13 @@ fishdat <- dat[,wgt_cpue := wgt/0.5][,wgt_cpua := wgt/0.0384][,num_cpue := num/0
 
 # now stopping here because the analysis doesn't end up needing zeros 
 
-save(fishdat, file=here("data","fishdat.Rdata"))
+fishdat_sf <- st_as_sf(fishdat, coords=c("longitude","latitude"), crs = 4326)
+
+fishdat_crop <- st_crop(fishdat_sf, fish_mask) |> # crop to extent of fish mask. this changes very little because the survey is already on the shelf 
+  mutate(longitude = sf::st_coordinates(geometry)[,1],
+         latitude = sf::st_coordinates(geometry)[,2]) |> 
+  as.data.frame() |> 
+  select(-geometry)  # un-spatialize after cropping 
+
+save(fishdat_crop, file=here("data","fishdat.Rdata"))
 rm(list = ls())
