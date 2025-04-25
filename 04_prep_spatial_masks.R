@@ -50,11 +50,7 @@ writeRaster(bathy_trim_eez, filename=here("data","hake_mask.tif"))
 
 # this is easier, we just want a mask of continental North America 
 
-usoutline <- vect(ne_countries(country="united states of america")[1]) # creates a SpatVector object 
-usmask <- rast()
-ext(usmask) <- c(-130, -60, 20, 55)
-usoutline_crop <- crop(usoutline, ext(usmask))
-#plot(usoutline_crop)
-writeVector(usoutline_crop, filename = here("data","vulture_mask.shp"))
+nameroutline <- vect(ne_countries(country=c("united states of america","canada"))[1]) # creates a SpatVector object 
+writeVector(nameroutline, filename = here("data","vulture_mask.shp"))
 
 rm(list=ls())
