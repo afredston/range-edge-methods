@@ -11,7 +11,6 @@ library(elevatr)
 library(virtualspecies)
 library(tidyverse)
 
-
 # data
 bird_mask <- vect(here("data","vulture_mask.shp"))
 fish_mask <- rast(here("data","hake_mask.tif"))
@@ -23,6 +22,8 @@ fishdat <- fishdat |> filter(accepted_name == "Urophycis tenuis")
 #########
 # get predictor data 
 #########
+
+# each species gets two predictors, one static one and one dynamic one (temperature) 
 
 # elevation for bird 
 if(file.exists(here("data","elev_rast.tif")) == TRUE) {
@@ -41,6 +42,9 @@ elev <- crop(x = elev_rast, y = bird_mask, mask=TRUE)
 plot(elev)
 names(elev)
 names(elev) <- "elev"
+
+# temperature for bird 
+
 
 # temperature for fish 
 oisst <- rast(here("data","oisst.tif"))
