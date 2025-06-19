@@ -19,7 +19,7 @@ mindepth = 15
 
 # get bathymetry data with "oceanmap" package 
 if(file.exists(here("data","bbox_bathy.tif"))==FALSE){
-  bathy <- get.bathy(lon = sea_lonrange, lat = sea_latrange, visualize = F, res = 15)
+  bathy <- get.bathy(lon = sea_lonrange, lat = sea_latrange, visualize = F, res = 4)
   writeRaster(bathy, filename=here("data","bbox_bathy.tif"))
 } else {
   bathy <- rast(here("data","bbox_bathy.tif"))
