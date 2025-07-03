@@ -21,8 +21,10 @@ if(file.exists(here("data","bbox_bathy.tif"))==FALSE){
 }
 bathy[bathy >= 1000] <- NA # this stands in for "UKmap" in the tutorial 
 # for the sake of following the rangeshiftr tutorial, let's discretize this into shelf (<200 m) depth 
-rcl <- matrix(c(-Inf, 183, 1,   
-                183, Inf, 2),  
+rcl <- matrix(c(-Inf, 49.999, 1, 
+                50, 91.499, 2,   
+                91.5, 183, 3,
+                183.001, Inf, 4),  
               ncol = 3, byrow = TRUE)
 
 # Apply the reclassification
@@ -63,15 +65,43 @@ plot(as.polygons(spdist_rast, dissolve=F), add=T, col="white")
 # now, rangeshiftr requires that maps be in a .txt format for ArcGIS, presumably for consistency with their windows GUI
 # let's write these out as text files and check that they look OK 
 
+writeRaster(bathy_hab, "habitatmap.asc", overwrite=T)
+writeRaster(spdist_rast, "speciesmap.asc", overwrite=T)
 
-writeRaster(bathy_hab, "test.asc", overwrite=T)
-
-carrycap <- c(0, 0, 0, 5, 0, 0)
-land <- ImportedLandscape(LandscapeFile = "UKmap_1km.txt", 
-                          Resolution = 10, # 10 m^2 cells.  
-                          Nhabitats = 6, 
+carrycap <- c(10000, 5000, 2500, 0) # I'm very confused about the units here. in the tutorial it says they are in individuals per hectare. but then the tutorial sets Resolution = 1000, which creates boxes that are 1000 m on a side, which is 1000000 m2 or 100 hectares (according to the function documentation, Resolution is "cell size in meters defaults to 100"). I'm using individuals per km2 which is the same units as num_cpue in the fish data file. so let's say the carrying capacity for good habitat is 10,000 individuals. 
+land <- ImportedLandscape(LandscapeFile = "habitatmap.asc", 
+                          Resolution = 1000, # 100 m on a side = 1 ha grid cell = 0.01 km2; 1000m on a side = 1 km2 
+                          Nhabitats = 4, 
                           K_or_DensDep = carrycap, 
-                          SpDistFile = "Species_Distribution_10km.txt", 
+                          SpDistFile = "speciesmap.asc", 
                           SpDistResolution = 10000)
+# ran without error on the first try, holy smokes! 
+
+# should revisit later to add in overlapping generations and age structure 
+
+demo <- Demography(Rmax = 1.5)
+
+disp <-  Dispersal(Emigration = Emigration(EmigProb = 0.1), 
+                   Transfer = DispersalKernel(Distances = 2000), 
+                   Settlement = Settlement() )
 
 
+init <- Initialise(InitType = 1, # = initialisation from a loaded species distribution map
+                   SpType = 0,   # = all suitable cells within all distribution presence cells
+                   InitDens = 0) # = at carrying capacity
+
+
+
+sim_0 <- Simulation(Simulation = 0, 
+                    Replicates = 20, 
+                    Years = 100,
+                    OutIntPop = 5,
+                    OutIntOcc = 5,
+                    OutIntRange = 5)
+
+s <- RSsim(land = land, demog = demo, dispersal = disp, simul = sim_0, init = init)
+
+s 
+validateRSparams(s)
+
+RunRS(s, dirpath = here())
