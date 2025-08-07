@@ -204,6 +204,8 @@ sim_result_01 <- sim(obj = sim_data_bird, time = 100) # we can then run it for t
 
 summary(sim_result_01) # gives a plot of mean abundance (y) vs time (x) 
 
+save(sim_result_01, file=here("rangr_sim_result_01.Rdata"))
+
 # there are way more functions to visualize the outputs
 
 # generate visualisation
