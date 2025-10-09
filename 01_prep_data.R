@@ -79,15 +79,23 @@ dat <- dat[!haul_id %in% neus_bad_hauls]
 
 fishdat <- dat[,wgt_cpue := wgt/0.5][,wgt_cpua := wgt/0.0384][,num_cpue := num/0.5][,num_cpua := num/0.0384]
 
-# now stopping here because the analysis doesn't end up needing zeros 
-
 fishdat_sf <- st_as_sf(fishdat, coords=c("longitude","latitude"), crs = 4326)
 
+# note this is all the species! not filtering by species yet 
 fishdat_crop <- st_crop(fishdat_sf, fish_mask) |> # crop to extent of fish mask. this changes very little because the survey is already on the shelf 
   mutate(longitude = sf::st_coordinates(geometry)[,1],
          latitude = sf::st_coordinates(geometry)[,2]) |> 
   as.data.frame() |> 
   select(-geometry)  # un-spatialize after cropping 
 
+# add in zeros if needed. this file will be really big, so don't track it on gh 
+fishdat_zeros <- expand.grid(haul_id = unique(fishdat$haul_id), accepted_name = unique(fishdat$accepted_name)) |> 
+  left_join(fishdat_crop |> select(haul_id, accepted_name, num:wgt_cpua), by=c("accepted_name", "haul_id")) |> 
+  mutate(
+    across(everything(), ~replace_na(.x, 0)) # replace all NAs with zeros in all columns 
+  ) |> # now add in the haul-level info that we want 
+  left_join(fishdat |> select(haul_id, year, month, day, latitude, longitude, depth, sbt, sst) |> distinct(), by="haul_id")
+
 save(fishdat_crop, file=here("data","fishdat.Rdata"))
+save(fishdat_zeros, file=here("data","fishdat_with_zeros.Rdata"))
 rm(list = ls())
