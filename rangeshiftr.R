@@ -8,7 +8,22 @@ library(here)
 library(tidyverse)
 select <- dplyr::select
 # following along with https://rangeshifter.github.io/RangeshiftR-tutorials/tutorial_1.html
-# but adapting it to an ocean example (especially given that the tutorial is not reproducible since there are no source files!)
+# but adapting it to an ocean example
+
+# rangeshiftr decisions
+
+# model parameters 
+set_resolution = 10000 # 10 km2 on a side 
+set_nhabitats = 4 
+set_carrycap = c(10000, 5000, 2500, 0) # vector, must be the same length as the number of habitats, containing the number of individuals / hectare FOR EACH HABITAT TYPE. (or is it individuals per box, whatever size you set the box at, in the resolution parameter above? I've set it to 1 km2, not 1 ha (which would be 100 not 1000 above). I'm aiming for 10,000 fish / km2 as carrying capacity; need to double-check that's what's actually happening here.)
+set_spdistresolution = 10000
+
+# run specs
+set_replicates = 1 
+set_years = 20
+set_outintpop = 0
+set_outintocc = 0
+set_outintrange = 0
 
 load(here("data","fishdat.Rdata")) 
 
@@ -68,13 +83,12 @@ plot(as.polygons(spdist_rast, dissolve=F), add=T, col="white")
 writeRaster(bathy_hab, "habitatmap.asc", overwrite=T)
 writeRaster(spdist_rast, "speciesmap.asc", overwrite=T)
 
-carrycap <- c(10000, 5000, 2500, 0) # I'm very confused about the units here. in the tutorial it says they are in individuals per hectare. but then the tutorial sets Resolution = 1000, which creates boxes that are 1000 m on a side, which is 1000000 m2 or 100 hectares (according to the function documentation, Resolution is "cell size in meters defaults to 100"). I'm using individuals per km2 which is the same units as num_cpue in the fish data file. so let's say the carrying capacity for good habitat is 10,000 individuals. 
 land <- ImportedLandscape(LandscapeFile = "habitatmap.asc", 
-                          Resolution = 1000, # 100 m on a side = 1 ha grid cell = 0.01 km2; 1000m on a side = 1 km2 
-                          Nhabitats = 4, 
-                          K_or_DensDep = carrycap, 
+                          Resolution = set_resolution, 
+                          Nhabitats = set_nhabitats, 
+                          K_or_DensDep = set_carrycap, 
                           SpDistFile = "speciesmap.asc", 
-                          SpDistResolution = 10000)
+                          SpDistResolution = set_spdistresolution)
 # ran without error on the first try, holy smokes! 
 
 # should revisit later to add in overlapping generations and age structure 
@@ -82,7 +96,7 @@ land <- ImportedLandscape(LandscapeFile = "habitatmap.asc",
 demo <- Demography(Rmax = 1.5)
 
 disp <-  Dispersal(Emigration = Emigration(EmigProb = 0.1), 
-                   Transfer = DispersalKernel(Distances = 2000), 
+                   Transfer = DispersalKernel(Distances = 10000), 
                    Settlement = Settlement() )
 
 
@@ -93,11 +107,11 @@ init <- Initialise(InitType = 1, # = initialisation from a loaded species distri
 
 
 sim_0 <- Simulation(Simulation = 0, 
-                    Replicates = 20, 
-                    Years = 100,
-                    OutIntPop = 5,
-                    OutIntOcc = 5,
-                    OutIntRange = 5)
+                    Replicates = set_replicates, 
+                    Years = set_years,
+                    OutIntPop = set_outintpop,
+                    OutIntOcc = set_outintocc,
+                    OutIntRange = set_outintrange)
 
 s <- RSsim(land = land, demog = demo, dispersal = disp, simul = sim_0, init = init)
 
