@@ -80,14 +80,14 @@ plot(as.polygons(spdist_rast, dissolve=F), add=T, col="white")
 # now, rangeshiftr requires that maps be in a .txt format for ArcGIS, presumably for consistency with their windows GUI
 # let's write these out as text files and check that they look OK 
 
-writeRaster(bathy_hab, "habitatmap.asc", overwrite=T)
-writeRaster(spdist_rast, "speciesmap.asc", overwrite=T)
+writeRaster(bathy_hab, "Inputs/habitatmap.asc", overwrite=T)
+writeRaster(spdist_rast, "Inputs/speciesmap.asc", overwrite=T)
 
-land <- ImportedLandscape(LandscapeFile = "habitatmap.asc", 
+land <- ImportedLandscape(LandscapeFile = "Inputs/habitatmap.asc", 
                           Resolution = set_resolution, 
                           Nhabitats = set_nhabitats, 
                           K_or_DensDep = set_carrycap, 
-                          SpDistFile = "speciesmap.asc", 
+                          SpDistFile = "Inputs/speciesmap.asc", 
                           SpDistResolution = set_spdistresolution)
 # ran without error on the first try, holy smokes! 
 
