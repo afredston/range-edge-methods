@@ -1,3 +1,7 @@
+###########
+# LOAD PACKAGES
+###########
+
 library(RangeShiftR)
 library(terra)
 library(RColorBrewer)
@@ -10,16 +14,19 @@ select <- dplyr::select
 # following along with https://rangeshifter.github.io/RangeshiftR-tutorials/tutorial_1.html
 # but adapting it to an ocean example
 
-# rangeshiftr decisions
-
+###########
+# RANGESHIFTR USER DECISIONS 
+###########
 
 # relative path from working directory:
 dirpath = "rangeshiftr_dir/"
 # rangeshiftr WILL NOT RUN unless you give it its own subdirectory within your working directory that in turn contains the folders below. 
+# see https://github.com/RangeShifter/RangeshiftR-tutorials/discussions/30
 
-#dir.create(paste0(dirpath,"Inputs"), showWarnings = TRUE)
-#dir.create(paste0(dirpath,"Outputs"), showWarnings = TRUE)
-#dir.create(paste0(dirpath,"Output_Maps"), showWarnings = TRUE)
+dir.create(file.path(dirpath, "Inputs"), recursive = TRUE, showWarnings = FALSE)
+dir.create(file.path(dirpath, "Outputs"), recursive = TRUE, showWarnings = FALSE)
+dir.create(file.path(dirpath, "Output_Maps"), recursive = TRUE, showWarnings = FALSE)
+crs_m <- "EPSG:3857"
 
 # model parameters 
 set_resolution = 10000 # 10 km2 on a side 
@@ -34,7 +41,21 @@ set_outintpop = 0
 set_outintocc = 0
 set_outintrange = 0
 
+###########
+# GET SPECIES DISTRIBUTION MAP
+###########
+
 load(here("data","fishdat.Rdata")) 
+spdist_df <- fishdat_crop |> 
+  filter(num_cpue > 0, accepted_name=="Paralichthys dentatus", year <= 1990) |> # note the year filter here 
+  select(longitude, latitude) |> 
+  distinct()
+
+spdist_vect <- vect(spdist_df, geom = c("longitude", "latitude"), crs = "EPSG:4326")  # geographic coordinates
+
+###########
+# GET HABITAT MAP
+###########
 
 # get bathymetry data with "oceanmap" package 
 if(file.exists(here("data","bbox_bathy.tif"))==FALSE){
@@ -54,43 +75,66 @@ rcl <- matrix(c(-Inf, 49.999, 1,
 # Apply the reclassification
 bathy_hab <- classify(bathy, rcl)
 plot(bathy_hab)
-# get starting species distribution 
-load(here("data","fishdat.Rdata")) 
-spdist_df <- fishdat_crop |> 
-  filter(num_cpue > 0, accepted_name=="Paralichthys dentatus", year <= 1990) |> # note the year filter here 
-  select(longitude, latitude) |> 
-  distinct()
 
-spdist_vect <- vect(spdist_df, geom = c("longitude", "latitude"), crs = "EPSG:4326")  # geographic coordinates
+###########
+# ALIGN MAP GRIDS
+###########
 
-# reproject to a metric CRS to make 10km x 10km boxes around points 
-v_proj <- project(spdist_vect, "EPSG:3857")  
+# code adapted from chat to align the cell size exactly to set_resolution 
+# we start by creating a template file for the grid 
+# code below snaps the extent to multiples of set_resolution so cellsize is exactly set_resolution
 
-# create a template raster with 10km × 10km resolution
-r_template <- rast(v_proj, res = 10000)  # 10,000 meters = 10 km
+bathy_reproj <- project(bathy_hab, crs_m)
+e <- ext(bathy_reproj) 
+xmin <- floor(xmin(e) / set_resolution) * set_resolution
+xmax <- ceiling(xmax(e) / set_resolution) * set_resolution
+ymin <- floor(ymin(e) / set_resolution) * set_resolution
+ymax <- ceiling(ymax(e) / set_resolution) * set_resolution
+tmpl <- rast(ext(xmin, xmax, ymin, ymax), res = set_resolution, crs = crs_m)
 
-# 4. Rasterize: you must have a field to use for values
-# If no value column, just assign 1 to every point
-if (!"value" %in% names(spdist_df)) {
-  v_proj$value <- 1
-}
+# now put the habitat (bathymetry) data on this grid 
+hab_m <- resample(bathy_reproj, tmpl, method = "near")
+hab_m <- as.int(hab_m)
+hab_m <- ifel(is.na(hab_m), -999L, hab_m) # put -999 for NA which I saw in the rangeshiftr documentation https://github.com/RangeShifter/RangeshiftR-tutorials/discussions/37
 
-r <- rasterize(v_proj, r_template, field = "value", fun = "mean") 
+# now put the species data on this grid
+spdist_reproj <- project(spdist_vect, crs_m)
+spdist_reproj$value <- 1L
+sp_m <- rasterize(spdist_reproj, tmpl, field = "value", fun = "max", background = NA) # fun="max" makes a cell present if any point falls in it
+sp_m <- as.int(sp_m)
+sp_m <- ifel(is.na(sp_m), -999L, sp_m)
 
-# project back to lat/lon
-spdist_rast <- project(r, "EPSG:4326")
-plot(spdist_rast)
+###########
+# CHECK FILES AND WRITE OUT
+###########
+plot(hab_m)
+plot(as.polygons(sp_m, dissolve = TRUE), add = TRUE, border = "white")
 
-# overlay species distribution onto the bathymetric map 
-plot(bathy_hab)
-plot(as.polygons(spdist_rast, dissolve=F), add=T, col="white")
-# looks good!
+hab_hdr <- readLines(file.path(dirpath,"Inputs","habitatmap.asc"), n = 7)
+sp_hdr  <- readLines(file.path(dirpath,"Inputs","speciesmap.asc"), n = 7)
+hab_hdr
+sp_hdr
+# visually inspect these headers and ensure they match exactly 
 
-# now, rangeshiftr requires that maps be in a .txt format for ArcGIS, presumably for consistency with their windows GUI
-# let's write these out as text files and check that they look OK 
+writeRaster(
+  hab_m,
+  filename = file.path(dirpath, "Inputs", "habitatmap.asc"),
+  overwrite = TRUE,
+  NAflag = -999,
+  datatype = "INT4S"
+)
 
-writeRaster(bathy_hab, paste0(dirpath, "Inputs/habitatmap.asc"), overwrite=T)
-writeRaster(spdist_rast, paste0(dirpath, "Inputs/speciesmap.asc"), overwrite=T)
+writeRaster(
+  sp_m,
+  filename = file.path(dirpath, "Inputs", "speciesmap.asc"),
+  overwrite = TRUE,
+  NAflag = -999,
+  datatype = "INT4S"
+)
+
+###########
+# CREATE RANGESHIFTR OBJECTS AND RUN
+###########
 
 land <- ImportedLandscape(LandscapeFile = "habitatmap.asc", # rangeshiftr will automatically look for this in dirpath/Inputs  
                           Resolution = set_resolution, 
