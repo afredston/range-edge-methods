@@ -12,6 +12,15 @@ select <- dplyr::select
 
 # rangeshiftr decisions
 
+
+# relative path from working directory:
+dirpath = "rangeshiftr_dir/"
+# rangeshiftr WILL NOT RUN unless you give it its own subdirectory within your working directory that in turn contains the folders below. 
+
+#dir.create(paste0(dirpath,"Inputs"), showWarnings = TRUE)
+#dir.create(paste0(dirpath,"Outputs"), showWarnings = TRUE)
+#dir.create(paste0(dirpath,"Output_Maps"), showWarnings = TRUE)
+
 # model parameters 
 set_resolution = 10000 # 10 km2 on a side 
 set_nhabitats = 4 
@@ -80,14 +89,14 @@ plot(as.polygons(spdist_rast, dissolve=F), add=T, col="white")
 # now, rangeshiftr requires that maps be in a .txt format for ArcGIS, presumably for consistency with their windows GUI
 # let's write these out as text files and check that they look OK 
 
-writeRaster(bathy_hab, "Inputs/habitatmap.asc", overwrite=T)
-writeRaster(spdist_rast, "Inputs/speciesmap.asc", overwrite=T)
+writeRaster(bathy_hab, paste0(dirpath, "Inputs/habitatmap.asc"), overwrite=T)
+writeRaster(spdist_rast, paste0(dirpath, "Inputs/speciesmap.asc"), overwrite=T)
 
-land <- ImportedLandscape(LandscapeFile = "Inputs/habitatmap.asc", 
+land <- ImportedLandscape(LandscapeFile = "habitatmap.asc", # rangeshiftr will automatically look for this in dirpath/Inputs  
                           Resolution = set_resolution, 
                           Nhabitats = set_nhabitats, 
                           K_or_DensDep = set_carrycap, 
-                          SpDistFile = "Inputs/speciesmap.asc", 
+                          SpDistFile = "speciesmap.asc", 
                           SpDistResolution = set_spdistresolution)
 # ran without error on the first try, holy smokes! 
 
@@ -118,4 +127,4 @@ s <- RSsim(land = land, demog = demo, dispersal = disp, simul = sim_0, init = in
 s 
 validateRSparams(s)
 
-RunRS(s, dirpath = here())
+RunRS(s, dirpath = dirpath)
