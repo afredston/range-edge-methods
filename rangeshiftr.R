@@ -31,8 +31,10 @@ crs_m <- "EPSG:3857"
 # model parameters 
 set_resolution = 10000 # 10 km2 on a side 
 set_nhabitats = 4 
-set_carrycap = c(10000, 5000, 2500, 0) # vector, must be the same length as the number of habitats, containing the number of individuals / hectare FOR EACH HABITAT TYPE. (or is it individuals per box, whatever size you set the box at, in the resolution parameter above? I've set it to 1 km2, not 1 ha (which would be 100 not 1000 above). I'm aiming for 10,000 fish / km2 as carrying capacity; need to double-check that's what's actually happening here.)
+#set_carrycap = c(10000, 5000, 2500, 0) # vector, must be the same length as the number of habitats, containing the number of individuals / hectare FOR EACH HABITAT TYPE. (or is it individuals per box, whatever size you set the box at, in the resolution parameter above? I've set it to 1 km2, not 1 ha (which would be 100 not 1000 above). I'm aiming for 10,000 fish / km2 as carrying capacity; need to double-check that's what's actually happening here.)
+set_carrycap = c(100, 50, 25, 0)# temporarily reduced this to get it to run faster 
 set_spdistresolution = 10000
+set_distances = 10000 # kernel distance in m
 
 # run specs
 set_replicates = 1 
@@ -149,7 +151,7 @@ land <- ImportedLandscape(LandscapeFile = "habitatmap.asc", # rangeshiftr will a
 demo <- Demography(Rmax = 1.5)
 
 disp <-  Dispersal(Emigration = Emigration(EmigProb = 0.1), 
-                   Transfer = DispersalKernel(Distances = 10000), 
+                   Transfer = DispersalKernel(Distances = set_distances), 
                    Settlement = Settlement() )
 
 
@@ -171,4 +173,6 @@ s <- RSsim(land = land, demog = demo, dispersal = disp, simul = sim_0, init = in
 s 
 validateRSparams(s)
 
+t0 <- Sys.time()
 RunRS(s, dirpath = dirpath)
+Sys.time() - t0
