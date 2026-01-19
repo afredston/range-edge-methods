@@ -39,6 +39,6 @@ load(here("data","birddat.RData"))
 focal_bird <- c('Coragyps atratus')
 bird_edgetype <- "pol"
 
-birdedgetidy <- calc_all_edges(birddat, bird_edgetype, focal_bird)
+birdedgetidy <- calc_all_edges(birddat_crop, bird_edgetype, focal_bird)
 
 write_csv(birdedgetidy, file=here("results",paste0(focal_bird, "_", bird_edgetype, "_results.csv")))

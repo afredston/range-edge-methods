@@ -170,12 +170,10 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
            sig = factor(sig, levels=c("yes","no")), 
            Method = case_match(
              Method, 
-             "most_distal_lat_eq" ~ "Most Distal Point",
-             "n_most_distal_lat_eq" ~ "Mean of Most Distal Points", 
-             "n_most_distal_lat_eq_wgt" ~ "Weighted Mean of Most Distal Points", 
-             "quant_10" ~ "0.10 Quantile",
-             "quant_05" ~ "0.05 Quantile", 
-             "quant_01" ~ "0.01 Quantile"
+             "n_most_distal_points_lat_eq" ~ "Mean of Most Distal Points", 
+             "quant_05" ~ "Presence-Based 0.05 Quantile",
+             "wt_quant_01" ~ "Abundance-Weighted 0.01 Quantile", 
+             "n_most_distal_grid_cells" ~ "Mean of Most Distal Occupied Cells"
            ))
     
     edgetidy$Edge <- "Equatorward"
@@ -188,12 +186,10 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
              sig = factor(sig, levels=c("yes","no")), 
              Method = case_match(
                Method, 
-               "most_distal_lat_pol" ~ "Most Distal Point",
-               "n_most_distal_lat_pol" ~ "Mean of Most Distal Points", 
-               "n_most_distal_lat_pol_wgt" ~ "Weighted Mean of Most Distal Points", 
-               "quant_90" ~ "0.90 Quantile",
-               "quant_95" ~ "0.95 Quantile", 
-               "quant_99" ~ "0.99 Quantile"
+               "n_most_distal_points_lat_pol" ~ "Mean of Most Distal Points", 
+               "quant_95" ~ "Presence-Based 0.95 Quantile",
+               "wt_quant_99" ~ "Abundance-Weighted 0.99 Quantile", 
+               "n_most_distal_grid_cells" ~ "Mean of Most Distal Occupied Cells"
              ))
     
     edgetidy$Edge <- "Poleward"
@@ -203,8 +199,8 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
   edgetidy$Species <- focal_spp
   
   
-  if(min(check$n) < 3){
-    edgetidy <- "Some years have less than three observations, so I didn't calculate range edges for you." 
+  if(min(check$n) < n_most_distal_points){
+    edgetidy <- paste0("Some years have less than ", n_most_distal_points, "  observations, so I didn't calculate range edges for you.") 
   }
   return(edgetidy)
   
