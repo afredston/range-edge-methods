@@ -10,35 +10,27 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
     group_by(year) %>% 
     summarise(n=n())
   
-  # most distal point (and set up dataframe)
-  if(edgetype=="pol"){
-    edgedat <- dat %>% 
-      select(year, latitude, num_cpue) %>% 
-      filter(num_cpue > 0) %>% 
-      group_by(year) %>% 
-      summarise(most_distal_lat_pol = max(latitude)) 
-  }
+  n_most_distal_points <- 5 # how many distal points to average? 
+  n_most_distal_cells <- 10 # how many grid cells to average?
+  edgedat <- NULL
   
-  if(edgetype=="eq"){
-    edgedat <- dat %>% 
-      select(year, latitude, num_cpue) %>% 
-      filter(num_cpue > 0) %>% 
-      group_by(year) %>% 
-      summarise(most_distal_lat_eq = min(latitude)) 
-  }
+  ##########
+  # calculate edge positions with different methods 
+  ##########
   
-  # mean of 3 most distal points
+  # mean of n most distal points
   if(edgetype=="pol") {
     tmp <- dat %>%  
       select(year, latitude, num_cpue) %>% 
       filter(num_cpue > 0) %>%   
       group_by(year) %>% 
       arrange(-latitude) %>% # starting from highest 
-      slice(1:3) %>% 
+      slice(1:n_most_distal_points) %>% 
       summarise(
-        n_most_distal_lat_pol = mean(latitude[1:3]),
-        n_most_distal_lat_pol_wgt = weighted.mean(latitude, num_cpue)) %>% 
-      select(year, n_most_distal_lat_pol, n_most_distal_lat_pol_wgt) %>% 
+        n_most_distal_points_lat_pol = mean(latitude[1:n_most_distal_points])
+     #   n_most_distal_points_lat_pol_wgt = weighted.mean(latitude, num_cpue)
+        ) %>% 
+      select(year, n_most_distal_points_lat_pol) %>% 
       distinct()
   }
   
@@ -48,24 +40,23 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
       filter(num_cpue > 0) %>%   
       group_by(year) %>% 
       arrange(latitude) %>% # starting from lowest 
-      slice(1:3) %>% 
+      slice(1:n_most_distal_points) %>% 
       summarise(
-        n_most_distal_lat_eq = mean(latitude[1:3]),
-        n_most_distal_lat_eq_wgt = weighted.mean(latitude, num_cpue)) %>% 
-      select(year, n_most_distal_lat_eq, n_most_distal_lat_eq_wgt) %>% 
+        n_most_distal_points_lat_eq = mean(latitude[1:n_most_distal_points])
+     #   n_most_distal_points_lat_eq_wgt = weighted.mean(latitude, num_cpue)
+     ) %>% 
+      select(year, n_most_distal_points_lat_eq) %>% 
       distinct()
   }
-  edgedat <- left_join(edgedat, tmp)
+  edgedat <- rbind(edgedat, tmp)
   
-  # quantiles
+  # abundance-weighted quantiles 
   if(edgetype=="pol"){
     tmp2 <- dat %>% 
       add_count(year) %>% # get nrows by year 
       group_by(year) %>% 
       summarise(
-        quant_90 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.9),
-        quant_95 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.95), 
-        quant_99 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.99))        
+        wt_quant_99 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.99))        
   }
   
   if(edgetype=="eq"){
@@ -73,16 +64,78 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
       add_count(year) %>% # get nrows by year 
       group_by(year) %>% 
       summarise(
-        quant_10 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.1),
-        quant_05 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.05), 
-        quant_01 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.01))        
+        wt_quant_01 = calc_edge_quantile(nobs=unique(n), weights=num_cpue, ruler=latitude, quantile=0.01))        
   }
   
   edgedat <- edgedat %>% 
     left_join(tmp2)
   
+  # presence-based quantiles
+  if(edgetype=="pol"){
+    tmp3 <- dat %>% 
+      add_count(year) %>% # get nrows by year 
+      group_by(year) %>% 
+      summarise(
+        quant_95 = quantile(latitude, probs = 0.95)
+      )
+  }
+  
+  if(edgetype=="eq"){
+    tmp3 <- dat %>% 
+      add_count(year) %>% # get nrows by year 
+      group_by(year) %>% 
+      summarise(
+        quant_05 = quantile(latitude, probs = 0.05)
+      )
+  }
+  edgedat <- edgedat %>% 
+    left_join(tmp3)
+  
+  # mean of n most distal grid cells 
+  grid <- expand.grid(
+    latitude_12 = seq(floor(min(dat$latitude)), ceiling(max(dat$latitude)), 1/12),
+    longitude_12 = seq(floor(min(dat$longitude)), ceiling(max(dat$longitude)), 1/12)) |> 
+    mutate(lonlat = paste0(longitude_12, "_", latitude_12))
+  
+  if(edgetype=="pol"){
+  tmp4 <- dat |> 
+    select(latitude, longitude, year) |> 
+    mutate(latitude_12 = round(latitude * 12) / 12, 
+           longitude_12 = round(longitude * 12) / 12, 
+           lonlat = paste0(longitude_12, "_", latitude_12)) |> 
+    select(year, lonlat) |> 
+    distinct() |> # this drops repeats of the same cell 
+    left_join(grid) |> 
+    group_by(year) |> 
+    arrange(-latitude_12) |> # sort from high to low, giving highest latitudes 
+    slice(1:n_most_distal_cells) |> 
+    summarise(n_most_distal_grid_cells = mean(latitude_12))
+  }
+  
+  if(edgetype=="eq"){
+    tmp4 <- dat |> 
+      select(latitude, longitude, year) |> 
+      mutate(latitude_12 = round(latitude * 12) / 12, 
+             longitude_12 = round(longitude * 12) / 12, 
+             lonlat = paste0(longitude_12, "_", latitude_12)) |> 
+      select(year, lonlat) |> 
+      distinct() |> # this drops repeats of the same cell 
+      left_join(grid) |> 
+      group_by(year) |> 
+      arrange(latitude_12) |> # sort from low to high, giving lowest latitudes 
+      slice(1:n_most_distal_cells) |> 
+      summarise(n_most_distal_grid_cells = mean(latitude_12))
+  }
+  
+  edgedat <- edgedat %>% 
+    left_join(tmp4)
+  
   edgetidy <- edgedat %>% 
     pivot_longer(!year, names_to="Method", values_to="lat_position")
+  
+  ##########
+  # calculate summary statistics for edge methods
+  ##########
   
   edgeresid <- edgetidy %>% 
     group_by(Method) %>%
