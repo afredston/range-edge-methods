@@ -11,6 +11,7 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
     summarise(n=n())
   
   n_most_distal_points <- 5 # how many distal points to average? 
+  n_most_distal_points_wt <- 3 # how many distal points for weighted average? 
   n_most_distal_cells <- 10 # how many grid cells to average?
   edgedat <- NULL
   
@@ -130,6 +131,37 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
   edgedat <- edgedat %>% 
     left_join(tmp4)
   
+  # weighted mean of distal points 
+  if(edgetype=="pol") {
+    tmp5 <- dat %>%  
+      select(year, latitude, num_cpue) %>% 
+      filter(num_cpue > 0) %>%   
+      group_by(year) %>% 
+      arrange(-latitude) %>% # starting from highest 
+      slice(1:n_most_distal_points_wt) %>% 
+      summarise(
+        n_most_distal_points_lat_pol_wt = weighted.mean(x=latitude[1:n_most_distal_points_wt], w=num_cpue[1:n_most_distal_points_wt])
+      ) %>% 
+      select(year, n_most_distal_points_lat_pol_wt) %>% 
+      distinct()
+  }
+  
+  if(edgetype=="eq"){
+    tmp5 <- dat %>%  
+      select(year, latitude, num_cpue) %>% 
+      filter(num_cpue > 0) %>%   
+      group_by(year) %>% 
+      arrange(latitude) %>% # starting from lowest 
+      slice(1:n_most_distal_points_wt) %>% 
+      summarise(
+        n_most_distal_points_lat_eq_wt = weighted.mean(x=latitude[1:n_most_distal_points_wt], w=num_cpue[1:n_most_distal_points_wt])
+      ) %>% 
+      select(year, n_most_distal_points_lat_eq_wt) %>% 
+      distinct()
+  }
+  edgedat <- edgedat %>% 
+    left_join(tmp5)
+  
   edgetidy <- edgedat %>% 
     pivot_longer(!year, names_to="Method", values_to="lat_position")
   
@@ -171,6 +203,7 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
            Method = case_match(
              Method, 
              "n_most_distal_points_lat_eq" ~ "Mean of Most Distal Points", 
+             "n_most_distal_points_lat_eq_wt" ~ "Abundance-Weighted Mean of Most Distal Points", 
              "quant_05" ~ "Presence-Based 0.05 Quantile",
              "wt_quant_01" ~ "Abundance-Weighted 0.01 Quantile", 
              "n_most_distal_grid_cells" ~ "Mean of Most Distal Occupied Cells"
@@ -187,6 +220,7 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
              Method = case_match(
                Method, 
                "n_most_distal_points_lat_pol" ~ "Mean of Most Distal Points", 
+               "n_most_distal_points_lat_pol_wt" ~ "Abundance-Weighted Mean of Most Distal Points", 
                "quant_95" ~ "Presence-Based 0.95 Quantile",
                "wt_quant_99" ~ "Abundance-Weighted 0.99 Quantile", 
                "n_most_distal_grid_cells" ~ "Mean of Most Distal Occupied Cells"

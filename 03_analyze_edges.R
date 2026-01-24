@@ -18,6 +18,11 @@ fish_edgetidy %>%
   mutate(estimate = estimate * 111,
          std.error = std.error * 111)
 
+# calculate variance 
+fish_edgetidy |> 
+  group_by(Method) |> 
+  summarise(variance = var(lat_position))
+
 # make plots
 
 colorblind_safe_eq <- c( '#6699CC', '#004488', '#EECC66', '#994455', '#997700', '#EE99AA') # https://personal.sron.nl/~pault/
@@ -58,6 +63,11 @@ bird_edgetidy %>%
   distinct() %>% 
   mutate(estimate = estimate * 111,
          std.error = std.error * 111)
+
+# calculate variance 
+bird_edgetidy |> 
+  group_by(Method) |> 
+  summarise(variance = var(lat_position))
 
 # make plots
 
