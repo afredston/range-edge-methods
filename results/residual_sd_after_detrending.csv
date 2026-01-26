@@ -1,0 +1,11 @@
+Edge,Method,residual_sd
+Poleward,Mean of Most Distal Points,0.3392544990146159
+Poleward,Abundance-Weighted 0.99 Quantile,0.16351605040306713
+Poleward,Presence-Based 0.95 Quantile,0.11968632569307978
+Poleward,Mean of Most Distal Occupied Cells,0.23556614954355873
+Poleward,Abundance-Weighted Mean of Most Distal Points,0.5104057365141851
+Equatorward,Mean of Most Distal Points,0.5894391268566068
+Equatorward,Abundance-Weighted 0.01 Quantile,0.517049775258236
+Equatorward,Presence-Based 0.05 Quantile,0.4429313375063864
+Equatorward,Mean of Most Distal Occupied Cells,0.4947423171874496
+Equatorward,Abundance-Weighted Mean of Most Distal Points,0.7211678291794215

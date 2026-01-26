@@ -91,3 +91,11 @@ birdplot <- ggplot(bird_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   NULL
 
 ggsave(birdplot, filename=here("figures","bird_edge.png"), width=8, height=4, dpi=160)
+
+resid_sd_dat <- bird_edgetidy |> 
+  select(Edge, Method, residual_sd) |> 
+  distinct() |> 
+  bind_rows(fish_edgetidy |> 
+              select(Edge, Method, residual_sd) |> 
+              distinct())
+write_csv(resid_sd_dat, here("results","residual_sd_after_detrending.csv"))

@@ -169,20 +169,11 @@ calc_all_edges <- function(dat, edgetype, focal_spp) {
   # calculate summary statistics for edge methods
   ##########
   
-  edgeresid <- edgetidy %>% 
+  edgeresid <- edgetidy %>%
     group_by(Method) %>%
     nest() %>%
-    mutate(
-      model = purrr::map(data, ~lm(lat_position ~ year, data=.x)),
-      tidymodel = purrr::map(model, augment)
-    ) %>%
-    unnest(tidymodel) %>%
-    select(-data, -model) %>% 
-    group_by(Method) %>% 
-    summarise(conditional_sd = sqrt(mean(.resid^2)))
-  # I GOT THIS FROM THE MHW POWER ANALYSIS BUT THAT WAS AN AUTOREGRESSIVE MODEL
-  # NOT SURE THIS IS THE RIGHT SD TO USE
-  # CHECK IN TEXTBOOKS LATER 
+    mutate(model = purrr::map(data, ~lm(lat_position ~ year, data = .x))) %>%
+    summarise(residual_sd = purrr::map_dbl(model, ~ summary(.x)$sigma))
   
   edgelm <- edgetidy %>% 
     group_by(Method) %>%
