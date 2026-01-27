@@ -4,7 +4,7 @@ library(doParallel)
 library(here)
 here <- here::here
 detectCores()
-registerDoParallel(cores=2)
+registerDoParallel(cores=150)
 
 source(here("functions","create_subsamples.R"))
 source(here("functions","calculate_slope.R"))
@@ -65,10 +65,10 @@ return(power)
 } # close function 
 
 power_out <- foreach(i = seq(1, iters, 1)) %dopar% {
-  calculate_power(shiftrate=shiftrate, sampleyrs=sampleyrs, error=errors, subset_times = subset_times, ts_lengths=ts_lengths, alpha=alpha)
+  calculate_power(shiftrate=shiftrate, sampleyrs=sampleyrs, errors=errors, subset_times = subset_times, ts_lengths=ts_lengths, alpha=alpha)
   }
 
-saveRDS(power_out, file=here("results","simulated_time_series_summary.rds"))
+saveRDS(power_out, file=here("results","simulated_time_series_summary_test.rds"))
 
 save(shiftrate,
      sampleyrs,
@@ -76,4 +76,4 @@ save(shiftrate,
      iters,
      ts_lengths,
      alpha,
-     file=here("results","parameters.Rdata"))
+     file=here("results","parameters_test.Rdata"))

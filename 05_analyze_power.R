@@ -2,36 +2,46 @@ library(here)
 library(tidyverse)
 library(ggdist)
 
-power_out <- readRDS(file=here("results","simulated_time_series_summary.rds"))
+load(file=here("results","parameters_test.Rdata"))
 
-load(file=here("results","parameters.Rdata"))
-# hacky way to change this into a df 
+power_out <- readRDS(file=here("results","simulated_time_series_summary_test.rds"))
 
-powerdat <- NULL
-for(i in 1:iters) {
-  mat <- power_out[[i]]
-  tmp <- as.data.frame(mat) %>% 
-    rowid_to_column() %>% 
-    mutate(ts_length = rowid + 2) %>% 
-    select(-rowid) %>% 
-    pivot_longer(- ts_length) %>% 
-    mutate(power = value, 
-           shiftrate_id = as.numeric(gsub("V","",name)),
-           rate = shiftrate[shiftrate_id]) %>% 
-    select(rate, power, ts_length) %>% 
-    mutate(iter = i) 
-  powerdat <- rbind(powerdat, tmp)
-}
+# reshape into a dataframe for plotting, analysis, etc. 
+# reshaping code thanks to chatgpt
+powerdat <- imap_dfr(power_out, \(a, iter) {
+  d <- dim(a)  # c(J, L, M)
+  
+  expand_grid(
+    error_i     = seq_len(d[3]),   # slowest
+    tslen_i     = seq_len(d[2]),
+    shiftrate_i = seq_len(d[1])    # fastest (matches as.vector() on arrays)
+  ) |>
+    mutate(
+      iter      = iter,
+      power     = as.vector(a),
+      shiftrate = shiftrate[shiftrate_i],
+      ts_length = ts_lengths[tslen_i],
+      error_sd  = errors[error_i]
+    ) |>
+    select(iter, shiftrate, ts_length, error_sd, power)
+})
+
+# add nice columns for plotting
+powerdat <- powerdat %>% 
+  mutate(ratelab = paste0(shiftrate, " °lat/yr"),
+         sdlab = 
+           ifelse(error_sd == errors[1], "Low SD", ifelse(error_sd == errors[2], "Mid SD", "High SD")),
+         sdlab = factor(sdlab, levels = c("Low SD", "Mid SD", 'High SD'))
+  ) 
 
 shiftrate_ex <- c(shiftrate[1], shiftrate[34], shiftrate[67], shiftrate[100])
 
 power_gg <- powerdat %>% 
-  filter(rate %in% shiftrate_ex) %>% 
-  mutate(ratelab = paste0(rate, " °lat/yr")) %>% 
+  filter(shiftrate %in% shiftrate_ex) %>% 
   ggplot(aes(x=ts_length, y=power, group = iter)) +
   geom_hline(aes(yintercept=0.8), color="black", linetype="dashed", lwd=1.2) +
   geom_line(aes(alpha = 0.2), color="grey30") +
-  facet_wrap(~ratelab, ncol=4) +
+  facet_grid(sdlab~ratelab) +
   scale_y_continuous(breaks=seq(0, 1, 0.2)) +
   theme_bw() +
   labs(x="Time-series length (years)", y="Power") +
@@ -41,7 +51,7 @@ power_gg
 
 ts_gg <- powerdat %>% 
   filter(power >= 0.8) %>% 
-  ggplot(aes(x=rate, y=ts_length)) +
+  ggplot(aes(x=shiftrate, y=ts_length)) +
   stat_lineribbon() +
   geom_hline(aes(yintercept=100), linetype="dashed", lwd=1.2, color="black") +
   theme_bw() +
@@ -50,6 +60,7 @@ ts_gg <- powerdat %>%
   scale_x_continuous(limits=c(0.001, 0.1), breaks=seq(0, 0.1, 0.01)) +
   labs(x="Range edge shift rate (°lat/yr)", y="Minimum years to \ndetect significant shift", fill="Proportion of \nsimulations") +
   theme(legend.position=c(0.1, 0.2)) +
+  facet_wrap(~sdlab) + 
   NULL
 ts_gg
 
