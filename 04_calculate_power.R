@@ -28,7 +28,7 @@ shiftrate <- seq(0.001, 0.1, 0.001)
 sampleyrs <- seq(1, 100, 1)
 # error = 0.65 # from mean(fish_edgetidy$conditional_sd) and mean(bird_edgetidy$conditional_sd)
 out_true <- array(dim=c(length(shiftrate), length(sampleyrs), length(errors))) 
-iters <- 10
+iters <- 100
 ts_lengths <- seq(3, 100, 1) # need to run a regression so must have >2 points (in contrast to sampleyrs) 
 subset_times <- create_subsamples(sampleyrs)
 alpha = 0.05
@@ -68,7 +68,7 @@ power_out <- foreach(i = seq(1, iters, 1)) %dopar% {
   calculate_power(shiftrate=shiftrate, sampleyrs=sampleyrs, errors=errors, subset_times = subset_times, ts_lengths=ts_lengths, alpha=alpha)
   }
 
-saveRDS(power_out, file=here("results","simulated_time_series_summary_test.rds"))
+saveRDS(power_out, file=here("results","simulated_time_series_summary.rds"))
 
 save(shiftrate,
      sampleyrs,
@@ -76,4 +76,4 @@ save(shiftrate,
      iters,
      ts_lengths,
      alpha,
-     file=here("results","parameters_test.Rdata"))
+     file=here("results","parameters.Rdata"))
