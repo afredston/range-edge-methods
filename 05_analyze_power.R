@@ -82,17 +82,17 @@ quantile(powerdat %>%
 # shortest minimum time-series lengths that DID meet the power threshold 
 med_ts_dat <- powerdat %>% 
   filter(power >= 0.8) %>% 
-  group_by(rate) %>% 
+  group_by(shiftrate) %>% 
   summarise(med_ts_length = median(ts_length))
 
 # median of minimum time-series lengths that DID meet the power threshold 
 min_ts_dat <- powerdat %>% 
   filter(power >= 0.8) %>% 
-  group_by(rate) %>% 
+  group_by(shiftrate) %>% 
   summarise(min_ts_length = min(ts_length))
 
 # range of maximum time-series lengths that DIDN'T meet the power threshold
 max_ts_dat <- powerdat %>% 
   filter(power < 0.8) %>% 
-  group_by(rate) %>% 
+  group_by(shiftrate) %>% 
   summarise(max_ts_length = max(ts_length))

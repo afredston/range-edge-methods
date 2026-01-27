@@ -38,12 +38,12 @@ fishplot <- ggplot(fish_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   labs(title=fishtitle, x="Year", y="Latitude") +
   guides(linetype="none") +
   theme_bw() +
-  theme(legend.position=c(0.38, 0.3),
+  theme(legend.position=c(0.33, 0.25),
         legend.background = element_rect(fill="transparent")) +
   # theme(legend.position="bottom",
   #   legend.position.inside = c(0.5, 0.5)) +
   NULL
-#fishplot
+fishplot
 ggsave(fishplot, filename=here("figures","fish_edge.png"), width=8, height=4, dpi=160)
 
 
@@ -89,7 +89,7 @@ birdplot <- ggplot(bird_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   # theme(legend.position="bottom",
   #   legend.position.inside = c(0.5, 0.5)) +
   NULL
-
+birdplot
 ggsave(birdplot, filename=here("figures","bird_edge.png"), width=8, height=4, dpi=160)
 
 resid_sd_dat <- bird_edgetidy |> 
