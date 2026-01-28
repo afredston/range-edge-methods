@@ -54,7 +54,7 @@ fishplot <- ggplot(fish_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   labs(title=fishtitle, x="Year", y="Latitude") +
   guides(linetype="none") +
   theme_bw() +
-  theme(legend.position=c(0.25, 0.20),
+  theme(legend.position=c(0.22, 0.20),
         legend.background = element_rect(fill="transparent"),
         legend.title=element_blank()) +
   geom_segment(
@@ -73,7 +73,7 @@ fishplot <- ggplot(fish_edgetidy, aes(x=year, y=lat_position, color=Method, fill
     show.legend = FALSE
   ) +
   coord_cartesian(clip = "off") +
-  scale_x_continuous(breaks=seq(1980, 2020, 10), limits=c(1970, 2023)) +
+  scale_x_continuous(breaks=seq(1980, 2020, 10), limits=c(1972, 2023)) +
   NULL
   
 fishplot
