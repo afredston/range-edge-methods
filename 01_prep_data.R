@@ -89,13 +89,13 @@ fishdat_crop <- st_crop(fishdat_sf, fish_mask) |> # crop to extent of fish mask.
   select(-geometry)  # un-spatialize after cropping 
 
 # add in zeros if needed. this file will be really big, so don't track it on gh 
-fishdat_zeros <- expand.grid(haul_id = unique(fishdat$haul_id), accepted_name = unique(fishdat$accepted_name)) |> 
-  left_join(fishdat_crop |> select(haul_id, accepted_name, num:wgt_cpua), by=c("accepted_name", "haul_id")) |> 
-  mutate(
-    across(everything(), ~replace_na(.x, 0)) # replace all NAs with zeros in all columns 
-  ) |> # now add in the haul-level info that we want 
-  left_join(fishdat |> select(haul_id, year, month, day, latitude, longitude, depth, sbt, sst) |> distinct(), by="haul_id")
+# fishdat_zeros <- expand.grid(haul_id = unique(fishdat$haul_id), accepted_name = unique(fishdat$accepted_name)) |> 
+#   left_join(fishdat_crop |> select(haul_id, accepted_name, num:wgt_cpua), by=c("accepted_name", "haul_id")) |> 
+#   mutate(
+#     across(everything(), ~replace_na(.x, 0)) # replace all NAs with zeros in all columns 
+#   ) |> # now add in the haul-level info that we want 
+#   left_join(fishdat |> select(haul_id, year, month, day, latitude, longitude, depth, sbt, sst) |> distinct(), by="haul_id")
 
 save(fishdat_crop, file=here("data","fishdat.Rdata"))
-save(fishdat_zeros, file=here("data","fishdat_with_zeros.Rdata"))
+#save(fishdat_zeros, file=here("data","fishdat_with_zeros.Rdata"))
 rm(list = ls())
