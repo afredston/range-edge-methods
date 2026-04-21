@@ -1,16 +1,87 @@
 # download from FISHGLOB: https://github.com/AquaAuma/FishGlob_data/blob/main/outputs/Cleaned_data/NEUS_clean.RData
 # too big to track on GH (added to gitignore)
 
-# download data from https://netapp.audubon.org/CBCObservation/Historical/ResultsBySpecies.aspx?1
+# download bird data from https://netapp.audubon.org/CBCObservation/Historical/ResultsBySpecies.aspx?1
 # the historical data download has some bugs so I used the "current year" tab and then went back and manually downloaded every count from 1975 to present for black vulture (as per pers comm w CBC)
+
+# to regenerate the fish mask you'll need:
+# worldeez <- vect(here("data/World_EEZ_v12_20231025","eez_v12.shp")) 
+# downloaded from: Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12. Available online at https://www.marineregions.org/. https://doi.org/10.14284/632
 
 library(data.table)
 library(tidyverse)
 library(here)
 library(sf)
 library(terra)
-bird_mask <- vect(here("data","vulture_mask.shp"))
-fish_mask <- rast(here("data","hake_mask.tif"))
+bird_mask_path <- here("data","vulture_mask.shp")
+fish_mask_path <- here("data","hake_mask.tif")
+
+# this script creates a raster mask for subsetting global temperature or other data to the domain of white hake and black vulture, respectively 
+
+#######
+# CREATE MASKS 
+####### 
+
+# these are used to drop data points outside a reasonable study region for each species 
+
+if(!file.exists(fish_mask_path)) {
+  library(oceanmap)
+  
+  # get bathymetry data with "oceanmap" package 
+  if(file.exists(here("data","bbox_bathy.tif"))==FALSE){
+    
+    # create bounding box for Northeast US shelf 
+    sea_lonrange <- c(-77, -66)
+    sea_latrange <- c(35, 45)
+    
+    bathy <- get.bathy(lon = sea_lonrange, lat = sea_latrange, visualize = F, res = 15)
+    writeRaster(bathy, filename=here("data","bbox_bathy.tif"))
+  
+  } else {
+    bathy <- rast(here("data","bbox_bathy.tif"))
+  }
+  
+  # inspect map
+  # plot(bathy) # note that this goes very far out to sea, and also includes estuaries and lakes. let's get rid of those! 
+  
+  # trim to a reasonable bathymetry range 
+  maxdepth = 300
+  mindepth = 15 
+  msk <- ifel(bathy > maxdepth | bathy < mindepth, NA, 1)
+  # plot(msk)
+  bathy_trim <- mask(bathy, msk)
+  # plot(bathy_trim) # better, but still goes beyond the US EEZ. let's fix that next
+  
+  # trim to extent of US EEZ (takes a few seconds, it's a large-ish file)
+  worldeez <- vect(here("data/World_EEZ_v12_20231025","eez_v12.shp")) # downloaded from: Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12. Available online at https://www.marineregions.org/. https://doi.org/10.14284/632
+  useez <- subset(worldeez, worldeez$SOVEREIGN1=="United States")
+  useez <- project(useez, bathy_trim) # reproject for consistent CRS 
+  # plot(useez) # takes a minute but looks good 
+  bathy_trim_eez <- mask(bathy_trim, useez)
+  # plot(bathy_trim_eez)
+  
+  writeRaster(bathy_trim_eez, filename=here("data","hake_mask.tif"))
+} else {
+  fish_mask <- rast(here("data","hake_mask.tif"))
+}
+
+if(!file.exists(bird_mask_path)) {
+  
+  library(rnaturalearth)
+  
+  # this is easier, we just want a mask of continental North America 
+  
+  usoutline <- vect(ne_countries(country="united states of america")[1]) # creates a SpatVector object 
+  usmask <- rast()
+  ext(usmask) <- c(-130, -60, 20, 55)
+  usoutline_crop <- crop(usoutline, ext(usmask))
+  #plot(usoutline_crop)
+  writeVector(usoutline_crop, filename = here("data","vulture_mask.shp"))
+  
+  
+} else {
+  bird_mask <- vect(here("data","vulture_mask.shp"))
+}
 
 #########
 # BIRD DATA
