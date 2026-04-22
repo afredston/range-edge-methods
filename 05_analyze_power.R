@@ -79,43 +79,12 @@ powerdat %>%
   filter(power >= 0.8) %>% 
   filter(ts_length == min(ts_length))
 
-# # quantiles of ts_length
-# quantile(powerdat %>% 
-#            filter(power >= 0.8) %>% pull(ts_length),
-#          probs = c(0, 0.01, 0.05, 0.5, 0.95, 0.99, 1))
-
-# # median minimum time-series lengths that DID meet the power threshold 
-# med_ts_dat <- powerdat %>% 
-#   filter(power >= 0.8) %>% 
-#   group_by(shiftrate, error_sd) %>% 
-#   summarise(med_ts_length = median(ts_length))
-# 
-# # shortest minimum time-series lengths that DID meet the power threshold 
-# min_ts_dat <- powerdat %>% 
-#   filter(power >= 0.8) %>% 
-#   group_by(shiftrate, error_sd) %>% 
-#   summarise(min_ts_length = min(ts_length))
-# 
-# # range of maximum time-series lengths that DIDN'T meet the power threshold
-# max_ts_dat <- powerdat %>% 
-#   filter(power < 0.8) %>% 
-#   group_by(shiftrate, error_sd) %>% 
-#   summarise(max_ts_length = max(ts_length))
-
-# when did 100% of simulations meet the power threshold? 
-prop_ts_dat <- powerdat |> 
-  group_by(shiftrate, ts_length, error_sd) |> 
-  summarise(
-            prop_above = mean(power > 0.8, na.rm = TRUE))
-
-prop_ts_dat_100 <- prop_ts_dat |> 
-  group_by(shiftrate, error_sd) |> 
-  filter(prop_above == 1) |> # drop rows from simulations with any underpowered iterations 
-  summarise(min_ts_length = min(ts_length)) # how long was the shortest time-series? 
-
-prop_ts_dat_100 |> 
-  filter(shiftrate == 0.05, 
-         error_sd == errors[2])
+# at intermediate shift rate, intermediate error rate, when did we reach power threshold? 
+powerdat_summ |> 
+  filter(shiftrate == 0.050,
+         error_sd == errors[2]) |> 
+  filter(power >= 0.8) |> 
+  arrange(ts_length)
 
 power_summ_gg <- powerdat_summ |>
   group_by(shiftrate, ts_length, error_sd, sdlab) |>
