@@ -26,7 +26,26 @@ powerdat <- imap_dfr(power_out, \(a, iter) {
     select(iter, shiftrate, ts_length, error_sd, power)
 })
 
+powerdat |> 
+  filter(shiftrate %in% c(0.050, 0.075), 
+         ts_length %in% c(5, 50),
+         error_sd == errors[2]) |> 
+  ggplot(aes(x=power)) +
+  geom_histogram() +
+  facet_grid(shiftrate ~ ts_length)
+
+# get median power for each parameter combination
+powerdat_summ <- powerdat |> 
+  group_by(shiftrate, ts_length, error_sd) |> 
+  summarise(power = median(power))
+
 # add nice columns for plotting
+powerdat_summ <- powerdat_summ %>% 
+  mutate(ratelab = paste0(shiftrate, " °lat/yr"),
+         sdlab = 
+           ifelse(error_sd == errors[1], "Low SD", ifelse(error_sd == errors[2], "Mid SD", "High SD")),
+         sdlab = factor(sdlab, levels = c("Low SD", "Mid SD", "High SD"))
+  ) 
 powerdat <- powerdat %>% 
   mutate(ratelab = paste0(shiftrate, " °lat/yr"),
          sdlab = 
@@ -35,19 +54,6 @@ powerdat <- powerdat %>%
   ) 
 
 shiftrate_ex <- c(shiftrate[1], shiftrate[34], shiftrate[67], shiftrate[100])
-
-power_gg <- powerdat %>% 
-  filter(shiftrate %in% shiftrate_ex) %>% 
-  ggplot(aes(x=ts_length, y=power, group = iter)) +
-  geom_hline(aes(yintercept=0.8), color="black", linetype="dashed", lwd=1.2) +
-  geom_line(aes(alpha = 0.2), color="grey30") +
-  facet_grid(sdlab~ratelab) +
-  scale_y_continuous(breaks=seq(0, 1, 0.2)) +
-  theme_bw() +
-  labs(x="Time-series length (years)", y="Power") +
-  theme(legend.position = "none") +
-  NULL
-power_gg
 
 # ts_gg <- powerdat %>% 
 # #  filter(power >= 0.8) %>% 
@@ -65,7 +71,6 @@ power_gg
 # ts_gg
 
 #ggsave(ts_gg, filename=here("figures","time-series.png"), width=8, height=4, dpi=160)
-ggsave(power_gg, filename=here("figures","power.png"), width=8, height=4, dpi=160)
 
 # in-text results
 
@@ -112,58 +117,42 @@ prop_ts_dat_100 |>
   filter(shiftrate == 0.05, 
          error_sd == errors[2])
 
-# alt_ts_gg <- powerdat |> 
-#   group_by(shiftrate, ts_length, error_sd, sdlab) |> 
-#   summarise(med_pwr = median(power)) |> 
-#   ggplot(aes(x=shiftrate, y=ts_length, fill=med_pwr)) +
-#   geom_tile() +
-#   theme_bw() + 
-#   scale_x_continuous(breaks=seq(0, 0.1, 0.02)) +
-#   scale_fill_gradientn(
-#     colours = c("#a50026", "#ffffbf", "#313695"),
-#     values  = scales::rescale(c(0, 0.8, 1)),
-#     limits  = c(0, 1),
-#     breaks  = seq(0, 1, 0.2), 
-#     labels  = seq(0, 1, 0.2), 
-#     na.value = "grey50"
-#   ) +
-#   labs(x="Range edge shift rate (°lat/yr)", y="Time-series length", fill="Median\npower") +
-#   facet_wrap(~sdlab) + 
-#   theme(
-#     legend.position = "right",
-#     legend.direction = "vertical"
-#   ) +
-#   NULL
-# alt_ts_gg
-# ggsave(alt_ts_gg, filename=here("figures","median_power.png"), width=8, height=3, dpi=160)
-
-
-alt_ts_gg2 <- powerdat |> 
-  group_by(shiftrate, ts_length, error_sd, sdlab) |> 
-  summarise(med_pwr = median(power),
-            prop_above = mean(power > 0.8, na.rm = TRUE)) |> 
-  ggplot(aes(x=shiftrate, y=ts_length, fill=prop_above)) +
+power_summ_gg <- powerdat_summ |>
+  group_by(shiftrate, ts_length, error_sd, sdlab) |>
+  ggplot(aes(x=shiftrate, y=ts_length, fill=power)) +
   geom_tile() +
-  theme_bw() + 
+  theme_bw() +
   scale_x_continuous(breaks=seq(0, 0.1, 0.02)) +
-  scale_fill_distiller(
-    palette = "RdBu",
-    direction = 1
-  )  + 
-# scale_fill_gradientn(
-  #   colours = c("#a50026", "#ffffbf", "#313695"),
-  #   values  = scales::rescale(c(0, 0.8, 1)),
-  #   limits  = c(0, 1),
-  #   breaks  = seq(0, 1, 0.2), 
-  #   labels  = seq(0, 1, 0.2), 
-  #   na.value = "grey50"
-  # ) +
-  labs(x="Range edge shift rate (°lat/yr)", y="Time-series length", fill="Proportion of\niterations meeting\npower threshold") +
-  facet_wrap(~sdlab) + 
+  scale_fill_gradientn(
+    colours = c("#a50026", "#ffffbf", "#313695"),
+    values  = scales::rescale(c(0, 0.8, 1)),
+    limits  = c(0, 1),
+    breaks  = seq(0, 1, 0.2),
+    labels  = seq(0, 1, 0.2),
+    na.value = "grey50"
+  ) +
+  labs(x="Range edge shift rate (°lat/yr)", y="Time-series length", fill="Power") +
+  facet_wrap(~sdlab) +
   theme(
     legend.position = "right",
     legend.direction = "vertical"
   ) +
   NULL
-alt_ts_gg2
-ggsave(alt_ts_gg2, filename=here("figures","power_threshold.png"), width=8, height=3, dpi=160)
+power_summ_gg
+ggsave(power_summ_gg, filename=here("figures","power_threshold.png"), width=8, height=3, dpi=160)
+
+
+power_iters_gg <- powerdat %>% 
+  filter(shiftrate %in% shiftrate_ex) %>% 
+  ggplot(aes(x=ts_length, y=power, group = iter)) +
+  geom_hline(aes(yintercept=0.8), color="black", linetype="dashed", lwd=1.2) +
+  geom_line(aes(alpha = 0.2), color="grey30") +
+  facet_grid(sdlab~ratelab) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2)) +
+  theme_bw() +
+  labs(x="Time-series length (years)", y="Power") +
+  theme(legend.position = "none") +
+  NULL
+power_iters_gg
+ggsave(power_iters_gg, filename=here("figures","power.png"), width=8, height=4, dpi=160)
+
