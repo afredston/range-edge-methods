@@ -10,7 +10,7 @@ source(here("functions","create_subsamples.R"))
 source(here("functions","calculate_slope.R"))
 resid_sd_dat <- read.csv(here("results","residual_sd_after_detrending.csv")) 
 
-errors <- quantile(resid_sd_dat$residual_sd, probs=seq(0, 1, 0.5))
+errors <- quantile(resid_sd_dat$residual_sd, probs=seq(0, 1, 0.5)) # get min, median, and max from the real data 
 
 # four nested for loops
 
@@ -23,10 +23,9 @@ errors <- quantile(resid_sd_dat$residual_sd, probs=seq(0, 1, 0.5))
 # the outer for loop (parallelized) repeats the above 100 times, and each time it records the power of the combination of shift rate and time-series length, defined as the proportion of times the different time-series subsets are significantly different from zero and in the correct direction. 
 
 # get "true" parameters 
-shiftrate_prep = seq(0.1, 10, 0.1) / 111 # "true" shift rate -- convert from km/yr to lat/yr  -- but these numbers are ugly so let's slightly shift this to ...
 shiftrate <- seq(0.001, 0.1, 0.001)
 sampleyrs <- seq(1, 100, 1)
-# error = 0.65 # from mean(fish_edgetidy$conditional_sd) and mean(bird_edgetidy$conditional_sd)
+
 out_true <- array(dim=c(length(shiftrate), length(sampleyrs), length(errors))) 
 iters <- 100
 ts_lengths <- seq(3, 100, 1) # need to run a regression so must have >2 points (in contrast to sampleyrs) 
