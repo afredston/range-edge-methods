@@ -9,7 +9,7 @@ power_out <- readRDS(file=here("results","simulated_time_series_summary.rds"))
 # reshape into a dataframe for plotting, analysis, etc. 
 # reshaping code thanks to chatgpt
 powerdat <- imap_dfr(power_out, \(a, iter) {
-  d <- dim(a)  # c(J, L, M)
+  d <- dim(a$power)  # c(J, L, M)
   
   expand_grid(
     error_i     = seq_len(d[3]),   # slowest
@@ -18,12 +18,30 @@ powerdat <- imap_dfr(power_out, \(a, iter) {
   ) |>
     mutate(
       iter      = iter,
-      power     = as.vector(a),
+      power     = as.vector(a$power),
       shiftrate = shiftrate[shiftrate_i],
       ts_length = ts_lengths[tslen_i],
       error_sd  = errors[error_i]
     ) |>
     select(iter, shiftrate, ts_length, error_sd, power)
+})
+
+out_true_dat <- imap_dfr(power_out, \(a, iter) {
+  d <- dim(a$out_true)  # c(J, K, M)
+  
+  expand_grid(
+    error_i     = seq_len(d[3]),   # slowest
+    sampleyr_i  = seq_len(d[2]),
+    shiftrate_i = seq_len(d[1])    # fastest (matches as.vector() on arrays)
+  ) |>
+    mutate(
+      iter      = iter,
+      out_true  = as.vector(a$out_true),
+      shiftrate = shiftrate[shiftrate_i],
+      sampleyr  = sampleyrs[sampleyr_i],
+      error_sd  = errors[error_i]
+    ) |>
+    select(iter, shiftrate, sampleyr, error_sd, out_true)
 })
 
 powerdat |> 
