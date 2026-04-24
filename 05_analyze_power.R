@@ -44,6 +44,100 @@ out_true_dat <- imap_dfr(power_out, \(a, iter) {
     select(iter, shiftrate, sampleyr, error_sd, out_true)
 })
 
+# BEGIN RESURVEY ANALYSIS 
+# resurvey analysis (this chunk also written with help from chatgpt)
+library(dplyr)
+library(purrr)
+library(foreach)
+library(doParallel)
+library(here)
+
+registerDoParallel(cores = 150)
+
+gaps <- 3:100
+
+dir.create(here("results", "out_compare_chunks"), showWarnings = FALSE)
+
+group_keys <- out_true_dat |>
+  distinct(iter, shiftrate, error_sd)
+
+calc_slopes_one_ts <- function(df, gaps = 3:100) {
+  df <- df |> arrange(sampleyr)
+  
+  x <- df$sampleyr
+  y <- df$out_true
+  n_years <- length(x)
+  
+  c_y  <- c(0, cumsum(y))
+  c_xy <- c(0, cumsum(x * y))
+  c_x  <- c(0, cumsum(x))
+  c_x2 <- c(0, cumsum(x^2))
+  
+  map_dfr(gaps, function(gap) {
+    starts <- seq_len(n_years - gap)
+    ends <- starts + gap
+    N <- gap + 1
+    
+    sum_y  <- c_y[ends + 1]  - c_y[starts]
+    sum_xy <- c_xy[ends + 1] - c_xy[starts]
+    sum_x  <- c_x[ends + 1]  - c_x[starts]
+    sum_x2 <- c_x2[ends + 1] - c_x2[starts]
+    
+    slope_regression <- (sum_xy - sum_x * sum_y / N) /
+      (sum_x2 - sum_x^2 / N)
+    
+    slope_endpoint <- (y[ends] - y[starts]) / gap
+    
+    tibble(
+      gap = gap,
+      start_year = x[starts],
+      end_year = x[ends],
+      slope_endpoint = slope_endpoint,
+      slope_regression = slope_regression
+    )
+  })
+}
+
+foreach(
+  g = seq_len(nrow(group_keys)),
+  .packages = c("dplyr", "purrr", "here")
+) %dopar% {
+  
+  key <- group_keys[g, ]
+  
+  df <- out_true_dat |>
+    filter(
+      iter == key$iter,
+      shiftrate == key$shiftrate,
+      error_sd == key$error_sd
+    )
+  
+  # run resurvey analysis for all iterations and parameter combinations 
+  out <- calc_slopes_one_ts(df, gaps = gaps) |>
+    mutate(
+      iter = key$iter,
+      shiftrate = key$shiftrate,
+      error_sd = key$error_sd,
+      .before = 1
+    )
+  
+  saveRDS(
+    out,
+    file = here(
+      "results", "out_compare_chunks",
+      paste0("out_compare_group_", g, ".rds")
+    )
+  )
+  
+  NULL
+}
+
+# plot 
+
+
+############ END RESURVEY ANALYSIS 
+
+# plot for reviewer showing the data I summarized to get power estimates 
 powerdat |> 
   filter(shiftrate %in% c(0.050, 0.075), 
          ts_length %in% c(5, 50),
