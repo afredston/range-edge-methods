@@ -132,8 +132,91 @@ foreach(
   NULL
 }
 
-# plot 
+resurvey_thin <- out_compare |> 
+  group_by(shiftrate, error_sd, gap) |> 
+  slice_sample(n=1000) |> 
+  ungroup()  |> 
+  filter(gap %in% c(10, 20, 50, 100)) |> 
+left_join(powerdat_summ |> select(error_sd, sdlab) |> distinct()) 
 
+
+quad_pct <- resurvey_thin |>
+  mutate(
+    quadrant = case_when(
+      slope_regression >= 0 & slope_endpoint >= 0 ~ "pos_pos",
+      slope_regression <  0 & slope_endpoint >= 0 ~ "neg_pos",
+      slope_regression <  0 & slope_endpoint <  0 ~ "neg_neg",
+      slope_regression >= 0 & slope_endpoint <  0 ~ "pos_neg"
+    )
+  ) |>
+  count(gap, sdlab, quadrant) |>
+  complete(
+    gap,
+    sdlab,
+    quadrant = c("pos_pos", "neg_pos", "neg_neg", "pos_neg"),
+    fill = list(n = 0)
+  ) |>
+  group_by(gap, sdlab) |>
+  mutate(pct = 100 * n / sum(n)) |>
+  ungroup() |>
+  mutate(
+    x = case_when(
+      quadrant %in% c("pos_pos", "pos_neg") ~ Inf,
+      TRUE ~ -Inf
+    ),
+    y = case_when(
+      quadrant %in% c("pos_pos", "neg_pos") ~ Inf,
+      TRUE ~ -Inf
+    ),
+    hjust = case_when(
+      quadrant %in% c("pos_pos", "pos_neg") ~ 1.2,
+      TRUE ~ -0.2
+    ),
+    vjust = case_when(
+      quadrant %in% c("pos_pos", "neg_pos") ~ 1.2,
+      TRUE ~ -0.5
+    ),
+    label = paste0(round(pct, 1), "%")
+  )
+
+resurvey_gg <- resurvey_thin |> 
+  ggplot(aes(x = slope_regression, y = slope_endpoint)) +
+  annotate(
+    "rect",
+    xmin = -Inf, xmax = 0,
+    ymin = 0, ymax = Inf,
+    fill = "grey85", alpha = 0.6
+  ) +
+  annotate(
+    "rect",
+    xmin = 0, xmax = Inf,
+    ymin = -Inf, ymax = 0,
+    fill = "grey85", alpha = 0.6
+  ) +
+  geom_hline(yintercept = 0, linewidth = 0.3) +
+  geom_vline(xintercept = 0, linewidth = 0.3) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", linewidth = 0.4) +
+  geom_point(alpha = 0.15, size = 0.6) +
+  geom_text(
+    data = quad_pct,
+    aes(x = x, y = y, label = label, hjust = hjust, vjust = vjust),
+    inherit.aes = FALSE,
+    size = 3.5
+  ) +
+  facet_grid(sdlab ~ gap, labeller = labeller(
+    gap = \(x) paste0(x, "-year gap")
+  )) +
+  labs(
+    x = "Regression slope estimated from full interval",
+    y = "Endpoint slope estimated from resurvey only"
+  ) +
+  theme_bw() +
+  theme(
+    panel.grid = element_blank(),
+    plot.title = element_text(face = "bold")
+  )
+
+ggsave(resurvey_gg, filename=here("figures","resurvey.png"), width=8, height=6, dpi=160)
 
 ############ END RESURVEY ANALYSIS 
 
@@ -149,7 +232,8 @@ powerdat |>
 # get median power for each parameter combination
 powerdat_summ <- powerdat |> 
   group_by(shiftrate, ts_length, error_sd) |> 
-  summarise(power = median(power))
+  summarise(power = median(power))|> 
+  ungroup()
 
 # add nice columns for plotting
 powerdat_summ <- powerdat_summ %>% 
@@ -196,7 +280,7 @@ powerdat_summ |>
   filter(shiftrate == 0.050,
          error_sd == errors[2]) |> 
   filter(power >= 0.8) |> 
-  arrange(ts_length)
+  arrange(ts_length) 
 
 power_summ_gg <- powerdat_summ |>
   group_by(shiftrate, ts_length, error_sd, sdlab) |>
