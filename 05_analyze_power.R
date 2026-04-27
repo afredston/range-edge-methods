@@ -26,6 +26,12 @@ powerdat <- imap_dfr(power_out, \(a, iter) {
     select(iter, shiftrate, ts_length, error_sd, power)
 })
 
+# get median power for each parameter combination
+powerdat_summ <- powerdat |> 
+  group_by(shiftrate, ts_length, error_sd) |> 
+  summarise(power = median(power))|> 
+  ungroup()
+
 out_true_dat <- imap_dfr(power_out, \(a, iter) {
   d <- dim(a$out_true)  # c(J, K, M)
   
@@ -44,6 +50,22 @@ out_true_dat <- imap_dfr(power_out, \(a, iter) {
     select(iter, shiftrate, sampleyr, error_sd, out_true)
 })
 
+
+# add nice columns for plotting
+powerdat_summ <- powerdat_summ %>% 
+  mutate(ratelab = paste0(shiftrate, " °lat/yr"),
+         sdlab = 
+           ifelse(error_sd == errors[1], "Low SD", ifelse(error_sd == errors[2], "Mid SD", "High SD")),
+         sdlab = factor(sdlab, levels = c("Low SD", "Mid SD", "High SD"))
+  ) 
+powerdat <- powerdat %>% 
+  mutate(ratelab = paste0(shiftrate, " °lat/yr"),
+         sdlab = 
+           ifelse(error_sd == errors[1], "Low SD", ifelse(error_sd == errors[2], "Mid SD", "High SD")),
+         sdlab = factor(sdlab, levels = c("Low SD", "Mid SD", "High SD"))
+  ) 
+
+
 # BEGIN RESURVEY ANALYSIS 
 # resurvey analysis (this chunk also written with help from chatgpt)
 library(dplyr)
@@ -56,88 +78,103 @@ registerDoParallel(cores = 150)
 
 gaps <- 3:100
 
-dir.create(here("results", "out_compare_chunks"), showWarnings = FALSE)
-
-group_keys <- out_true_dat |>
-  distinct(iter, shiftrate, error_sd)
-
-calc_slopes_one_ts <- function(df, gaps = 3:100) {
-  df <- df |> arrange(sampleyr)
+if(!file.exists(here("results", "out_compare_all.rds"))) {
+  dir.create(here("results", "out_compare_chunks"), showWarnings = FALSE)
   
-  x <- df$sampleyr
-  y <- df$out_true
-  n_years <- length(x)
+  group_keys <- out_true_dat |>
+    distinct(iter, shiftrate, error_sd)
   
-  c_y  <- c(0, cumsum(y))
-  c_xy <- c(0, cumsum(x * y))
-  c_x  <- c(0, cumsum(x))
-  c_x2 <- c(0, cumsum(x^2))
-  
-  map_dfr(gaps, function(gap) {
-    starts <- seq_len(n_years - gap)
-    ends <- starts + gap
-    N <- gap + 1
+  calc_slopes_one_ts <- function(df, gaps = 3:100) {
+    df <- df |> arrange(sampleyr)
     
-    sum_y  <- c_y[ends + 1]  - c_y[starts]
-    sum_xy <- c_xy[ends + 1] - c_xy[starts]
-    sum_x  <- c_x[ends + 1]  - c_x[starts]
-    sum_x2 <- c_x2[ends + 1] - c_x2[starts]
+    x <- df$sampleyr
+    y <- df$out_true
+    n_years <- length(x)
     
-    slope_regression <- (sum_xy - sum_x * sum_y / N) /
-      (sum_x2 - sum_x^2 / N)
+    c_y  <- c(0, cumsum(y))
+    c_xy <- c(0, cumsum(x * y))
+    c_x  <- c(0, cumsum(x))
+    c_x2 <- c(0, cumsum(x^2))
     
-    slope_endpoint <- (y[ends] - y[starts]) / gap
+    map_dfr(gaps, function(gap) {
+      starts <- seq_len(n_years - gap)
+      ends <- starts + gap
+      N <- gap + 1
+      
+      sum_y  <- c_y[ends + 1]  - c_y[starts]
+      sum_xy <- c_xy[ends + 1] - c_xy[starts]
+      sum_x  <- c_x[ends + 1]  - c_x[starts]
+      sum_x2 <- c_x2[ends + 1] - c_x2[starts]
+      
+      slope_regression <- (sum_xy - sum_x * sum_y / N) /
+        (sum_x2 - sum_x^2 / N)
+      
+      slope_endpoint <- (y[ends] - y[starts]) / gap
+      
+      tibble(
+        gap = gap,
+        start_year = x[starts],
+        end_year = x[ends],
+        slope_endpoint = slope_endpoint,
+        slope_regression = slope_regression
+      )
+    })
+  }
+  
+  foreach(
+    g = seq_len(nrow(group_keys)),
+    .packages = c("dplyr", "purrr", "here")
+  ) %dopar% {
     
-    tibble(
-      gap = gap,
-      start_year = x[starts],
-      end_year = x[ends],
-      slope_endpoint = slope_endpoint,
-      slope_regression = slope_regression
+    key <- group_keys[g, ]
+    
+    df <- out_true_dat |>
+      filter(
+        iter == key$iter,
+        shiftrate == key$shiftrate,
+        error_sd == key$error_sd
+      )
+    
+    # run resurvey analysis for all iterations and parameter combinations 
+    out <- calc_slopes_one_ts(df, gaps = gaps) |>
+      mutate(
+        iter = key$iter,
+        shiftrate = key$shiftrate,
+        error_sd = key$error_sd,
+        .before = 1
+      )
+    
+    saveRDS(
+      out,
+      file = here(
+        "results", "out_compare_chunks",
+        paste0("out_compare_group_", g, ".rds")
+      )
     )
-  })
-}
-
-foreach(
-  g = seq_len(nrow(group_keys)),
-  .packages = c("dplyr", "purrr", "here")
-) %dopar% {
+    
+    NULL
+  }
   
-  key <- group_keys[g, ]
-  
-  df <- out_true_dat |>
-    filter(
-      iter == key$iter,
-      shiftrate == key$shiftrate,
-      error_sd == key$error_sd
-    )
-  
-  # run resurvey analysis for all iterations and parameter combinations 
-  out <- calc_slopes_one_ts(df, gaps = gaps) |>
-    mutate(
-      iter = key$iter,
-      shiftrate = key$shiftrate,
-      error_sd = key$error_sd,
-      .before = 1
-    )
-  
-  saveRDS(
-    out,
-    file = here(
-      "results", "out_compare_chunks",
-      paste0("out_compare_group_", g, ".rds")
-    )
+  chunk_files <- list.files(
+    here("results", "out_compare_chunks"),
+    pattern = "\\.rds$",
+    full.names = TRUE
   )
   
-  NULL
+  out_compare <- map_dfr(chunk_files, readRDS)
+  
+  saveRDS(
+    out_compare,
+    file = here("results", "out_compare_all.rds")
+  )
+} else {
+  readRDS(file = here("results", "out_compare_all.rds"))
 }
 
 resurvey_thin <- out_compare |> 
-  group_by(shiftrate, error_sd, gap) |> 
-  slice_sample(n=1000) |> 
-  ungroup()  |> 
-  filter(gap %in% c(10, 20, 50, 100)) |> 
-left_join(powerdat_summ |> select(error_sd, sdlab) |> distinct()) 
+  filter(gap %in% c(10, 20, 50),
+         shiftrate == 0.05) |> # median value  
+  left_join(powerdat_summ |> select(error_sd, sdlab) |> distinct()) 
 
 
 quad_pct <- resurvey_thin |>
@@ -207,8 +244,8 @@ resurvey_gg <- resurvey_thin |>
     gap = \(x) paste0(x, "-year gap")
   )) +
   labs(
-    x = "Regression slope estimated from full interval",
-    y = "Endpoint slope estimated from resurvey only"
+    x = "Range edge shift rate (regression method, °lat/yr)",
+    y = "Range edge shift rate (resurvey method, °lat/yr)"
   ) +
   theme_bw() +
   theme(
@@ -228,26 +265,6 @@ powerdat |>
   ggplot(aes(x=power)) +
   geom_histogram() +
   facet_grid(shiftrate ~ ts_length)
-
-# get median power for each parameter combination
-powerdat_summ <- powerdat |> 
-  group_by(shiftrate, ts_length, error_sd) |> 
-  summarise(power = median(power))|> 
-  ungroup()
-
-# add nice columns for plotting
-powerdat_summ <- powerdat_summ %>% 
-  mutate(ratelab = paste0(shiftrate, " °lat/yr"),
-         sdlab = 
-           ifelse(error_sd == errors[1], "Low SD", ifelse(error_sd == errors[2], "Mid SD", "High SD")),
-         sdlab = factor(sdlab, levels = c("Low SD", "Mid SD", "High SD"))
-  ) 
-powerdat <- powerdat %>% 
-  mutate(ratelab = paste0(shiftrate, " °lat/yr"),
-         sdlab = 
-           ifelse(error_sd == errors[1], "Low SD", ifelse(error_sd == errors[2], "Mid SD", "High SD")),
-         sdlab = factor(sdlab, levels = c("Low SD", "Mid SD", "High SD"))
-  ) 
 
 shiftrate_ex <- c(shiftrate[1], shiftrate[34], shiftrate[67], shiftrate[100])
 
