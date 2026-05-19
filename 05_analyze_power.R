@@ -168,7 +168,7 @@ if(!file.exists(here("results", "out_compare_all.rds"))) {
     file = here("results", "out_compare_all.rds")
   )
 } else {
-  readRDS(file = here("results", "out_compare_all.rds"))
+  out_compare <- readRDS(file = here("results", "out_compare_all.rds"))
 }
 
 resurvey_thin <- out_compare |> 
@@ -233,7 +233,8 @@ resurvey_gg <- resurvey_thin |>
   geom_hline(yintercept = 0, linewidth = 0.3) +
   geom_vline(xintercept = 0, linewidth = 0.3) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed", linewidth = 0.4) +
-  geom_point(alpha = 0.15, size = 0.6) +
+  geom_point(alpha = 0.15, size = 0.6)+ 
+  annotate("point", x = 0.05, y = 0.05, colour = "red", size = 4, shape = 8) + 
   geom_text(
     data = quad_pct,
     aes(x = x, y = y, label = label, hjust = hjust, vjust = vjust),
