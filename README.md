@@ -1,10 +1,9 @@
 # Measuring the edges of species' geographic ranges 
 
-## Alexa Fredston 
 
 ### Description 
 
-This repository contains all of the code and most of the data to reproduce analyses exploring methods for measuring range edge positions and edge shifts. Please cite [the manuscript](https://doi.org/10.32942/X2QP69) if you draw any data, code, or ideas from this repository. The workflow is as follows:
+This repository contains all of the code and most of the data to reproduce analyses exploring methods for measuring range edge positions and edge shifts. The workflow is as follows:
 
 1. `01_prep_data.R` reshapes and filters the raw data. It uses spatial masks to do so, which are available in this repository as well. Not all the raw data are hosted here, because some files are too big (see "Data" below). 
 2. `02_calculate_edges.R` applies range edge metrics to the data (see functions/calc_edge_quantile.R for more information on how they're calculated).
