@@ -4,6 +4,8 @@
 
 ## *In press, Methods in Ecology and Evolution* 
 
+[Shiny app to explore these results is now live!](https://afredston.shinyapps.io/range-edge-methods/)
+
 ### Description 
 
 This repository contains all of the code and most of the data to reproduce analyses exploring methods for measuring range edge positions and edge shifts. The workflow is as follows:
