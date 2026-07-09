@@ -6,9 +6,11 @@
 
 [Shiny app to explore these results is now live!](https://afredston.shinyapps.io/range-edge-methods/)
 
+[![DOI](https://zenodo.org/badge/805014870.svg)](https://doi.org/10.5281/zenodo.21272457)
+
 ### Description 
 
-This repository contains all of the code and most of the data to reproduce analyses exploring methods for measuring range edge positions and edge shifts. The workflow is as follows:
+This repository contains all of the code and most of the data to reproduce analyses exploring methods for measuring range edge positions and edge shifts. Please cite the paper and the repository DOI above for any derived work. The workflow is as follows:
 
 1. `01_prep_data.R` reshapes and filters the raw data. It uses spatial masks to do so, which are available in this repository as well. Not all the raw data are hosted here, because some files are too big (see "Data" below). 
 2. `02_calculate_edges.R` applies range edge metrics to the data (see functions/calc_edge_quantile.R for more information on how they're calculated).
