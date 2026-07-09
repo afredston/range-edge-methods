@@ -254,7 +254,7 @@ resurvey_gg <- resurvey_thin |>
     plot.title = element_text(face = "bold")
   )
 
-ggsave(resurvey_gg, filename=here("figures","resurvey.png"), width=8, height=6, dpi=160)
+ggsave(resurvey_gg, filename=here("figures","resurvey.png"), width=8, height=6, dpi=600)
 
 ############ END RESURVEY ANALYSIS 
 
@@ -322,7 +322,7 @@ power_summ_gg <- powerdat_summ |>
   ) +
   NULL
 power_summ_gg
-ggsave(power_summ_gg, filename=here("figures","power_threshold.png"), width=8, height=3, dpi=160)
+ggsave(power_summ_gg, filename=here("figures","power_threshold.png"), width=8, height=3, dpi=600)
 
 
 power_iters_gg <- powerdat %>% 
@@ -337,7 +337,7 @@ power_iters_gg <- powerdat %>%
   theme(legend.position = "none") +
   NULL
 power_iters_gg
-ggsave(power_iters_gg, filename=here("figures","power.png"), width=8, height=4, dpi=160)
+ggsave(power_iters_gg, filename=here("figures","power.png"), width=8, height=4, dpi=600)
 
 saveRDS(powerdat, here("shiny/results", "powerdat.rds"))
 saveRDS(powerdat_summ, here("shiny/results", "powerdat_summ.rds"))
