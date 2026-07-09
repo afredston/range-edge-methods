@@ -1,5 +1,6 @@
 library(tidyverse)
 library(here)
+library(gridExtra)
 
 fish_edgetype <- "eq"
 focal_fish <- c('Urophycis tenuis')
@@ -77,7 +78,7 @@ fishplot <- ggplot(fish_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   NULL
   
 fishplot
-ggsave(fishplot, filename=here("figures","fish_edge.png"), width=8, height=4, dpi=160)
+ggsave(fishplot, filename=here("figures","fish_edge.png"), width=8, height=4, dpi=600)
 
 
 bird_edgetype <- "pol"
@@ -154,7 +155,10 @@ birdplot <- ggplot(bird_edgetidy, aes(x=year, y=lat_position, color=Method, fill
   scale_x_continuous(breaks=seq(1980, 2020, 10), limits=c(1975, 2027)) +
   NULL
 birdplot
-ggsave(birdplot, filename=here("figures","bird_edge.png"), width=8, height=4, dpi=160)
+ggsave(birdplot, filename=here("figures","bird_edge.png"), width=8, height=4, dpi=600)
+
+ggsave(here("figures","figure_1.png"),width=8, height=8, dpi=600, 
+       arrangeGrob(birdplot, fishplot))
 
 resid_sd_dat <- bird_edgetidy |> 
   select(Edge, Method, residual_sd) |> 
