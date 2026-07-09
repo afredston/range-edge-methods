@@ -2,7 +2,7 @@
 
 ## Alexa L. Fredston, Department of Ocean Sciences, University of California, Santa Cruz
 
-## *In press, The American Naturalist* 
+## *In press, Methods in Ecology and Evolution* 
 
 ### Description 
 
