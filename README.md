@@ -4,7 +4,7 @@
 
 ## *In press, Methods in Ecology and Evolution* 
 
-[Shiny app to explore these results is now live!](https://afredston.shinyapps.io/range-edge-methods/)
+[Shiny app to explore these results is now live](https://afredston.shinyapps.io/range-edge-methods/) (built with code from ChatGPT). 
 
 [![DOI](https://zenodo.org/badge/805014870.svg)](https://doi.org/10.5281/zenodo.21272457)
 

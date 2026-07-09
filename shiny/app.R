@@ -1,3 +1,4 @@
+# APP SCRIPT WRITTEN BY CHATGPT WITH PROMPTS BY ME, JULY 8, 2026
 # app.R
 # R 4.0-compatible Shiny app
 
