@@ -339,3 +339,7 @@ power_iters_gg <- powerdat %>%
 power_iters_gg
 ggsave(power_iters_gg, filename=here("figures","power.png"), width=8, height=4, dpi=160)
 
+saveRDS(powerdat, here("shiny/results", "powerdat.rds"))
+saveRDS(powerdat_summ, here("shiny/results", "powerdat_summ.rds"))
+
+

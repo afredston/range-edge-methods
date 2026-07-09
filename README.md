@@ -1,5 +1,8 @@
 # Measuring the edges of species' geographic ranges 
 
+## Alexa L. Fredston, Department of Ocean Sciences, University of California, Santa Cruz
+
+## *In press, The American Naturalist* 
 
 ### Description 
 
